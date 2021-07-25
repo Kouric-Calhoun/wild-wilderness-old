@@ -1,2 +1,1 @@
-public class Populator {
-}
+public class Populator { }
