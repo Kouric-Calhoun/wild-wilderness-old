@@ -1,0 +1,29 @@
+{
+  "name": "wilderness-wild-repo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pt-spring-2021-final-projects/wilderness-wild-repo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pt-spring-2021-final-projects/wilderness-wild-repo/issues"
+  },
+  "homepage": "https://github.com/pt-spring-2021-final-projects/wilderness-wild-repo#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "parcel": "^2.0.0-beta.2"
+  }
+}
