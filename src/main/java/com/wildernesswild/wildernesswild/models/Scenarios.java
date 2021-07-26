@@ -3,6 +3,8 @@ package com.wildernesswild.wildernesswild.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -16,7 +18,7 @@ public class Scenarios {
     private String description;
     private String image;
     private String name;
-    @ManyToOne
+    @ManyToMany
     @JsonIgnore
     private Collection<Regions> regions;
 
@@ -41,11 +43,11 @@ public class Scenarios {
     public Scenarios () {
     }
 
-    public Scenarios(String description, String image, String name, Collection<Regions> regions) {
+    public Scenarios(String description, String image, String name, Regions...regions) {
         this.description = description;
         this.image = image;
         this.name = name;
-        this.regions = regions;
+        this.regions = new ArrayList<>(Arrays.asList(regions));
     }
 
     @Override
@@ -53,11 +55,11 @@ public class Scenarios {
         if (this == o) return true;
         if (!(o instanceof Scenarios)) return false;
         Scenarios scenarios = (Scenarios) o;
-        return Objects.equals(getId(), scenarios.getId());
+        return Objects.equals(getId(), scenarios.getId()) && Objects.equals(getDescription(), scenarios.getDescription()) && Objects.equals(getImage(), scenarios.getImage()) && Objects.equals(getName(), scenarios.getName()) && Objects.equals(getRegions(), scenarios.getRegions());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId());
+        return Objects.hash(getId(), getDescription(), getImage(), getName(), getRegions());
     }
 }
