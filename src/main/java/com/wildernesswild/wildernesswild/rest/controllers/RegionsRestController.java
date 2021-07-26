@@ -23,7 +23,7 @@ public class RegionsRestController {
         return (Collection<Regions>) regionsRepo.findAll(); }
 
     @GetMapping("/api/regions/{id}")
-    public Optional<Regions> getRegions(@PathVariable Long id){
+    public Optional<Regions> getRegions(@PathVariable Long id) {
         return regionsRepo.findById(id); }
 
 }
