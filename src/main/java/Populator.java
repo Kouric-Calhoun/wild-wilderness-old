@@ -1,5 +1,6 @@
 import com.wildernesswild.wildernesswild.models.Regions;
 import com.wildernesswild.wildernesswild.models.Scenarios;
+import com.wildernesswild.wildernesswild.models.Skills;
 import com.wildernesswild.wildernesswild.repositories.RegionsRepository;
 import com.wildernesswild.wildernesswild.repositories.ScenariosRepository;
 import com.wildernesswild.wildernesswild.repositories.SkillsRepository;
@@ -23,6 +24,11 @@ public class Populator implements CommandLineRunner {
         Regions northEast = new Regions("https://xxxx.com","North East","Warm","North East xxxx","Pic", "east of Ohio Valley",
                 "normal");
         regionsRepo.save(northEast);
-        Scenarios startFire = new Scenarios("How to start a fire", "pic", "Fire", northEast);
+
+        Scenarios findingWater = new Scenarios("How to find water", "pic", "Water", northEast);
+        scenariosRepo.save(findingWater);
+
+        Skills startFire = new Skills("Start a Fire", "How to make a fire", "Sticks", "pic", northEast);
+        skillsRepo.save(startFire);
     }
 }

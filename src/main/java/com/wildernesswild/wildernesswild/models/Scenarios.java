@@ -55,11 +55,11 @@ public class Scenarios {
         if (this == o) return true;
         if (!(o instanceof Scenarios)) return false;
         Scenarios scenarios = (Scenarios) o;
-        return Objects.equals(getId(), scenarios.getId());
+        return Objects.equals(getId(), scenarios.getId()) && Objects.equals(getDescription(), scenarios.getDescription()) && Objects.equals(getImage(), scenarios.getImage()) && Objects.equals(getName(), scenarios.getName()) && Objects.equals(getRegions(), scenarios.getRegions());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId());
+        return Objects.hash(getId(), getDescription(), getImage(), getName(), getRegions());
     }
 }

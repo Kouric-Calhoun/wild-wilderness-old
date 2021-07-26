@@ -56,12 +56,12 @@ public class Skills {
         if (this == o) return true;
         if (!(o instanceof Skills)) return false;
         Skills skills = (Skills) o;
-        return Objects.equals(id, skills.id);
+        return Objects.equals(id, skills.id) && Objects.equals(getName(), skills.getName()) && Objects.equals(getDescription(), skills.getDescription()) && Objects.equals(getGear(), skills.getGear()) && Objects.equals(getImage(), skills.getImage()) && Objects.equals(getRegions(), skills.getRegions());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(id, getName(), getDescription(), getGear(), getImage(), getRegions());
     }
 }
 

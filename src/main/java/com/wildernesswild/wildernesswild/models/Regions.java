@@ -68,11 +68,11 @@ public class Regions {
         if (this == o) return true;
         if (!(o instanceof Regions)) return false;
         Regions regions = (Regions) o;
-        return Objects.equals(getId(), regions.getId());
+        return Objects.equals(getId(), regions.getId()) && Objects.equals(getApiLink(), regions.getApiLink()) && Objects.equals(getName(), regions.getName()) && Objects.equals(getClimate(), regions.getClimate()) && Objects.equals(getDescription(), regions.getDescription()) && Objects.equals(getImage(), regions.getImage()) && Objects.equals(getLocation(), regions.getLocation()) && Objects.equals(getTerrain(), regions.getTerrain()) && Objects.equals(scenarios, regions.scenarios);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId());
+        return Objects.hash(getId(), getApiLink(), getName(), getClimate(), getDescription(), getImage(), getLocation(), getTerrain(), scenarios);
     }
 }
