@@ -17,11 +17,13 @@ public class ScenariosRestController {
 
     @GetMapping("/api/scenarios")
     public Collection<Scenarios> getHistory() {
+
         return (Collection<Scenarios>) scenariosRepo.findAll();
     }
 
     @GetMapping("/api/scenarios/{id}")
     public Scenarios getScenarios(@PathVariable Long id) {
+
         return scenariosRepo.findById(id).get();
     }
 }

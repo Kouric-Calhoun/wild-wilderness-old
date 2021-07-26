@@ -17,8 +17,10 @@ public class SkillsRestController {
     private SkillsRepository skillsRepo;
 
     @GetMapping("/api/skills")
-    public Collection<Skills> getSkills() { return (Collection<Skills>) skillsRepo.findAll(); }
+    public Collection<Skills> getSkills() {
+        return (Collection<Skills>) skillsRepo.findAll(); }
 
     @GetMapping("/api/skills/{id}")
-    public Skills getSkills(@PathVariable Long id) { return skillsRepo.findById(id).get(); }
+    public Skills getSkills(@PathVariable Long id) {
+        return skillsRepo.findById(id).get(); }
 }

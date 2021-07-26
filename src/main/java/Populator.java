@@ -21,14 +21,14 @@ public class Populator implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Regions northEast = new Regions("https://xxxx.com","North East","Warm","North East xxxx","Pic", "east of Ohio Valley",
-                "normal");
-        regionsRepo.save(northEast);
-
-        Scenarios findingWater = new Scenarios("How to find water", "pic", "Water", northEast);
+        Scenarios findingWater = new Scenarios("How to find water", "pic", "Water");
         scenariosRepo.save(findingWater);
 
-        Skills startFire = new Skills("Start a Fire", "How to make a fire", "Sticks", "pic", northEast);
+        Skills startFire = new Skills("Start a Fire", "How to make a fire", "Sticks", "pic");
         skillsRepo.save(startFire);
+
+        Regions northEast = new Regions("https://xxxx.com","North East","Warm","North East xxxx","Pic", "east of Ohio Valley",
+                "normal", findingWater,startFire);
+        regionsRepo.save(northEast);
     }
 }

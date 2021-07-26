@@ -18,7 +18,7 @@ public class Scenarios {
     private String description;
     private String image;
     private String name;
-    @ManyToOne
+    @ManyToMany
     @JsonIgnore
     private Collection<Regions> regions;
 
