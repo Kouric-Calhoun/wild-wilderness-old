@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Lob;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -18,9 +20,6 @@ public class Skills {
     private String gear;
     private String image;
     private Collection<Regions> regions;
-
-    public Skills () {
-    }
 
     public String getName() {
         return name;
@@ -42,12 +41,14 @@ public class Skills {
         return regions;
     }
 
-    public Skills(String name, String description, String gear, String image, Collection<Regions> regions) {
+    public Skills () {}
+
+    public Skills(String name, String description, String gear, String image, Regions...regions) {
         this.name = name;
         this.description = description;
         this.gear = gear;
         this.image = image;
-        this.regions = regions;
+        this.regions = new ArrayList<>(Arrays.asList(regions));
     }
 
     @Override

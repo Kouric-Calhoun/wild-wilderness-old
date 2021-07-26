@@ -3,6 +3,8 @@ package com.wildernesswild.wildernesswild.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -41,11 +43,11 @@ public class Scenarios {
     public Scenarios () {
     }
 
-    public Scenarios(String description, String image, String name, Collection<Regions> regions) {
+    public Scenarios(String description, String image, String name, Regions...regions) {
         this.description = description;
         this.image = image;
         this.name = name;
-        this.regions = regions;
+        this.regions = new ArrayList<>(Arrays.asList(regions));
     }
 
     @Override
