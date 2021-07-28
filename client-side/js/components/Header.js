@@ -1,10 +1,11 @@
-export default function Header(){
-    return `
+export default function Header() {
+  return `
     <ul class ='nav-list'>
     <li class ='nav-list__home'>Home</li>
-    <li class ='nav-list__#1'>#1</li>
-    <li class ='nav-list__#2'>#2</li>
-    <li class ='nav-list__#3'>#3</li>
+    <li class ='nav-list__skills'>Skills</li>
+    <li class ='nav-list__scenarios'>Scenarios</li>
+    <li class ='nav-list__regions'>Regions</li>
+    <li class ='nav-list__blog'>Blog</li>
     </ul>
     `;
 }
