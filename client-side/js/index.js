@@ -73,16 +73,16 @@ function navBlog() {
 }
 
 function footerAbout() {
-  const footerFaqElm = document.querySelector(".footer__about");
-  footerFaqElm.addEventListener("click", () => {
+  const footerAboutElm = document.querySelector(".footer__about");
+  footerAboutElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = About();
   });
 }
 
 function footerContact() {
-  const footerFaqElm = document.querySelector(".footer__contact");
-  footerFaqElm.addEventListener("click", () => {
+  const footerContactElm = document.querySelector(".footer__contact");
+  footerContactElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Contact();
   });
