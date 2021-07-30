@@ -49,7 +49,7 @@ function navSkills() {
 }
 
 function navScenarios() {
-  const scenariosElem = document.querySelector("nav-list__scenarios");
+  const scenariosElem = document.querySelector(".nav-list__scenarios");
   scenariosElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Scenarios();
@@ -57,7 +57,7 @@ function navScenarios() {
 }
 
 function navRegions() {
-  const regionsElem = document.querySelector("nav-list__regions");
+  const regionsElem = document.querySelector(".nav-list__regions");
   regionsElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
@@ -65,7 +65,7 @@ function navRegions() {
 }
 
 function navBlog() {
-  const blogElem = document.querySelector("nav-list__blog");
+  const blogElem = document.querySelector(".nav-list__blog");
   blogElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Blog();
