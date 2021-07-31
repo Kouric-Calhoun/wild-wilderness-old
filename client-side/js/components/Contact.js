@@ -1,15 +1,23 @@
+import form from '../../css/form.css';
+import contact from '../../css/contact.css';
+import contactImageBg2 from '../../images/contactImageBg2.jpg';
+
+
 export default function Contact() {
   return `
+
     <title>Wilderness Wild</title>
     <body class="contactPage">
       <header id="showcase" class="grid">
         <div class="bg-image"></div>
         <div class="content-wrap">
           <h1>Welcome to Wilderness Wild</h1>
+          <img src='${contactImageBg2}'></img>
           <p>We are an organization that specializes in teaching basic to advance 
           survivor skills for different scenarios and various terrains when you 
           are adventuring the wilderness. Our motto is, "Vincit Qui Se Vincit" 
           which means, "He/she conquers who conquers him/herself."</p>
+          <br>
         </div>
       </header>
 
@@ -23,6 +31,7 @@ export default function Contact() {
                   clients on the required surivor skills to prepare them 
                   when facing situation in various scenarios in the 
                   Wilderness. </p>
+                  <br>
               </div>
           </div>
       </section>
@@ -43,7 +52,7 @@ export default function Contact() {
       <!-- Section C -->
       <section id="section-c" class="grid">
           <div class="content-wrap">
-              <h2 class="content-title">Survivor Team Building Event</h2>
+              <h2 class="content-title">Team Building</h2>
               <div class="content-text">
                   <p>Wilderness Wild will handle all your survival events 
                   as team building events for companies and will include a 
@@ -53,27 +62,47 @@ export default function Contact() {
               </div>
           </div>
       </section>
+      </main>
 
       <!-- Section D-->
-        <section id="section-d" class="grid">
-            <div class="box">
-                <h2 class="content-title">Contact Us</h2>
-                <p class="fa fa-address-card">2645 N High Street Columbus, OH 43202</p>
-                <p class="fa fa-phone">1.844.932.2626</p>
-                <p class="fa fa-envelope">survivor@wildernesswild.com</p>
-            </div>
-
-            <div class="box">
+      <div class="box">
                 <h2 class="content-title">About Our Company</h2>
                 <p>Founded in 2021 by a group of wild and crazy individuals for a 
                 tremendous love for the great outdoors and the many adventures 
                 the Earth has to offer.  These fab people chose to teach and advocate
                 friends, family, and co-workers on the survivor skills that they 
                 had experienced over their many years.  And due to the number of 
-                requests for guiding, <strong>Wilderness Wilds</strong> was born.</p>
+                requests for survival guiding, <strong>Wilderness Wilds</strong> was born.</p>
             </div>
         </section>
-    </main>
+ 
+
+    <!-- Section E-->
+      <div class="form">
+      <h2 class="content-title">Contact Us</h2>
+      <div class="box">
+      <li><p class="fa fa-address-card">  2645 N High Street Columbus, OH 43202</p></li>
+      <li><p class="fa fa-phone">  1.844.932.2626</p></li>
+      <li><p class="fa fa-envelope">  survivor@wildernesswild.com</p></li>
+      <br>
+    </div>
+    
+    <p>Got a question? We'd love to hear from you. Send us a message and we'll respond as
+      soon as possible.</p>
+    
+    <div class="row">  
+        <div class="column">
+            <form>
+                <p><b><label for="name">Name</label></b></p>
+                <p><input type="text" id="name" name="name" placeholder="Enter your name"></p>
+                <p><b><label for="email">Email</label></b></p>
+                <p><input type="text" id="email" name="email" placeholder="Enter your email"></p>
+                <p><b><label for="email">Message</label></b></p>
+                <p><textarea id="subject" name="subject" placeholder="Write your comment" style="height:170px"></textarea></p>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 
     </body>
     `;
