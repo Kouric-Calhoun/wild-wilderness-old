@@ -1,9 +1,10 @@
-export default function Fire(){
-    return`
+export default function Fire() {
+    return `
     <main class = "build-fire-main">
 
-    <div class = "fire-title">
-    <h1>How to Safely Build a Fire</h1>
+    <div class = "fire-header">
+    <h1 class = "fire-title">How to Safely Build a Fire</h1>
+    <img src="images/campfire.jpg" alt = "pic of a campfire">
     <p>One of the most important skills to have when you are braving the wilderness is knowing how to build a fire.
     It is also important to know how to safely build this fire and how to tend to it so that you do not accidentally 
    start a wildfire. It is important that you know how to build a fire in the wilderness so that you can keep yourself
@@ -14,8 +15,8 @@ export default function Fire(){
     </div>
 
     <div class="fire-tips">
-    <h1>Tips to know before the fire:</h1>
-    <h2>Find your firestarter</h2>
+    <h1 class = "fire-tips-title">Tips to know before the fire:</h1>
+    <h2 class = "firestarter-title">Find your firestarter</h2>
         <p>A good fire begins with a quality firestarter. In some cases, that can mean something as simple as a store-bought 
     starter or lighter fluid-doused twigs. But if you ever find yourself with no access to such tools, there are plenty 
     of other options you can use to get some flames burning. A favorite is birch bark and you can pack a bag or two 
@@ -34,58 +35,59 @@ export default function Fire(){
      use Doritos, Cheetos, or any type of oily chip in a pinch. Simply light a corner of a few chips and place them 
     beneath your kindling.</p>
 
-    <h2>Give your fire room to breathe</h2>
+    <h2 class = "fire-breathe-title">Give your fire room to breathe</h2>
+    <img src = "images/fire-building.jpg" alt = "pic of building a fire">
         <p>You need oxygen, fuel, and a sustained ignition source to have a fire. These three factors form a "fire triangle". 
     If you neglect one of these things, your triangle will collapse. Usually, fuel means wood and an ignition
     source is a match or lighter. The level of oxygen will depend on how the wood is arranged—if you stack it well, it
-     will facilitate air movement so the fire can breathe and grow.</p>
+    will facilitate air movement so the fire can breathe and grow.</p>
         <p>Start with the kindling. You can dig a trench a couple of inches deep as your fire pit, then lay three small pieces
      of wood over the trench in a triangle that’s just big enough to support your tinder. Pile your tinder, place your 
     firestarter of choice in the middle of it, and build your structure around it all. Start with smaller branches and 
     sticks that will catch easily, then add larger pieces as the fire grows. Be careful not to overcrowd the wood, or
-     oxygen won’t be able to flow freely and your fire will go out. Stick with branches or logs no bigger than your wrist.
+    oxygen won’t be able to flow freely and your fire will go out. Stick with branches or logs no bigger than your wrist.
     Larger logs don’t mean more heat energy, just a longer burn. And don’t worry if you can’t build a massive blaze—small 
     fires are just as effective for cooking and heating as larger ones.</p>
 
-    <h2>Setting a fire in the rain</h2>
+    <h2 class = "fire-rain-title">Setting a fire in the rain</h2>
         <p>Building a fire when everything’s perfectly dry is one thing, but in cold and wet conditions it becomes exponentially 
     more difficult. It can, however, still be done. Start by looking for dry wood and kindling at the bases of trees 
     where branches and foliage may have protected it from rain. In an emergency, you can harvest small branches from 
     the lowest parts of nearby trees. Sometimes you have to do what’s necessary to survive. Look for dead trees or 
     branches and wood that’s fallen to the ground that might be soggy on the outside, but dry on the inside. When you
-     do, carve off the wet outer layers until you hit dry wood.</p>
+    do, carve off the wet outer layers until you hit dry wood.</p>
         <p>Find a sheltered location that will help you stay dry and warm, like against a rock face or in a grove of trees. 
-     In gusty weather, dig a pit for your fire to sit in—the stronger the wind, the deeper your pit should be. Collect
-      more wood than you think you need—you don’t want to have to leave your fire. Make your fire structure no more 
-     than shin-high to conserve fuel, and store wet wood near your flames to dry it out. Make a solid base. You want to 
-     get the fire structure off of the wet surface. Lay down a raft-like foundation of wrist size sticks. </p>
+    In gusty weather, dig a pit for your fire to sit in—the stronger the wind, the deeper your pit should be. Collect
+    more wood than you think you need—you don’t want to have to leave your fire. Make your fire structure no more 
+    than shin-high to conserve fuel, and store wet wood near your flames to dry it out. Make a solid base. You want to 
+    get the fire structure off of the wet surface. Lay down a raft-like foundation of wrist size sticks. </p>
     </div>
     
     <div class = "fire-methods>
-    <h1>Methods for starting a fire</h1>
-    <h2>The Hand Drill</h2>
+    <h1 class = "fire-methods-title">Methods for starting a fire</h1>
+    <h2 class = "hand-drill-title">The Hand Drill</h2>
     <p>If you’re wondering how to start a fire with sticks, you’ll want to try the hand drill. The hand drill strategy is a 
     primitive method and the hardest to do. Shaft revolution and descending weight are two of the most imperative prerequisites 
     for starting a hand drill fire. This method will require wood, resolute hands, and gritty determination.</p>
     
-    <ol class = "hand-drill-method">
+    <ol class = "hand-drill-method-list">
         <li>Make a tinder nest. The tinder nest is necessary to get the fire going. A tinder nest can be made from things
-         that bursts into flames effectively, such as to dry leaves, grass, and bark. For more hints on how to pick out the best 
-         wood, check out our campfire tips and tricks.</li>
-         <li>Make your notch. Cut an angular notch on your fireboard and create a depression near it.</li>
-         <li>Place bark below the v-shaped cut. The bark is used to get an ember from the erosion between the axle and fireboard.</li>
-         <li>Start spinning. Place the shaft into the groove on your fireboard. Your shaft ought to be around two feet to work well.
-          Keep up weight on the fireboard and start to roll the shaft in your hands rapidly down the axle. Continue doing this until
-           an ember lights on the fireboard.</li>
+        that bursts into flames effectively, such as to dry leaves, grass, and bark. For more hints on how to pick out the best 
+        wood, check out our campfire tips and tricks.</li>
+        <li>Make your notch. Cut an angular notch on your fireboard and create a depression near it.</li>
+        <li>Place bark below the v-shaped cut. The bark is used to get an ember from the erosion between the axle and fireboard.</li>
+        <li>Start spinning. Place the shaft into the groove on your fireboard. Your shaft ought to be around two feet to work well.
+        Keep up weight on the fireboard and start to roll the shaft in your hands rapidly down the axle. Continue doing this until
+        an ember lights on the fireboard.</li>
         <li>Start a fire. When you see a shining ember, tap the fireboard to place your ember onto the bit of bark. Exchange the bark 
         to your nest of tinder. Slowly blow it to get yourself fire.</li>
     </ol>
 
-    <h2>The Fire Plow</h2>
+    <h2 class = "fire-plow-title">The Fire Plow</h2>
     <p>The fire plow is another common method using minimal tools. All you’ll need is a softer wood for the plow board and a harder wood
-     for the plow. Willow and poplar make good plow board material.</p>
+    for the plow. Willow and poplar make good plow board material.</p>
 
-     <ol>
+     <ol class = "fire-plow-list">
      <li>Set up your fireplace and cut a groove about one inch wide and six to eight inches long down a board. Find a piece of hardwood 
      about one foot long and carve it to a point at the end.</li>
      <li>Rub. Take the head of your plow and place it on your fireboard. Begin rubbing the tip of the plow back and forth in the grove.
@@ -96,12 +98,12 @@ export default function Fire(){
     <li>Transfer the flame to the tinder. Once the dust is alight, transfer it to the tinder and gently blow to start your fire. </li>
      </ol>
 
-     <h2>The Bow Drill</h2>
+     <h2 class = "fire-bow-drill-title">The Bow Drill</h2>
      <p>The bow drill is presumably the best contact-based technique to use because it’s less demanding to keep up the rate and weight
       required to create friction that can produce fire. However, it does require the most materials. 
       The items you’ll need for this method are: </p>
 
-      <ul>
+      <ul class = "fire-bow-drill-materials-list">
       <li>Fireboard: A flat, softwood board about a foot long and at least six inches wide.</li>
       <li>Socket: A hand-sized, flat rock with a depression on one side. This is used to put weight on the top of the drill as you’re 
       turning it with the bow.</li>
@@ -111,7 +113,7 @@ export default function Fire(){
       </ul>
     <p>Once you’ve gathered your materials, follow these steps to start the fire.</p>
 
-    <ol>
+    <ol class = "fire-bow-drill-list">
     <li>Make your bow: The bow ought to be about the length of your arm. Bend the bow into a half-moon shape and tie it 
     into position with the cord.</li>
     <li>Set up the fireboard. Cut a shallow depression on the center edge of the fireboard. On the underside of the board, 
@@ -123,13 +125,13 @@ export default function Fire(){
      <li>Start a fire. Put ember into the nest and slowly blow on it to get yourself fire.</li>
     </ol>
 
-    <h2>Stone and Steel</h2>
+    <h2 class = "fire-stone-title">Stone and Steel</h2>
     <p>Here’s how to start a fire without matches, lighters, or sticks! Using a flint is a traditional standby and is presumably
-     a standout amongst the most solid and simple approaches to start an open-air fire. You might even see folks using this to start
-      a fire at an ordinary campground. It’s generally a smart idea to carry a steel and flint with you on an outdoors trip. It is 
-      utilized by various armed forces the world over.</p>
+    a standout amongst the most solid and simple approaches to start an open-air fire. You might even see folks using this to start
+    a fire at an ordinary campground. It’s generally a smart idea to carry a steel and flint with you on an outdoors trip. It is 
+    utilized by various armed forces the world over.</p>
 
-      <ol>
+      <ol class = "fire-stone-list">
       <li>Make a tinder nest. This nest will be used to catch the spark that you make with the flint and steel.</li>
       <li>Grab your starters. Grip the steel in one hand while taking the striker in the other.</li>
       <li>Strike. Position the fire steel against your base to keep it from moving. At that point push the striker down 
@@ -137,21 +139,21 @@ export default function Fire(){
       <li>Start a fire! Place the ember in the nest and slowly blow it to get yourself a fire.</li>
       </ol>
 
-      <h2>Batteries and Steel Wool</h2>
+      <h2 class = "fire-batteries-title">Batteries and Steel Wool</h2>
       <p>With this strategy, all you need are a few batteries and steel wool.</p>
 
-      <ol>
+      <ol class = "fire-battery-list">
       <li>Stretch out the wool. You need it to be around 6 inches in length and at least an inch wide.</li>
       <li>Rub the battery on the steel wool. You can use any battery; however 9-volt batteries are recommended.
        Rub the battery sides with the steel. The wool will start to gleam and blaze.</li>
        <li>Place the blazing wool on the tinder nest and slowly blow it to get a larger fire.</li>
       </ol>
 
-      <h2>Traditional Lenses</h2>
+      <h2 class = "fire-lenses-title">Traditional Lenses</h2>
       <p>With this approach, all you need is some kind lens to center daylight on a particular spot. A magnifying glass or 
       binocular lens both work.</p>
 
-      <ol>
+      <ol class = "fire-lenses-list">
       <li>Get your tinder ready.</li>
       <li>Hold the magnifying glass between the sun and the tinder. Look for the bright dot that appears. Tilt the
        magnifying glass so that the dot is over the tinder and about a quarter-inch in diameter.</li>
