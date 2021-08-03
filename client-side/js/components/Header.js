@@ -6,6 +6,7 @@ export default function Header() {
     <li class ='nav-list__scenarios'>Scenarios</li>
     <li class ='nav-list__regions'>Regions</li>
     <li class ='nav-list__blog'>Blog</li>
+    <li class= 'nav-list__quiz'>Survival Quiz</li>
     </ul>
     `;
 }

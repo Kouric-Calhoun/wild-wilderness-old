@@ -7,6 +7,7 @@ import Regions from "./components/Regions";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Quiz from "./components/Quiz";
 
 buildPage();
 
@@ -20,6 +21,8 @@ function buildPage() {
   navBlog();
   footerAbout();
   footerContact();
+  quizPage();
+  survivalQuiz();
 }
 
 function header() {
@@ -87,3 +90,54 @@ function footerContact() {
     app.innerHTML = Contact();
   });
 }
+
+function quizPage() {
+  const quizElem = document.querySelector(".nav-list__quiz");
+  quizElem.addEventListener("click", () => {
+    app.innerHTML = Quiz();
+  });
+}
+
+function survivalQuiz() {
+  const app = document.querySelector("#app");
+        app.addEventListener("click", (event) => {
+          if (event.target.classList.contains("submit_Btn")) {
+            var score = 0;
+            if (document.getElementById("correct1").checked) {
+              score++;
+            }
+            if (document.getElementById("correct2").checked) {
+              score++;
+            }
+            if (document.getElementById("correct3").checked) {
+              score++;
+            }
+            if (document.getElementById("correct4").checked) {
+              score++;
+            }
+            if (document.getElementById("correct5").checked) {
+              score++;
+          } 
+        if (score == 0) {
+            number_correct.textContent =
+              "Uh oh! I think you need some more practice!";
+          } else if (score == 1) {
+              number_correct.textContent =
+                "You got one right. Maybe try again?";
+          } else if (score == 2) {
+            number_correct.textContent =
+              "You got two questions right. You might want to study some more.";
+          } else if (score == 3) {
+              number_correct.textContent =
+                "You got three questions right. Not bad!";
+            } else if (score == 4) {
+              number_correct.textContent =
+                "You got four questions right. Close!";
+              } else {
+                number_correct.textContent =
+                  "Whoa! You got them all! You are on your way to becoming a wilderness survival expert!";
+            }
+          }
+        });
+      }
+
