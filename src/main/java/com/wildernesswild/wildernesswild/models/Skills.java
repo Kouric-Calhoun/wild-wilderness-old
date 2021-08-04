@@ -44,7 +44,6 @@ public class Skills {
 
     public Skills () {}
 
-
     public Skills(String name, String description, String gear, String image, Regions...regions) {
         this.name = name;
         this.description = description;
