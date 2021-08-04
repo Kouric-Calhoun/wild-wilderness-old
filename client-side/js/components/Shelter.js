@@ -1,5 +1,5 @@
-export default function Shelter(){
-    return `
+export default function Shelter() {
+  return `
     <div class="container">
     <div class="shelter-building-title">
     <h1 class = "shelter-title">Ways to Build A Survival Shelter</h1>
@@ -89,5 +89,4 @@ export default function Shelter(){
 
    </article>
     `;
-    
 }
