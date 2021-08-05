@@ -8,6 +8,9 @@ import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Quiz from "./components/Quiz";
+import Donate from "./pages/Donate";
+import Event from "./pages/Event";
+import Hiring from "./pages/Hiring";
 
 buildPage();
 
@@ -23,6 +26,9 @@ function buildPage() {
   footerContact();
   quizPage();
   survivalQuiz();
+  footerDonate();
+  footerEvent();
+  footerHiring();
 }
 
 function header() {
@@ -141,3 +147,26 @@ function survivalQuiz() {
         });
       }
 
+      function footerDonate() {
+        const footerDonateElm = document.querySelector(".footer__donate");
+        footerDonateElm.addEventListener("click", () => {
+          const app = document.querySelector("#app");
+          app.innerHTML = Donate();
+        });
+      }
+      
+      function footerEvent() {
+        const footerEventElm = document.querySelector(".footer__event");
+        footerEventElm.addEventListener("click", () => {
+          const app = document.querySelector("#app");
+          app.innerHTML = Event();
+        });
+      }
+      
+      function footerHiring() {
+        const footerHiringElm = document.querySelector(".footer__hiring");
+        footerHiringElm.addEventListener("click", () => {
+          const app = document.querySelector("#app");
+          app.innerHTML = Hiring();
+        });
+      }
