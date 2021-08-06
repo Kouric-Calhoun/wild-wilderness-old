@@ -3,24 +3,34 @@ package com.wildernesswild.wildernesswild.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Objects;
 
 @Entity
 public class Skills {
+
     @Id
     @GeneratedValue
     private Long id;
+
     private String name;
     @Lob
     private String description;
     private String gear;
     private String image;
-    @ManyToMany
+
+    @ManyToOne
     @JsonIgnore
-    private Collection<Regions> regions;
+    private Regions regions;
+
+    public Skills () {}
+
+    public Skills(String name, String description, String gear, String image, Regions regions) {
+        this.name = name;
+        this.description = description;
+        this.gear = gear;
+        this.image = image;
+        this.regions = regions;
+    }
 
     public String getName() {
         return name;
@@ -38,32 +48,22 @@ public class Skills {
         return image;
     }
 
-    public Collection<Regions> getRegions() {
+    public Regions getRegions() {
         return regions;
     }
 
-    public Skills () {}
-
-
-    public Skills(String name, String description, String gear, String image, Regions...regions) {
-        this.name = name;
-        this.description = description;
-        this.gear = gear;
-        this.image = image;
-        this.regions = new ArrayList<>(Arrays.asList(regions));
-    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Skills)) return false;
         Skills skills = (Skills) o;
-        return Objects.equals(id, skills.id) && Objects.equals(getName(), skills.getName()) && Objects.equals(getDescription(), skills.getDescription()) && Objects.equals(getGear(), skills.getGear()) && Objects.equals(getImage(), skills.getImage()) && Objects.equals(getRegions(), skills.getRegions());
+        return Objects.equals(id, skills.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, getName(), getDescription(), getGear(), getImage(), getRegions());
+        return Objects.hash(id);
     }
 }
 

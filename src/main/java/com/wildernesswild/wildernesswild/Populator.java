@@ -1,8 +1,8 @@
+package com.wildernesswild.wildernesswild;
+
 import com.wildernesswild.wildernesswild.models.Regions;
-import com.wildernesswild.wildernesswild.models.Scenarios;
 import com.wildernesswild.wildernesswild.models.Skills;
 import com.wildernesswild.wildernesswild.repositories.RegionsRepository;
-import com.wildernesswild.wildernesswild.repositories.ScenariosRepository;
 import com.wildernesswild.wildernesswild.repositories.SkillsRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -14,9 +14,6 @@ public class Populator implements CommandLineRunner {
 
     @Resource
     private RegionsRepository regionsRepo;
-
-    @Resource
-    private ScenariosRepository scenariosRepo;
 
     @Resource
     private SkillsRepository skillsRepo;
@@ -46,11 +43,5 @@ public class Populator implements CommandLineRunner {
         skillsRepo.save(procureWater);
 
 
-        Scenarios findingWater = new Scenarios("How to find water", "pic", "Water", northEast);
-        scenariosRepo.save(findingWater);
-
-
-
-        R
     }
 }
