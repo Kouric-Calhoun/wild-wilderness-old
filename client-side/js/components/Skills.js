@@ -1,4 +1,16 @@
-export default function Skills() {
+
+export default function Skills(skills) {
   return `
-    <h1>Skills test page</h1>`;
+  <div class='nav-list__skills'>
+    <ul>
+    ${skills.collections.items
+      .map((skills) => {
+        return `
+        <h3>${skills(skills)}</h3>
+        `;
+      })
+      .join('')}
+    </ul>
+    </div>
+    `;
 }
