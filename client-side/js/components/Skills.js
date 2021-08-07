@@ -8,6 +8,7 @@ import skill from '../../css/skill';
 export default function Skills() {
   return `
     <h1>Survival Skills</h1>
+
     <div class ="skills-main">
       <div class="card">
         <img class="fire-link-pic" src ='$-{lightingFire}'>
