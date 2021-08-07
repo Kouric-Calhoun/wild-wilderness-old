@@ -85,6 +85,12 @@ export default function Water(){
     pathogens, similar to how many municipal water treatment plants disinfect drinking water before releasing it into the distribution system.</p>
 
     </div>
+
+    <div class ="skills-main">
+        <h3>Take a Quiz on how to find Water</h3>
+        <button class="quiz-btn-links_Water">Quiz</button>
+      </div>
+
     </main>
     `;
 }
