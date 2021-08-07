@@ -1,4 +1,24 @@
 export default function Scenarios() {
   return `
-    <h1>Scenarios Test Page</h1>`;
+    <div id="scenarios-div">
+      <h1>Everything About Survival</h1>
+      <div class="scenarios-splash">
+        <h3 class="scenarios-p"><em>Survival Gears, Guides, and Advice</em></h3>
+        <p>While the great outdoors is beautiful, you may find yourself in a situation that could lead to a very bad ending if you are not prepared. 
+        Fear not we have brought you all the survival tips, tricks, and guide you could need to survive! </p>
+      </div>
+      <div class="scenariosCards-1">
+        <h3>Scenario 1 to add</h3>
+        <button class = "home-btn-links"> Scenario 1 </button>
+      </div>
+      <div class="scenariosCards-2">
+        <h3>Scenario 2 to add</h3>
+        <button class = "home-btn-links"> Scenario 2 </button>
+      </div>
+      <div class="scenariosCards-3">
+        <h3>Scenario 3 to add</h3>
+        <button class = "home-btn-links"> Scenario 3 </button>
+      </div>
+    </div>
+    `;
 }
