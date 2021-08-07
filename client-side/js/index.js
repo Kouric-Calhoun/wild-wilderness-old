@@ -13,6 +13,7 @@ import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
 import apiActions from "./api-actions/api-actions.js";
 
+
 buildPage();
 
 function buildPage() {
@@ -53,10 +54,9 @@ function navHome() {
 function navSkills() {
   const skillsElem = document.querySelector(".nav-list__skills");
   skillsElem.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    console.log("test");
-    app.innerHTML = Skills();
-  });
+    const app = document.querySelector('#app');    
+      app.innerHTML = Skills();
+    });  
 }
 
 function navScenarios() {

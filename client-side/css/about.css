@@ -1,0 +1,27 @@
+.picture {
+  height: 300px;
+  width: 218px;
+}
+
+.cardAboutUs {
+  border: solid;
+  border-radius: 15px;
+  color: rgb(21, 70, 21);
+  margin: 15%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-github {
+  color: rgb(68, 3, 68);
+}
+
+.fa-linkedin {
+  color: blue;
+}
+
+.para {
+  color: black;
+}
