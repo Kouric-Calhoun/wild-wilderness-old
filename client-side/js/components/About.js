@@ -17,7 +17,7 @@ export default function About() {
 
   <div class="content">
 
-    <div class="card" id="one">
+    <div class="cardAboutUs" id="one">
       <div class="img_box">
         <img class="picture" src="${kouric}" height="300px" width="200px" alt="Photo">
         <div class="img_info">
@@ -37,7 +37,7 @@ export default function About() {
 
     
 
-    <div class="card" id="two">
+    <div class="cardAboutUs" id="two">
       <div class="img_box">
         <img class="picture" src="${filsan}" height="300px" width="200px" alt="Photo">
         <div class="img_info">
@@ -55,7 +55,7 @@ export default function About() {
       <h3>Filsan Madar</h3>
     </div>
 
-    <div class="card" id="three">
+    <div class="cardAboutUs" id="three">
       <div class="img_box">
         <img class="picture" src="${yuli}" height="300px" width="250px" alt="Photo">
         <div class="img_info">
@@ -72,7 +72,7 @@ export default function About() {
       <h3>Yuli McElroy</h3>
     </div>
 
-    <div class="card" id="four">
+    <div class="cardAboutUs" id="four">
       <div class="img_box">
         <img class="picture" src="${jovahnn}" height="300px" width="270px" alt="Photo">
         <div class="img_info">
@@ -89,7 +89,7 @@ export default function About() {
       <h3>Jovahnn Tucker</h3>
     </div>
 
-    <div class="card" id="five">
+    <div class="cardAboutUs" id="five">
       <div class="img_box">
         <img class="picture" src="${miranda}" height="300px" width="270px" alt="Photo">
         <div class="img_info">
@@ -106,7 +106,7 @@ export default function About() {
       <h3>Miranda Perry</h3>
     </div>
 
-    <div class="card" id="six">
+    <div class="cardAboutUs" id="six">
       <div class="img_box">
         <img class="picture" src="${ty}" height="300px" alt="Photo">
         <div class="img_info">

@@ -11,7 +11,6 @@ import Quiz from "./components/Quiz";
 import Donate from "./pages/Donate";
 import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
-import SkillsPage from "./pages/SkillsPage";
 import apiActions from './api-actions/api-actions.js';
 
 buildPage();
@@ -54,13 +53,9 @@ function navHome() {
 function navSkills() {
   const skillsElem = document.querySelector(".nav-list__skills");
   skillsElem.addEventListener("click", () => {
-    const app = document.querySelector('#app');
-    console.log("test");
-    apiActions.getRequest('http://localhost:8080/api/skills/', (skills) => {
-      app.innerHTML = SkillsPage(skills);
+    const app = document.querySelector('#app');    
+      app.innerHTML = Skills();
     });  
-
-  });
 }
 
 function navScenarios() {
