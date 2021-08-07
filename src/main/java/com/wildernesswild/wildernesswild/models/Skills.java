@@ -12,37 +12,31 @@ public class Skills {
     @GeneratedValue
     private Long id;
 
-    private String name;
+    private String skillName;
     @Lob
     private String description;
-    private String gear;
     private String image;
 
     @ManyToOne
     @JsonIgnore
     private Regions regions;
 
-    public Skills () {}
 
-    public Skills(String name, String description, String gear, String image, Regions regions) {
-        this.name = name;
+    public Skills(String skillName, String description,  String image, Regions regions) {
+        this.skillName = skillName;
         this.description = description;
-        this.gear = gear;
         this.image = image;
         this.regions = regions;
     }
 
-    public String getName() {
-        return name;
+    public String getSkillName() {
+        return skillName;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public String getGear() {
-        return gear;
-    }
 
     public String getImage() {
         return image;

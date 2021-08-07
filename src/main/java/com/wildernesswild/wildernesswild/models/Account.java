@@ -1,5 +1,8 @@
 package com.wildernesswild.wildernesswild.models;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Account {
     private String username;
     private String password;
@@ -42,6 +45,6 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account{ " + "username= ' " + username + '\'' + ", password= ' " + password + '\'' + ", fullName= ' " + fullName + '\'' + ", profilePicture= ' " + profilePicture + '\'' + ", serverSideStatus=" + serverSideStatus + '}';  
+        return "Account{ " + "username= ' " + username + '\'' + ", password= ' " + password + '\'' + ", fullName= ' " + fullName + '\'' + ", profilePicture= ' " + profilePicture + '\'' + ", serverSideStatus=" + serverSideStatus + '}';
     }
 }
