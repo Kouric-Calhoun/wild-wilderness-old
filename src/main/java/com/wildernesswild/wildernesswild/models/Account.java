@@ -20,7 +20,7 @@ public class Account {
 
 
     protected Account() {
-        
+
     }
     public Account(String username, String password, String fullName, String profilePicture, boolean serverSideStatus) {
         this.username = username;
@@ -28,6 +28,10 @@ public class Account {
         this.fullName = fullName;
         this.profilePicture = profilePicture;
         this.serverSideStatus = serverSideStatus;
+    }
+
+    public long getId() {
+        return id;
     }
 
     public String getUsername() {

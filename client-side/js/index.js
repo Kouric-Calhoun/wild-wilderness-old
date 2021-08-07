@@ -55,9 +55,7 @@ function navSkills() {
   skillsElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     console.log("test");
-    apiActions.getRequest("http://localhost:8080/api/skills/", (skills) => {
-      app.innerHTML = SkillsPage(skills);
-    });
+    app.innerHTML = Skills();
   });
 }
 

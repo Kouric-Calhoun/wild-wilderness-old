@@ -6,7 +6,7 @@ import com.wildernesswild.wildernesswild.repositories.AccountRepository;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AccountStorage implements AccountRepository {
+public class AccountStorage  {
     private AccountRepository accountRepo;
     public AccountStorage (AccountRepository accountRepo) {
         this.accountRepo = accountRepo;
