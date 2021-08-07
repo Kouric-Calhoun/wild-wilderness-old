@@ -12,7 +12,12 @@ import Donate from "./pages/Donate";
 import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
 import apiActions from "./api-actions/api-actions.js";
-
+import Fire from "./components/Fire.js";
+import Water from "./components/Water.js";
+import Shelter from "./components/Shelter.js";
+import Food from "./components/Food.js";
+import Predators from "./components/Predators.js";
+import FireQuiz from "./pages/FireQuiz.js";
 
 buildPage();
 
@@ -54,9 +59,15 @@ function navHome() {
 function navSkills() {
   const skillsElem = document.querySelector(".nav-list__skills");
   skillsElem.addEventListener("click", () => {
-    const app = document.querySelector('#app');    
+    const app = document.querySelector('#app');
       app.innerHTML = Skills();
-    });  
+      renderingFirePage()
+      renderingWaterPage()
+      renderingShelterPage()
+      renderingFoodPage()
+      renderingPredatorsPage()
+      quizPage();
+    });
 }
 
 function navScenarios() {
@@ -170,3 +181,85 @@ function footerHiring() {
     app.innerHTML = Hiring();
   });
 }
+
+function renderingFirePage() {
+  const fireBtnElm = document.querySelector(".skills-btn-links_Fire");
+  fireBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Fire();
+    renderingFireQuizPage();
+  });
+}
+
+function renderingWaterPage() {
+  const waterBtnElm = document.querySelector(".skills-btn-links_Water");
+  waterBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Water();
+  });
+}
+
+function renderingShelterPage() {
+  const shelterBtnElm = document.querySelector(".skills-btn-links_Shelter");
+  shelterBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Shelter();
+  });
+}
+
+function renderingFoodPage() {
+  const foodBtnElm = document.querySelector(".skills-btn-links_Food");
+  foodBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Food();
+  });
+}
+
+function renderingPredatorsPage() {
+  const predatorsBtnElm = document.querySelector(".skills-btn-links_Predators");
+  predatorsBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Predators();
+  });
+}
+
+function renderingFireQuizPage() {
+  const fireQuizBtnElm = document.querySelector(".quiz-btn-links_Fire");
+  fireQuizBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = FireQuiz();
+  });
+}
+
+function renderingWaterQuizPage() {
+  const waterQuizBtnElm = document.querySelector(".quiz-btn-links_Water");
+  waterQuizBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = WaterQuiz();
+  });
+}
+
+function renderingShelterQuizPage() {
+  const shelterQuizBtnElm = document.querySelector(".quiz-btn-links_Shelter");
+  shelterQuizBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = ShelterQuiz();
+  });
+}
+
+function renderingFoodQuizPage() {
+  const foodQuizBtnElm = document.querySelector(".quiz-btn-links_Food");
+  foodQuizBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = FoodQuiz();
+  });
+}
+
+function renderingPredatorsQuizPage() {
+  const predatorsQuizBtnElm = document.querySelector(".quiz-btn-links_Predrators");
+  predatorsQuizBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = PredatorsQuiz();
+  });
+}
+

@@ -161,6 +161,11 @@ export default function Fire() {
         tinder starts smoking, gently blow to get the flame going.</li>
       </ol>
 
+      <div class ="skills-main">
+        <h3>Take a Quiz on how to build a Fire</h3>
+        <button class="quiz-btn-links_Fire">Quiz</button>
+      </div>
+
     </div>
 
 

@@ -5,6 +5,7 @@ import waterProcurement from '../../images/waterProcurement.jpg';
 // import scenariosLinkPic from '../../images/scenariosLinkPic.jpg';
 import skill from '../../css/skill';
 
+
 export default function Skills() {
   return `
     <h1>Survival Skills</h1>
@@ -13,31 +14,31 @@ export default function Skills() {
       <div class="card">
         <img class="fire-link-pic" src ='$-{lightingFire}'>
         <h3>How to safely build a fire</h3>
-        <button class ="skills-btn-links">How to build a Fire</button>
+        <button class="skills-btn-links_Fire">How to build a Fire</button>
       </div>
       
       <div class="card">
-        <img class="fire-link-pic" src ='${waterProcurement}'>
+        <img class="fire-link-pic" src = ${waterProcurement}>
         <h3>How to procure water</h3>
-        <button class = "skills-btn-links">Water Procurement</button>
+        <button class = "skills-btn-links_Water">Water Procurement</button>
       </div>
     
       <div class="card">
         <img class="fire-link-pic" src ='$-{shelterLinkPic}'>
         <h3>How to find/make shelter</h3>
-        <button class = "skills-btn-links">Shelter</button>
+        <button class = "skills-btn-links_Shelter">Shelter</button>
       </div>
       
       <div class="card">
-        <img class="fire-link-pic" src ='$-{regionsLinkPic}'>
-        <h3>Explore by Region</h3>
-        <button class = "skills-btn-links">Regions</button>
+        <img class="fire-link-pic" src ='$-{regionsLinkFood}'>
+        <h3>How to find food</h3>
+        <button class = "skills-btn-links_Food">Food</button>
       </div>
     
       <div class="card">
-        <img class="fire-link-pic" src ='$-{scenariosLinkPic}'>
-        <h3>What to do in specific scenarios</h3>
-        <button class = "skills-btn-links">Scenarios</button>
+        <img class="fire-link-pic" src ='$-{scenariosLinkPredator}'>
+        <h3>How to avoid predators</h3>
+        <button class = "skills-btn-links_Predators">Predators</button>
       </div>
     </div>
     `;

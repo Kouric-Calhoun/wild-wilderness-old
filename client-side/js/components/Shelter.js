@@ -1,10 +1,16 @@
+import ShelterVan from "../../images/ShelterVan.jpg";
+import WoodShelter from "../../images/WoodShelter.jpg";
+import CaveShelter from "../../images/CaveShelter.jpg";
+import TarpShelter from "../../images/TarpShelter.jpg";
+import SnowShelter from "../../images/SnowShelter.jpg";
+
 export default function Shelter() {
   return `
     <div class="container">
     <div class="shelter-building-title">
     <h1 class = "shelter-title">Ways to Build A Survival Shelter</h1>
     <img src='${ShelterVan}'></img>
-    </div>
+    
    
     <p>Shelter should be your survival priority, so knowing how to make a survival shelter is something that everyone should know. 
     Down below will show you a few simple methods to building a shelter when surviving in the wild.
@@ -65,7 +71,7 @@ export default function Shelter() {
    as it will also help to radiate heat within your shelter.</p>   
    </article>
 
-   <article class ="snow-shelter-build">
+  <article class ="snow-shelter-build">
    <h2>Building A Shelter In the Snow</h2>
    <img src='${SnowShelter}'></img>
    <p>Snow is one of nature’s amazing products that can actually be used to insulate your body from the cold.
@@ -88,5 +94,13 @@ export default function Shelter() {
      Creating that layer is important in order for you to retain body heat, much of which would be lost by coming into direct contact with the frozen ground.</p>
 
    </article>
+
+   <div class ="skills-main">
+        <h3>Take a Quiz on how to Find Shelter</h3>
+        <button class="quiz-btn-links_Shelter">Quiz</button>
+      </div>
+
+   </div>
+
     `;
 }
