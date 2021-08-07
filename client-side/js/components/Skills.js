@@ -3,6 +3,7 @@ import waterProcurement from "../../images/waterProcurement.jpg";
 // import shelterLinkPic from "../../images/shelterLinkPic.jpg";
 // import regionsLinkPic from "../../images/regionsLinkPic.jpg";
 // import scenariosLinkPic from "../../images/scenariosLinkPic.jpg";
+
 export default function Skills() {
   return `
     <h1>Survival Skills</h1>
