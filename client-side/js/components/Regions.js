@@ -7,9 +7,11 @@ export default function Regions() {
       <div class="map-region">
       <img  src="${map}" alt="map-regions" usemap="#map">
 <map name="map">
-  <area shape="circle" coords="140,23,117" alt="west" href="west.htm">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+  <area shape="circle" coords="190,190,170" alt="West" href="west.html">
+  <area shape="rect" coords="550,500,200,220" alt="South" href="south.html">
+  <area shape="circle" coords="570,200,137" alt="Midwest" href="midwest.htm">
+  <area shape="circle" coords="900,200,137" alt="North" href="north.htm">
+  <area shape="circle" coords="770,400,120 " alt="South" href="south.htm">
 </map>>
       </div>
       <div class="regions-splash">
