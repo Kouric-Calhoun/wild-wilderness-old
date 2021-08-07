@@ -104,6 +104,7 @@ function footerContact() {
 function quizPage() {
   const quizElem = document.querySelector(".nav-list__quiz");
   quizElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
     app.innerHTML = Quiz();
   });
 }
