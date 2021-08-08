@@ -18,6 +18,10 @@ import Shelter from "./components/Shelter.js";
 import Food from "./components/Food.js";
 import Predators from "./components/Predators.js";
 import FireQuiz from "./pages/FireQuiz.js";
+import WaterQuiz from "./pages/WaterQuiz.js";
+import ShelterQuiz from "./pages/ShelterQuiz.js";
+import FoodQuiz from "./pages/FoodQuiz.js";
+import PredatorsQuiz from "./pages/PredatorsQuiz.js";
 
 buildPage();
 
