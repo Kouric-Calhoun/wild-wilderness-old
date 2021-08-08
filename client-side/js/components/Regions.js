@@ -1,7 +1,19 @@
+import map from "../../images/map.jpg";
+
 export default function Regions() {
   return `
     <div id="regions-div">
       <h1>Regions</h1>
+      <div class="map-region">
+      <img  src="${map}" alt="map-regions" usemap="#map">
+<map name="map">
+  <area shape="circle" coords="190,190,170" alt="West" href="west.js">
+  <area shape="circle" coords="420,500,180" alt="South" href="south.html">
+  <area shape="circle" coords="570,200,137" alt="Midwest" href="midwest.htm">
+  <area shape="circle" coords="900,200,137" alt="North" href="north.htm">
+  <area shape="circle" coords="770,400,120 " alt="South" href="south.htm">
+</map>
+      </div>
       <div class="regions-splash">
         <h3 class="regions-p"><em>Region Specific Important Information</em></h3>
         <p>With how large the United States is, even our national parks have extremely different climate and terrain. </p>

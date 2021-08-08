@@ -18,6 +18,10 @@ import Shelter from "./components/Shelter.js";
 import Food from "./components/Food.js";
 import Predators from "./components/Predators.js";
 import FireQuiz from "./pages/FireQuiz.js";
+import WaterQuiz from "./pages/WaterQuiz.js";
+import ShelterQuiz from "./pages/ShelterQuiz.js";
+import FoodQuiz from "./pages/FoodQuiz.js";
+import PredatorsQuiz from "./pages/PredatorsQuiz.js";
 
 buildPage();
 
@@ -196,6 +200,7 @@ function renderingWaterPage() {
   waterBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Water();
+    renderingWaterQuizPage();
   });
 }
 
@@ -204,6 +209,7 @@ function renderingShelterPage() {
   shelterBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Shelter();
+    renderingShelterQuizPage();
   });
 }
 
@@ -212,6 +218,7 @@ function renderingFoodPage() {
   foodBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
+    renderingFoodQuizPage();
   });
 }
 
@@ -220,6 +227,7 @@ function renderingPredatorsPage() {
   predatorsBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Predators();
+    renderingPredatorsQuizPage();
   });
 }
 
