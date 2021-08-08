@@ -22,6 +22,7 @@ import WaterQuiz from "./pages/WaterQuiz.js";
 import ShelterQuiz from "./pages/ShelterQuiz.js";
 import FoodQuiz from "./pages/FoodQuiz.js";
 import PredatorsQuiz from "./pages/PredatorsQuiz.js";
+import West from "./pages/West.js";
 
 buildPage();
 
@@ -87,6 +88,7 @@ function navRegions() {
   regionsElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
+    renderingWestPage()
   });
 }
 
@@ -264,10 +266,17 @@ function renderingFoodQuizPage() {
 }
 
 function renderingPredatorsQuizPage() {
-  const predatorsQuizBtnElm = document.querySelector(".quiz-btn-links_Predrators");
+  const predatorsQuizBtnElm = document.querySelector(".quiz-btn-links_Predators");
   predatorsQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = PredatorsQuiz();
   });
 }
 
+  function renderingWestPage() {
+    const westBtnElm = document.querySelector(".west");
+    westBtnElm.addEventListener("click", () => {
+      const app = document.querySelector("#app");
+      app.innerHTML = West();
+    });
+}
