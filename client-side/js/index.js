@@ -196,6 +196,7 @@ function renderingWaterPage() {
   waterBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Water();
+    renderingWaterQuizPage();
   });
 }
 
@@ -204,6 +205,7 @@ function renderingShelterPage() {
   shelterBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Shelter();
+    renderingShelterQuizPage();
   });
 }
 
@@ -212,6 +214,7 @@ function renderingFoodPage() {
   foodBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
+    renderingFoodQuizPage();
   });
 }
 
@@ -220,6 +223,7 @@ function renderingPredatorsPage() {
   predatorsBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Predators();
+    renderingPredatorsQuizPage();
   });
 }
 
