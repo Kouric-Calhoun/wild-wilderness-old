@@ -26,6 +26,7 @@ import West from "./pages/West.js";
 import Midwest from "./pages/Midwest.js";
 import Northeast from "./pages/Northeast.js";
 import Southeast from "./pages/Southeast.js";
+import Southwest from "./pages/Southwest.js";
 import WestAlaskaHawaii from "./pages/WestAlaskaHawaii";
 
 buildPage();
@@ -96,6 +97,7 @@ function navRegions() {
     renderingMidwestPage();
     renderingNortheastPage();
     renderingSoutheastPage();
+    renderingSouthwestPage();
     renderingWestAlaskaHawaiiPage();
   });
 }
@@ -312,6 +314,14 @@ function renderingSoutheastPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Southeast();
+  });
+}
+
+function renderingSouthwestPage() {
+  const westBtnElm = document.querySelector(".southwest");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Southwest();
   });
 }
 
