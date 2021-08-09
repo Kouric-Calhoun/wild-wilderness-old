@@ -221,6 +221,9 @@ function renderingFoodPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
+    addComment();
+    survivalQuiz();
+
   });
 }
 
@@ -280,3 +283,6 @@ function renderingPredatorsQuizPage() {
       app.innerHTML = West();
     });
 }
+
+
+
