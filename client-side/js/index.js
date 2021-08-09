@@ -23,6 +23,11 @@ import ShelterQuiz from "./pages/ShelterQuiz.js";
 import FoodQuiz from "./pages/FoodQuiz.js";
 import PredatorsQuiz from "./pages/PredatorsQuiz.js";
 import West from "./pages/West.js";
+import Midwest from "./pages/Midwest.js";
+import Northeast from "./pages/Northeast.js";
+import Southeast from "./pages/Southeast.js";
+import Southwest from "./pages/Southwest.js";
+import WestAlaskaHawaii from "./pages/WestAlaskaHawaii";
 
 buildPage();
 
@@ -64,15 +69,15 @@ function navHome() {
 function navSkills() {
   const skillsElem = document.querySelector(".nav-list__skills");
   skillsElem.addEventListener("click", () => {
-    const app = document.querySelector('#app');
-      app.innerHTML = Skills();
-      renderingFirePage()
-      renderingWaterPage()
-      renderingShelterPage()
-      renderingFoodPage()
-      renderingPredatorsPage()
-      quizPage();
-    });
+    const app = document.querySelector("#app");
+    app.innerHTML = Skills();
+    renderingFirePage();
+    renderingWaterPage();
+    renderingShelterPage();
+    renderingFoodPage();
+    renderingPredatorsPage();
+    quizPage();
+  });
 }
 
 function navScenarios() {
@@ -88,7 +93,12 @@ function navRegions() {
   regionsElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
-    renderingWestPage()
+    renderingWestPage();
+    renderingMidwestPage();
+    renderingNortheastPage();
+    renderingSoutheastPage();
+    renderingSouthwestPage();
+    renderingWestAlaskaHawaiiPage();
   });
 }
 
@@ -266,17 +276,59 @@ function renderingFoodQuizPage() {
 }
 
 function renderingPredatorsQuizPage() {
-  const predatorsQuizBtnElm = document.querySelector(".quiz-btn-links_Predators");
+  const predatorsQuizBtnElm = document.querySelector(
+    ".quiz-btn-links_Predators"
+  );
   predatorsQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = PredatorsQuiz();
   });
 }
 
-  function renderingWestPage() {
-    const westBtnElm = document.querySelector(".west");
-    westBtnElm.addEventListener("click", () => {
-      const app = document.querySelector("#app");
-      app.innerHTML = West();
-    });
+function renderingWestPage() {
+  const westBtnElm = document.querySelector(".west");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = West();
+  });
+}
+
+function renderingMidwestPage() {
+  const westBtnElm = document.querySelector(".midwest");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Midwest();
+  });
+}
+
+function renderingNortheastPage() {
+  const westBtnElm = document.querySelector(".northeast");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Northeast();
+  });
+}
+
+function renderingSoutheastPage() {
+  const westBtnElm = document.querySelector(".southeast");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Southeast();
+  });
+}
+
+function renderingSouthwestPage() {
+  const westBtnElm = document.querySelector(".southwest");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Southwest();
+  });
+}
+
+function renderingWestAlaskaHawaiiPage() {
+  const westBtnElm = document.querySelector(".westalaskahawaii");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = WestAlaskaHawaii();
+  });
 }
