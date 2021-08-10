@@ -204,6 +204,7 @@ function renderingFirePage() {
     const app = document.querySelector("#app");
     app.innerHTML = Fire();
     renderingFireQuizPage();
+    survivalQuiz()
   });
 }
 
@@ -213,6 +214,7 @@ function renderingWaterPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Water();
     renderingWaterQuizPage();
+    survivalQuiz()
   });
 }
 
