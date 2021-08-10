@@ -1,5 +1,6 @@
-export default function Southwest() {
+export default function South() {
   return `
-            <h2>Test Southwest !!! Page</h2>
-        `;
+      <h2>Test South Page</h2>
+      
+  `;
 }
