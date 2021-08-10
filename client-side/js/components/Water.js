@@ -1,20 +1,27 @@
+import waterHands from '../../images/waterHands.jpg';
+import waterRivers from '../../images/waterRivers.jpg';
+import waterBoiling from '../../images/waterBoiling.jpg';
+import rainWater from '../../images/rainWater.jpg';
+import waterPurificationPic from '../../images/waterPurificationPic.jpg';
+import snowWater from '../../images/snowWater.jpg';
+
 export default function Water(){
     return`
-    <main cless = "water-procurement-main">
+    <main class = "water-procurement-main">
     
-
-    <div class = "water-header">
+    <div class="water-container">
+    <article class = "water-header">
     <h1 class = "water-title">How to locate and purify water in the wild</h1>
-    <img src = "images/waterProcurement.jpg" alt = "pic of leaf dripping water into a glass">
+    <img class ="water-hands-pic" src = '${waterHands}' alt = "pic of leaf dripping water into a glass">
         <p>In any survival scenario, water is by far your most important resource. You can easily go a day without food,
     and usually don’t need shelter right away, unless you’re in freezing conditions. Not having any water for 24 hours,
     however, while survivable, depletes both your physical and mental strength, making it more difficult to perform the 
     tasks necessary to making it out the other side. And after just three days without hydration, your body will shut 
     down, and it’ll be lights out for you. What’s best for you depends on the microbes you expect to encounter, 
     how light you want to travel and the volume of water you will treat.</p>
-    </div>
+    </article>
 
-    <div class = "water-tips">
+    <article class = "water-tips">
     <h2 class = "water-tips-title-1">Tips for treating water</h2>
     <ul class = "water-treating-list">
     <li>Use a cotton cloth or coffee filter to strain out sediment before you filter/purify.</li>
@@ -28,7 +35,7 @@ export default function Water(){
     </ul>
 
     <h2 class = "water-tips-title-2">Lakes, Streams, and Rivers</h2>
-    <img src = "images/waterRivers.jpg" alt="pic of a river">
+    <img src = '${waterRivers}' alt="pic of a river">
         <p>These are your most obvious sources of water in the wild. Clear, flowing water is your best option, as the movement doesn’t 
     allow bacteria to fester. This means that small streams should be what you look for first. Rivers are acceptable, but larger
     ones often have a lot of pollution from upstream. Lakes and ponds are okay, but they’re stagnant, meaning there’s an increased
@@ -40,12 +47,12 @@ export default function Water(){
     in the desert. Animal tracks will be easier to spot in the sand, and they’ll almost always eventually lead to water. Birds will also 
     especially flock towards water in dry areas. Also just scout the environment you’re in. Water runs downhill, so follow valleys, ditches,
     gullies, etc. Find your way to low ground, and you’ll often run into water.</p>
-    </div>
+    </article>
 
-    <div class = "water-procurement-methods">
+    <article class = "water-procurement-methods">
     <h1 class = "water-methods-title">Methods for procuring water</h1>
     <h2 class = "water-boiling-title">Boiling</h2>
-    <img src ="images/waterBoiling.jpg" alt = "pic of boiling water by a fire">
+    <img src ='${waterBoiling}' alt = "pic of boiling water by a fire">
         <p>Boiling water is one of the best wilderness water purification methods. Boiling clear water is the most efficient way to make it 
     safe to drink. Most bacteria and microorganisms can’t survive in boiling water, and they will likely die off during the heating process.</p>
         <p>Only boil clear water. If you boil water contaminated with physical materials like dirt and leaves, you could still end up getting sick 
@@ -69,28 +76,34 @@ export default function Water(){
     fully purify your water, it distills it. This water can then be filtered using an emergency water filter.</p>
 
     <h2 class = "collect-rainwater-title">Collect Rainwater</h2>
+    <img class ="rain-water-pic" src= '${rainWater}' alt="pic of rain water">
     <p>There are two primary methods of collecting rainwater. The first is to use any and all containers you might have on you. The second is to 
     tie the corners of a poncho or tarp around trees a few feet off the ground, place a small rock in the center to create a depression, and let 
     the water collect.</p>
 
     <h2 class = "collect-rainwater-title">Collect Snow</h2>
+    <img class ="snow-water-pic" src= '${snowWater}' alt="pic of snow in the woods">
     <p>Collect ice or snow and wrap it inside a t-shirt or large bandana. Use sturdy branches to suspend the snow above a fire. As the snow or ice 
     begins to melt it will start to drip through the fabric. Use a large cup or container to catch the falling water.</p>
 
     <h2 class = "water-tablets-title">Water purification tablets/chemicals</h2>
-    <p>Water purification tablets are meant to be beneficial to anyone that does not have access to potable and clean water. These types of tablets 
+    <img class ="water-purification-pic" src= '${waterPurificationPic}' alt="pic of bucket of water">
+    <p>Water purification tablets are meant to be beneficial to anyone that does not have access to portable and clean water. These types of tablets 
     and chemicals include products like Aquatabs, Iodine, and Katadyn MicroPur MP1 Chlorine Dioxide Tablets. They have become a popular choice for 
     on-the-go disinfection thanks to their portability and simplicity: just filter cloudy/turbid water through a filter or cloth, drop a tablet 
     in 1-2 litres of water, wait 30 minutes and it’s safe to rehydrate. They work by releasing free chlorine into the water to quickly kill most 
     pathogens, similar to how many municipal water treatment plants disinfect drinking water before releasing it into the distribution system.</p>
 
-    </div>
+    </article>
+    
 
     <div class ="skills-main">
         <h3>Take a Quiz on how to find Water</h3>
         <button class="quiz-btn-links_Water">Quiz</button>
       </div>
 
+      </div>
     </main>
+    
     `;
 }
