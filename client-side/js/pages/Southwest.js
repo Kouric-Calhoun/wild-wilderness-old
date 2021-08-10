@@ -1,6 +1,6 @@
-export default function South() {
+export default function SouthWest() {
   return `
-      <h2>Test South Page</h2>
+      <h2>Test SouthWest Page</h2>
       
   `;
 }
