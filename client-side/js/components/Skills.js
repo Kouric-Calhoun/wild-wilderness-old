@@ -1,8 +1,8 @@
-// import lightingFire from '../../images/lightingFire.jpg';
+import lightingFire from '../../images/lightingFire.jpg';
 import waterProcurement from '../../images/waterProcurement.jpg';
-// import shelterLinkPic from '../../images/shelterLinkPic.jpg';
-// import regionsLinkPic from '../../images/regionsLinkPic.jpg';
-// import scenariosLinkPic from '../../images/scenariosLinkPic.jpg';
+import shelterLinkPic from '../../images/shelterLinkPic.jpg';
+import foodLinkPic from '../../images/foodLinkPic.jpg';
+import predatorLinkPic from '../../images/predatorLinkPic.jpg';
 
 
 
@@ -13,31 +13,31 @@ export default function Skills() {
 
     <div class ="skills-main">
       <div class="card">
-        <img class="fire-link-pic" src ='$-{lightingFire}'>
+        <img class="fire-link-pic" src ='${lightingFire}'>
         <h3>How to safely build a fire</h3>
         <button class="skills-btn-links_Fire">How to build a Fire</button>
       </div>
       
       <div class="card">
-        <img class="fire-link-pic" src = ${waterProcurement}>
+        <img class="fire-link-pic" src = '${waterProcurement}'>
         <h3>How to procure water</h3>
         <button class = "skills-btn-links_Water">Water Procurement</button>
       </div>
     
       <div class="card">
-        <img class="fire-link-pic" src ='$-{shelterLinkPic}'>
+        <img class="fire-link-pic" src ='${shelterLinkPic}'>
         <h3>How to find/make shelter</h3>
         <button class = "skills-btn-links_Shelter">Shelter</button>
       </div>
       
       <div class="card">
-        <img class="fire-link-pic" src ='$-{regionsLinkFood}'>
+        <img class="fire-link-pic" src ='${foodLinkPic}'>
         <h3>How to find food</h3>
         <button class = "skills-btn-links_Food">Food</button>
       </div>
     
       <div class="card">
-        <img class="fire-link-pic" src ='$-{scenariosLinkPredator}'>
+        <img class="fire-link-pic" src ='${predatorLinkPic}'>
         <h3>How to avoid predators</h3>
         <button class = "skills-btn-links_Predators">Predators</button>
       </div>
