@@ -28,8 +28,7 @@ import Northeast from "./pages/Northeast.js";
 import Southeast from "./pages/Southeast.js";
 import Southwest from "./pages/Southwest.js";
 import WestAlaskaHawaii from "./pages/WestAlaskaHawaii.js";
-
-
+import startGame from "./Game.js";
 
 buildPage();
 
@@ -48,7 +47,6 @@ function buildPage() {
   footerDonate();
   footerEvent();
   footerHiring();
-
 }
 
 function header() {
@@ -88,6 +86,7 @@ function navScenarios() {
   scenariosElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Scenarios();
+    startGame();
   });
 }
 
