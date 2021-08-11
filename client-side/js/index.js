@@ -27,7 +27,9 @@ import Midwest from "./pages/Midwest.js";
 import Northeast from "./pages/Northeast.js";
 import Southeast from "./pages/Southeast.js";
 import Southwest from "./pages/Southwest.js";
-import WestAlaskaHawaii from "./pages/WestAlaskaHawaii";
+import WestAlaskaHawaii from "./pages/WestAlaskaHawaii.js";
+
+
 
 buildPage();
 
@@ -46,6 +48,7 @@ function buildPage() {
   footerDonate();
   footerEvent();
   footerHiring();
+
 }
 
 function header() {
@@ -322,6 +325,7 @@ function renderingSouthwestPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Southwest();
+    startGame();
   });
 }
 
