@@ -23,6 +23,7 @@ import ShelterQuiz from "./pages/ShelterQuiz.js";
 import FoodQuiz from "./pages/FoodQuiz.js";
 import PredatorsQuiz from "./pages/PredatorsQuiz.js";
 import West from "./pages/West.js";
+import Gear from "./components/Gear";
 
 buildPage();
 
@@ -58,21 +59,22 @@ function navHome() {
   homeElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Home();
+    renderingGearPage();
   });
 }
 
 function navSkills() {
   const skillsElem = document.querySelector(".nav-list__skills");
   skillsElem.addEventListener("click", () => {
-    const app = document.querySelector('#app');
-      app.innerHTML = Skills();
-      renderingFirePage()
-      renderingWaterPage()
-      renderingShelterPage()
-      renderingFoodPage()
-      renderingPredatorsPage()
-      quizPage();
-    });
+    const app = document.querySelector("#app");
+    app.innerHTML = Skills();
+    renderingFirePage();
+    renderingWaterPage();
+    renderingShelterPage();
+    renderingFoodPage();
+    renderingPredatorsPage();
+    quizPage();
+  });
 }
 
 function navScenarios() {
@@ -88,7 +90,7 @@ function navRegions() {
   regionsElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
-    renderingWestPage()
+    renderingWestPage();
   });
 }
 
@@ -266,17 +268,27 @@ function renderingFoodQuizPage() {
 }
 
 function renderingPredatorsQuizPage() {
-  const predatorsQuizBtnElm = document.querySelector(".quiz-btn-links_Predators");
+  const predatorsQuizBtnElm = document.querySelector(
+    ".quiz-btn-links_Predators"
+  );
   predatorsQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = PredatorsQuiz();
   });
 }
 
-  function renderingWestPage() {
-    const westBtnElm = document.querySelector(".west");
-    westBtnElm.addEventListener("click", () => {
-      const app = document.querySelector("#app");
-      app.innerHTML = West();
-    });
+function renderingWestPage() {
+  const westBtnElm = document.querySelector(".west");
+  westBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = West();
+  });
+}
+
+function renderingGearPage() {
+  const gearBtnElm = document.querySelector(".home-btn-links_Gear");
+  gearBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Gear();
+  });
 }
