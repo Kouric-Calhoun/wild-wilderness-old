@@ -7,8 +7,7 @@ var aboutUsBtn = document.querySelector(".header__profile_aboutUs");
 var contactUsBtn = document.querySelector(".header__profile_contactUs");
 var faqBtn = document.querySelector(".header__profile_faq");
 var termsBtn = document.querySelector(".header__profile_terms");
-var privacyBtn = document.querySelector(".header__profile_privacy");
-var startBtn = document.querySelector(".start");
+var startBtn = document.querySelector(".header__start");
 var startMenu = document.querySelector(".menu");
 
 function openStartMenu() {
@@ -22,6 +21,10 @@ startBtn.addEventListener("click", () => {
   openStartMenu();
   hideStartButton();
 });
+
+// startMenu.addEventListener("click", () => {
+//   closeProfileMenu();
+// });
 
 function openProfileMenu() {
   profileMenu.style.display = "block";
@@ -62,9 +65,5 @@ faqBtn.addEventListener("click", () => {
 });
 
 termsBtn.addEventListener("click", () => {
-  closeProfileMenu();
-});
-
-privacyBtn.addEventListener("click", () => {
   closeProfileMenu();
 });
