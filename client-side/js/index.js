@@ -42,6 +42,8 @@ function buildPage() {
   footerDonate();
   footerEvent();
   footerHiring();
+  navAbout();
+  navContact();
 }
 
 function header() {
@@ -99,6 +101,22 @@ function navBlog() {
   blogElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Blog();
+  });
+}
+
+function navAbout() {
+  const aboutElem = document.querySelector(".header__profile_aboutUs");
+  aboutElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = About();
+  });
+}
+
+function navContact() {
+  const contactElem = document.querySelector(".header__profile_contactUs");
+  contactElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Contact();
   });
 }
 
