@@ -107,6 +107,8 @@ function navBlog() {
   blogElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Blog();
+    slideShow();
+    script()
   });
 }
 
@@ -204,7 +206,7 @@ function renderingFirePage() {
     const app = document.querySelector("#app");
     app.innerHTML = Fire();
     renderingFireQuizPage();
-    survivalQuiz()
+    survivalQuiz();
   });
 }
 
@@ -214,7 +216,7 @@ function renderingWaterPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Water();
     renderingWaterQuizPage();
-    survivalQuiz()
+    survivalQuiz();
   });
 }
 
@@ -235,7 +237,6 @@ function renderingFoodPage() {
     renderingFoodQuizPage();
     addComment();
     survivalQuiz();
-
   });
 }
 
@@ -338,5 +339,28 @@ function renderingWestAlaskaHawaiiPage() {
   });
 }
 
+function slideShow() {
+  const slideshows = document.querySelectorAll(".slideshow");
+  console.log(slideshows);
+  slideshows.forEach(initSlideShow);
+}
+function initSlideShow(slideshow) {
+  var slides = slideshow.querySelector("div").querySelectorAll(".slide");
 
+  var index = 0,
+    time = 3000;
+  slides[index].classList.add("active");
+  setInterval(() => {
+    console.log(slides);
+    slides[index].classList.remove("active");
+    index++;
+    if (index === slides.length) index = 0;
+    slides[index].classList.add("active");
+  }, time);
+}
 
+function script() {
+  var script = document.createElement("script");
+  script.src = "https://platform.twitter.com/widgets.js";
+  document.head.appendChild(script);
+}
