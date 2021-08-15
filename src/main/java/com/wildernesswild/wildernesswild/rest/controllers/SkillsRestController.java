@@ -19,8 +19,8 @@ public class SkillsRestController {
 //    @GetMapping("/api/skills")
 //    public Collection<Skills> getSkills() {
 //        return (Collection<Skills>) skillsRepo.findAll(); }
-//
+
 //    @GetMapping("/api/skills/{id}")
 //    public Skills getSkills(@PathVariable Long id) {
 //        return skillsRepo.findById(id).get(); }
-}
+// }

@@ -4,7 +4,7 @@ function getRequest(location, callback) {
       .then((data) => callback(data))
       .catch((err) => console.log(err));
   }
-  
+
   export default {
     getRequest,
   };
