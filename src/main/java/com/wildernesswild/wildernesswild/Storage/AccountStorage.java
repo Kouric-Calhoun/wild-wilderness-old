@@ -1,6 +1,5 @@
 package com.wildernesswild.wildernesswild.Storage;
 
-import com.wildernesswild.wildernesswild.models.Account;
 import com.wildernesswild.wildernesswild.repositories.AccountRepository;
 
 import org.springframework.stereotype.Service;

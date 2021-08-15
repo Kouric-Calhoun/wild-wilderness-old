@@ -23,11 +23,15 @@ import ShelterQuiz from "./pages/ShelterQuiz.js";
 import FoodQuiz from "./pages/FoodQuiz.js";
 import PredatorsQuiz from "./pages/PredatorsQuiz.js";
 import West from "./pages/West.js";
+
+import Gear from "./components/Gear";
+
 import Midwest from "./pages/Midwest.js";
 import Northeast from "./pages/Northeast.js";
 import Southeast from "./pages/Southeast.js";
 import Southwest from "./pages/Southwest.js";
 import WestAlaskaHawaii from "./pages/WestAlaskaHawaii";
+
 
 buildPage();
 
@@ -46,6 +50,8 @@ function buildPage() {
   footerDonate();
   footerEvent();
   footerHiring();
+  navAbout();
+  navContact();
 }
 
 function header() {
@@ -63,6 +69,7 @@ function navHome() {
   homeElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Home();
+    renderingGearPage();
   });
 }
 
@@ -94,11 +101,14 @@ function navRegions() {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
     renderingWestPage();
+
+
     renderingMidwestPage();
     renderingNortheastPage();
     renderingSoutheastPage();
     renderingSouthwestPage();
     renderingWestAlaskaHawaiiPage();
+
   });
 }
 
@@ -107,6 +117,22 @@ function navBlog() {
   blogElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Blog();
+  });
+}
+
+function navAbout() {
+  const aboutElem = document.querySelector(".header__profile_aboutUs");
+  aboutElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = About();
+  });
+}
+
+function navContact() {
+  const contactElem = document.querySelector(".header__profile_contactUs");
+  contactElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Contact();
   });
 }
 
@@ -298,6 +324,13 @@ function renderingWestPage() {
   });
 }
 
+
+function renderingGearPage() {
+  const gearBtnElm = document.querySelector(".home-btn-links_Gear");
+  gearBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Gear();
+
 function renderingMidwestPage() {
   const westBtnElm = document.querySelector(".midwest");
   westBtnElm.addEventListener("click", () => {
@@ -335,6 +368,7 @@ function renderingWestAlaskaHawaiiPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = WestAlaskaHawaii();
+
   });
 }
 
