@@ -3,7 +3,7 @@ let optionButtonsElement;
 
 let state = {};
 
-export default function startGame() {
+export default function startGameNorthEast() {
   textElement = document.getElementById("scenarios-text");
   optionButtonsElement = document.getElementById("option-buttons");
   state = {};
@@ -34,7 +34,7 @@ function showOption(option) {
 function selectOption(option) {
   const nextTextNodeId = option.nextText;
   if (nextTextNodeId <= 0) {
-    return startGame();
+    return  startGameNorthEast();
   }
   state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
@@ -43,7 +43,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: "Do you take the fire or leave with nothing?",
+    text: "Do you take THE WATER or leave with nothing?",
     options: [
       {
         text: "Take the fire",
