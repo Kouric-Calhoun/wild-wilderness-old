@@ -330,6 +330,8 @@ function renderingGearPage() {
   gearBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Gear();
+  });
+}
 
 function renderingMidwestPage() {
   const westBtnElm = document.querySelector(".midwest");
@@ -371,6 +373,3 @@ function renderingWestAlaskaHawaiiPage() {
 
   });
 }
-
-
-
