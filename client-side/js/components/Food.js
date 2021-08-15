@@ -3,6 +3,7 @@ import wires from "../../images/wires.jpg"
 import PencilLoop from "../../images/PencilLoop.jpg"
 import snarediagram1 from "../../images/snarediagram1.jpg"
 import SnareTrigger from "../../images/SnareTrigger.jpg"
+import SnareRockCombo from "../../images/SnareRockCombo.jpg"
 
 export default function Food() {
     return ` 
@@ -37,7 +38,7 @@ export default function Food() {
      <article class = "types-of-snares">
      <h2 class = "trigger-spring-snare">The Simplest Snare Design</h2>
      <p>There are literally hundreds of different snare sets and designs–some of which are overly complex.
-      If you only learn one snare design in your life, it should be what I call the Trigger Spring Snare.</p>
+      If you only learn one snare design in your life.</p>
      </article>
 
      <article class = "instructions-for-snare">
@@ -80,9 +81,9 @@ export default function Food() {
 
       <article class = "trigger-lead">
       <h2>Step 2: Trigger and Leader Line</h2>
-      <p>The trigger consists of 2 parts: the HOOK and the BASE.  As you can see in the diagram below, the LEADER LINE is tied to the top of the HOOK
-      and the NOOSE is tied to the bottom of the HOOK.  The ENGINE (typically a bent over sapling) provides tension to the HOOK which is secured under
-      the BASE–until an animal disengages it by pulling on the NOOSE.  The LEADER LINE from the HOOK to the ENGINE can be any type of cordage.  It needs
+      <p>The trigger consists of 2 parts: the hook and the base.  As you can see in the diagram below, the leader line is tied to the top of the hook
+      and the noose is tied to the bottom of the hook.  The engine (typically a bent over sapling) provides tension to the hook which is secured under
+      the base until an animal disengages it by pulling on the noose.  The leader line from the HOOK to the engine can be any type of cordage.  It needs
       to be strong enough to withstand the initial “spring jerk” and then the weight of the suspended (and struggling) animal.</p>
       <img src='${snarediagram1}'><img> 
       <h3>Trigger Method</h3>
@@ -95,14 +96,32 @@ export default function Food() {
        <h2>Step 3: The Engine</h2>
        <p>Every environment is different and unique.  There may not be a sapling to bend over along a game trail.  Or, you may be in the middle of a prairie
        or field where there are no trees at all.  If so, you must improvise.  There are many ways to do this.  One way is to simply cut down a green sapling
-       or branch from another area and stake it in the ground to use as an ENGINE.  Your LEADER LINE can also be weighted and run over a branch or make-shift 
-       tripod to serve the same purpose.  In the photo below I’ve weighted the LEADER LINE with a 10 pound rock that applies tension to the TRIGGER. Use the bark
-       from a root as the LEADER LINE and a NOOSE made from braided cattail leaves–this is a 100% primitive snare set.</p>
+       or branch from another area and stake it in the ground to use as an ENGINE. Your leader line can also be weighted and run over a branch or make-shift 
+       tripod to serve the same purpose.  In the photo below the leader line is weighted with a 10 pound rock that applies tension to the trigger. Use the bark
+       from a root as the leader line and a noose made from braided cattail leaves–this is a 100% primitive snare set.</p>
+       <img src='${SnareRockCombo}'><img>
+       <p>Erected a make-shift tripod to serve as an anchor point for the leader line.</p>
        </article>
-    <div class ="skills-main">
-        <h3>Take a Quiz on how to Find Food</h3>
+
+       <article>
+       <h2>Step 4: Redirect Flow of Traffic</h2>
+       <p>As mentioned earlier, animals will typically follow the path of least resistance to conserve energy.  Use this to your advantage by arranging sticks, 
+       logs, dirt, rocks, or other objects in such a way that funnels the animal into your snare noose.
+
+       Try not to disturb the area too much if possible.  The more natural you leave it the better.  Animals survive on instinct and will react if something seems 
+       out of place. The forest is their home and they know it by heart.  Leave as little trace of your activity as possible.</p>
+       </article>
+
+       <div class ="skills-main">
+       <h3>Take a Quiz on how to Find Food</h3>
         <button class="quiz-btn-links_Food">Quiz</button>
       </div>
       </div>
+
+      <div class="container">
+      <label for="comment" name="comment">ADD YOUR COMMENT BELOW-</label>
+      <textarea id="comment"></textarea>
+      <button id="addComments">Add</button>
+      <div id="allComments"></div>
     `;
 }

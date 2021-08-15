@@ -25,3 +25,27 @@ a {
 .para {
   color: black;
 }
+
+.west {
+  cursor: pointer;
+}
+
+.midwest {
+  cursor: pointer;
+}
+
+.northeast {
+  cursor: pointer;
+}
+
+.southeast {
+  cursor: pointer;
+}
+
+.southwest {
+  cursor: pointer;
+}
+
+.westalaskahawaii {
+  cursor: pointer;
+}
