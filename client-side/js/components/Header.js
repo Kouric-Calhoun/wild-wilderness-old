@@ -8,8 +8,8 @@ export default function Header() {
           <li class="header__start">Profile
             <span class="menu__close"><i class="fas fa-time"></i></span>
           </li>
-          <li class="header__profile_aboutUs">About Us</li>
-          <li class="header__profile_contactUs">Contact Us</li>
+          <li class="footer__about">About Us</li>
+          <li class="footer__contact">Contact Us</li>
           <li class="header__profile_faq">FAQ</li>
           <li class="header__profile_terms">Terms & Conditions</li>
           
