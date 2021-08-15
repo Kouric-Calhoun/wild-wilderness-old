@@ -11,26 +11,29 @@ import Quiz from "./components/Quiz";
 import Donate from "./pages/Donate";
 import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
-import apiActions from "./api-actions/api-actions.js";
 import Fire from "./components/Fire.js";
 import Water from "./components/Water.js";
 import Shelter from "./components/Shelter.js";
 import Food from "./components/Food.js";
 import Predators from "./components/Predators.js";
-import FireQuiz from "./pages/FireQuiz.js";
-import WaterQuiz from "./pages/WaterQuiz.js";
-import ShelterQuiz from "./pages/ShelterQuiz.js";
-import FoodQuiz from "./pages/FoodQuiz.js";
-import PredatorsQuiz from "./pages/PredatorsQuiz.js";
-import West from "./pages/West.js";
-
+import FireQuiz from "./pages/Quiz/FireQuiz.js";
+import WaterQuiz from "./pages/Quiz/WaterQuiz.js";
+import ShelterQuiz from "./pages/Quiz/ShelterQuiz.js";
+import FoodQuiz from "./pages/Quiz/FoodQuiz.js";
+import PredatorsQuiz from "./pages/Quiz/PredatorsQuiz.js";
+import West from "./pages/Regions/West.js";
 import Gear from "./components/Gear";
-
-import Midwest from "./pages/Midwest.js";
-import Northeast from "./pages/Northeast.js";
-import Southeast from "./pages/Southeast.js";
-import Southwest from "./pages/Southwest.js";
-import WestAlaskaHawaii from "./pages/WestAlaskaHawaii";
+import Midwest from "./pages/Regions/Midwest.js";
+import Northeast from "./pages/Regions/Northeast.js";
+import Southeast from "./pages/Regions/Southeast.js";
+import Southwest from "./pages/Regions/Southwest.js";
+import WestAlaskaHawaii from "./pages/Regions/WestAlaskaHawaii.js";
+import startGameWest from "./pages/Game/GameWest.js";
+import startGameSouthWest from "./pages/Game/GameSouthWest.js";
+import startGameMidWest from "./pages/Game/GameMidWest.js";
+import startGameSouthEast from "./pages/Game/GameSouthEast.js";
+import startGameNorthEast from "./pages/Game/GameNorthEast.js";
+import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 
 
 buildPage();
@@ -92,6 +95,12 @@ function navScenarios() {
   scenariosElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Scenarios();
+    startGameWest();
+    startGameSouthWest();
+    startGameMidWest();
+    startGameSouthEast();
+    startGameNorthEast();
+    startGameWestAlaskaHawaii();
   });
 }
 
@@ -321,6 +330,7 @@ function renderingWestPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = West();
+    startGameWest();
   });
 }
 
@@ -338,6 +348,7 @@ function renderingMidwestPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Midwest();
+    startGameMidWest();
   });
 }
 
@@ -346,6 +357,7 @@ function renderingNortheastPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Northeast();
+    startGameNorthEast();
   });
 }
 
@@ -354,6 +366,7 @@ function renderingSoutheastPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Southeast();
+    startGameSouthEast();
   });
 }
 
@@ -362,6 +375,7 @@ function renderingSouthwestPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Southwest();
+    startGameSouthWest();
   });
 }
 
@@ -370,6 +384,6 @@ function renderingWestAlaskaHawaiiPage() {
   westBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = WestAlaskaHawaii();
-
+    startGameWestAlaskaHawaii();
   });
 }
