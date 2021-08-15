@@ -34,6 +34,7 @@ import startGameMidWest from "./pages/Game/GameMidWest.js";
 import startGameSouthEast from "./pages/Game/GameSouthEast.js";
 import startGameNorthEast from "./pages/Game/GameNorthEast.js";
 import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
+import NationalParkSearch from "./pages/NationalParkSearch.js";
 
 
 buildPage();
@@ -95,12 +96,7 @@ function navScenarios() {
   scenariosElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Scenarios();
-    startGameWest();
-    startGameSouthWest();
-    startGameMidWest();
-    startGameSouthEast();
-    startGameNorthEast();
-    startGameWestAlaskaHawaii();
+    NationalParkSearch();
   });
 }
 
@@ -110,8 +106,6 @@ function navRegions() {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
     renderingWestPage();
-
-
     renderingMidwestPage();
     renderingNortheastPage();
     renderingSoutheastPage();

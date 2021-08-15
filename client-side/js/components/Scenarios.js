@@ -1,22 +1,45 @@
 export default function Scenarios() {
   return `
     <div id="scenarios-div">
-      <h1>Everything About Survival</h1>
-      <div class="scenarios-splash">
-        <h3 class="scenarios-p"><em>Survival Gears, Guides, and Advice</em></h3>
-        <p id="scenarios-text">While the great outdoors is beautiful, you may find yourself in a situation that could lead to a very bad ending if you are not prepared. 
-        Fear not we have brought you all the survival tips, tricks, and guide you could need to survive! </p>
-      </div>
-      <div class="scenariosCards-1" id="option-buttons">
-        <h3>Scenario 1 to add</h3>
-        <button class = "home-btn-links"> Scenario 1 </button>
-      
-        <h3>Scenario 2 to add</h3>
-        <button class = "home-btn-links"> Scenario 2 </button>
-      
-        <h3>Scenario 3 to add</h3>
-        <button class = "home-btn-links"> Scenario 3 </button>
-      </div>
+    <body>
+    <nav class="national-navbar">
+      <a id="app-title" class="navbar-brand" href="#"
+        >National Parks Finder App</a
+      >
+    </nav>
+
+    <main role="main" class="national-container">
+      <section class="app-container">
+        <form id="search-form">
+          <h1>Search U.S. National Parks</h1>
+          <p>Enter the state for some national parks suggestions</p>
+          <input
+            type="text"
+            id="state-name-input"
+            class="form-control"
+            placeholder="Enter a state"
+          />
+          <br />
+          <p>Number of parks you want to review</p>
+          <input
+            type="text"
+            id="number-input"
+            class="form-control"
+            placeholder="Default 10 park results"
+          />
+          <br />
+          <input
+            id="submit-button"
+            class="btn btn-primary"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </section>
+      <section id="results-list" class="container hidden">
+        <p>Here are your park results</p>
+      </section>
+    </main>
     </div>
     `;
 }
