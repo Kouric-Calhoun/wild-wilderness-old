@@ -2,7 +2,7 @@ export default function Southwest() {
 
         return `
           <div id="scenarios-div">
-            <h1>Everything About Survival</h1>
+            <h1>Everything About Survival in the South West</h1>
             <div class="scenarios-splash">
               <h3 class="scenarios-p"><em>Survival Gears, Guides, and Advice</em></h3>
               <p id="scenarios-text">While the great outdoors is beautiful, you may find yourself in a situation that could lead to a very bad ending if you are not prepared. 

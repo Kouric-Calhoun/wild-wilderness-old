@@ -13,6 +13,7 @@ export default function Regions() {
   <area shape="circle" coords="900,200,137" alt="Northeast" class="northeast">
   <area shape="circle" coords="770,400,120" alt="Southeast" class="southeast">
   <area shape="circle" coords="120,615,147" alt="WestAlaskaHawaii" class="westalaskahawaii">
+
 </map>
      
       </div>

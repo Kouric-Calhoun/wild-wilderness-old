@@ -11,7 +11,6 @@ import Quiz from "./components/Quiz";
 import Donate from "./pages/Donate";
 import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
-import apiActions from "./api-actions/api-actions.js";
 import Fire from "./components/Fire.js";
 import Water from "./components/Water.js";
 import Shelter from "./components/Shelter.js";
@@ -23,6 +22,7 @@ import ShelterQuiz from "./pages/Quiz/ShelterQuiz.js";
 import FoodQuiz from "./pages/Quiz/FoodQuiz.js";
 import PredatorsQuiz from "./pages/Quiz/PredatorsQuiz.js";
 import West from "./pages/Regions/West.js";
+import Gear from "./components/Gear";
 import Midwest from "./pages/Regions/Midwest.js";
 import Northeast from "./pages/Regions/Northeast.js";
 import Southeast from "./pages/Regions/Southeast.js";
@@ -53,6 +53,8 @@ function buildPage() {
   footerDonate();
   footerEvent();
   footerHiring();
+  navAbout();
+  navContact();
 }
 
 function header() {
@@ -70,6 +72,7 @@ function navHome() {
   homeElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Home();
+    renderingGearPage();
   });
 }
 
@@ -107,11 +110,14 @@ function navRegions() {
     const app = document.querySelector("#app");
     app.innerHTML = Regions();
     renderingWestPage();
+
+
     renderingMidwestPage();
     renderingNortheastPage();
     renderingSoutheastPage();
     renderingSouthwestPage();
     renderingWestAlaskaHawaiiPage();
+
   });
 }
 
@@ -120,6 +126,22 @@ function navBlog() {
   blogElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Blog();
+  });
+}
+
+function navAbout() {
+  const aboutElem = document.querySelector(".header__profile_aboutUs");
+  aboutElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = About();
+  });
+}
+
+function navContact() {
+  const contactElem = document.querySelector(".header__profile_contactUs");
+  contactElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Contact();
   });
 }
 
@@ -217,6 +239,7 @@ function renderingFirePage() {
     const app = document.querySelector("#app");
     app.innerHTML = Fire();
     renderingFireQuizPage();
+    survivalQuiz()
   });
 }
 
@@ -226,6 +249,7 @@ function renderingWaterPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Water();
     renderingWaterQuizPage();
+    survivalQuiz()
   });
 }
 
@@ -244,6 +268,9 @@ function renderingFoodPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
+    addComment();
+    survivalQuiz();
+
   });
 }
 
@@ -304,6 +331,15 @@ function renderingWestPage() {
     const app = document.querySelector("#app");
     app.innerHTML = West();
     startGameWest();
+  });
+}
+
+
+function renderingGearPage() {
+  const gearBtnElm = document.querySelector(".home-btn-links_Gear");
+  gearBtnElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Gear();
   });
 }
 

@@ -11,13 +11,9 @@ export default function Home() {
       <h3>Check Out Events In Your Area</h3>
       <button class = "home-btn-links">Events</button>
     </div>
-    <div class="homeCards-Chatrooms">
-      <h3>Chatrooms Are Open!</h3>
-      <button class = "home-btn-links">Chatroom</button>
-    </div>
     <div class="homeCards-Gear">
       <h3>Absolute Survival Gear Checklist</h3>
-      <button class = "home-btn-links">Checklist</button>
+      <button class = "home-btn-links_Gear">Checklist</button>
     </div>
   </div>  
   `;
