@@ -1,8 +1,10 @@
+import About from "./components/About";
+
 var profileBtn = document.querySelector(".header__profile_button");
 var profileMenu = document.querySelector(".header__profile_menu");
 var menuBackdrop = document.querySelector(".header__profileMenu_backdrop");
-var menuCloseBtn = document.querySelector("menu__close");
-var profilePortalBtn = document.querySelector(".header__profile_portal");
+var menuCloseBtn = document.querySelector(".menu__close");
+// var profilePortalBtn = document.querySelector(".header__profile_portal");
 var aboutUsBtn = document.querySelector(".header__profile_aboutUs");
 var contactUsBtn = document.querySelector(".header__profile_contactUs");
 var faqBtn = document.querySelector(".header__profile_faq");
@@ -11,7 +13,7 @@ var startBtn = document.querySelector(".header__start");
 var startMenu = document.querySelector(".menu");
 
 function openStartMenu() {
-  startBtn.style.display = "block";
+  startMenu.style.display = "block";
 }
 
 function hideStartButton() {
@@ -48,12 +50,13 @@ menuCloseBtn.addEventListener("click", () => {
   closeProfileMenu();
 });
 
-profilePortalBtn.addEventListener("click", () => {
-  closeProfileMenu();
-});
+// profilePortalBtn.addEventListener("click", () => {
+//   closeProfileMenu();
+// });
 
 aboutUsBtn.addEventListener("click", () => {
   closeProfileMenu();
+  About();
 });
 
 contactUsBtn.addEventListener("click", () => {
