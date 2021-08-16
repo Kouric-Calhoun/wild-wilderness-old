@@ -33,6 +33,7 @@ import Southwest from "./pages/Southwest.js";
 import WestAlaskaHawaii from "./pages/WestAlaskaHawaii";
 
 
+
 buildPage();
 
 function buildPage() {
@@ -84,6 +85,7 @@ function navSkills() {
     renderingFoodPage();
     renderingPredatorsPage();
     quizPage();
+    
   });
 }
 
@@ -259,7 +261,6 @@ function renderingFoodPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
-    addComment();
     survivalQuiz();
 
   });

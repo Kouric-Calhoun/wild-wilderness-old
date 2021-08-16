@@ -1,3 +1,4 @@
+
 import DeerAntlers from "../../images/DeerAntlers.jpg"
 import wires from "../../images/wires.jpg"
 import PencilLoop from "../../images/PencilLoop.jpg"
@@ -116,12 +117,24 @@ export default function Food() {
        <h3>Take a Quiz on how to Find Food</h3>
         <button class="quiz-btn-links_Food">Quiz</button>
       </div>
-      </div>
+      <br><br>
 
-      <div class="container">
-      <label for="comment" name="comment">ADD YOUR COMMENT BELOW-</label>
-      <textarea id="comment"></textarea>
-      <button id="addComments">Add</button>
-      <div id="allComments"></div>
-    `;
-}
+      <h3 class="heading">Add A Comment Below</h3>
+<body>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <textarea class="form-control status-box" rows="3" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </form>
+    <div class="button-group pull-right">
+      <p class="counter">250</p>
+      <a href="#" class="btn btn-primary">Post</a>
+    </div>
+    <ul class="posts">
+    </ul>
+  </div>
+    
+     `
+    }
+     
