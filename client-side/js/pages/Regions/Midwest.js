@@ -1,5 +1,12 @@
 export default function Midwest() {
   return `
+          <div>
+          The five regions of the United States all have many things about them that make them unique. The Midwest has 12 states and is the only region that is not bordered by a major body of water. It is known for its farming, severe weather, and its low, flat land. The Midwest has some amazing landmarks for tourists to visit, such as The Mall of America and Mount Rushmore. 
+          Let’s learn all about the Midwest region and why it is such a great place to live and visit! Many important natural resources come from the Midwest, including corn, wheat, dairy, livestock, and iron ore. For this activity, students will create a 3-5 cell spider map that illustrates different natural resources from the Midwest.
+          Due to its geographical location, the weather in the Midwest is often severe. The winters are long and frigid, and the summers are hot and humid. Blizzards and tornadoes occur frequently in the Midwest.
+          The Midwest is mostly covered by flat land with excellent soil for growing crops. In the Midwest, one can find the Central Plains, the Great Plains, the Black Hills, and the Badlands.
+          The culture in the Midwest is centered around food, fun, and music. Visitors and residents enjoy outdoor activities such as ice fishing and skiing. Rock and roll and Motown are rooted in the Midwest.
+          </div>
           <div class="container_park">
           <div class="park">
             <h3>Brown County State Park</h3>
