@@ -8,7 +8,7 @@ var menuCloseBtn = document.querySelector(".menu__close");
 var aboutUsBtn = document.querySelector(".header__profile_aboutUs");
 var contactUsBtn = document.querySelector(".header__profile_contactUs");
 var faqBtn = document.querySelector(".header__profile_faq");
-var termsBtn = document.querySelector(".header__profile_terms");
+var checklistBtn = document.querySelector(".header__profile_checklist");
 var startBtn = document.querySelector(".header__start");
 var startMenu = document.querySelector(".menu");
 
@@ -67,6 +67,6 @@ faqBtn.addEventListener("click", () => {
   closeProfileMenu();
 });
 
-termsBtn.addEventListener("click", () => {
+checklistBtn.addEventListener("click", () => {
   closeProfileMenu();
 });

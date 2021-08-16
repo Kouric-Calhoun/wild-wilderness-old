@@ -35,7 +35,7 @@ import startGameSouthEast from "./pages/Game/GameSouthEast.js";
 import startGameNorthEast from "./pages/Game/GameNorthEast.js";
 import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 import NationalParkSearch from "./pages/NationalParkSearch.js";
-
+import Checklist from "./components/Checklist.js";
 
 buildPage();
 
@@ -56,6 +56,7 @@ function buildPage() {
   footerHiring();
   navAbout();
   navContact();
+  navChecklist();
 }
 
 function header() {
@@ -111,7 +112,6 @@ function navRegions() {
     renderingSoutheastPage();
     renderingSouthwestPage();
     renderingWestAlaskaHawaiiPage();
-
   });
 }
 
@@ -136,6 +136,14 @@ function navContact() {
   contactElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Contact();
+  });
+}
+
+function navChecklist() {
+  const contactElem = document.querySelector(".header__profile_checklist");
+  contactElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Checklist();
   });
 }
 
@@ -233,7 +241,7 @@ function renderingFirePage() {
     const app = document.querySelector("#app");
     app.innerHTML = Fire();
     renderingFireQuizPage();
-    survivalQuiz()
+    survivalQuiz();
   });
 }
 
@@ -243,7 +251,7 @@ function renderingWaterPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Water();
     renderingWaterQuizPage();
-    survivalQuiz()
+    survivalQuiz();
   });
 }
 
@@ -264,7 +272,6 @@ function renderingFoodPage() {
     renderingFoodQuizPage();
     addComment();
     survivalQuiz();
-
   });
 }
 
@@ -327,7 +334,6 @@ function renderingWestPage() {
     startGameWest();
   });
 }
-
 
 function renderingGearPage() {
   const gearBtnElm = document.querySelector(".home-btn-links_Gear");
