@@ -35,6 +35,7 @@ import startGameSouthEast from "./pages/Game/GameSouthEast.js";
 import startGameNorthEast from "./pages/Game/GameNorthEast.js";
 import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 import NationalParkSearch from "./pages/NationalParkSearch.js";
+import Checklist from "./pages/Checklist.js";
 
 
 buildPage();
@@ -56,11 +57,13 @@ function buildPage() {
   footerHiring();
   navAbout();
   navContact();
+  Checklist();
 }
 
 function header() {
   const headerElement = document.querySelector(".header");
   headerElement.innerHTML = Header();
+  Checklist();
 }
 
 function footer() {
