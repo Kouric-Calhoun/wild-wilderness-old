@@ -1,6 +1,16 @@
 export default function Southwest() {
   return `
-          <div class="container_park">
+      <div class ="region-text">
+      The five regions of the United States all have many things that make them unique. Although the Southwest is only made up of four states, they are very large. The Southwest region is known for its vast deserts, delicious food, the Grand Canyon, and rich culture. 
+      Let’s learn all about what makes the Southwest so unique, and an amazing place to visit or live! Some of the most useful natural resources from the Southwest region are copper, sliver, iron, coal, and oil. The Southwest is the leading region in the raising of beef cattle and sheep. 
+      The climate in the Southwest is hot and dry with very little rain. The weather very rarely changes, and droughts are common due to the lack of rainfall.
+      Our culture is what makes us all unique and each region different. The Southwest is rooted deeply in Spanish and Mexican culture, and many of the old traditions and values are still prevalent today.
+      The geography of the Southwest is unique due to its vast amount of desert, plateaus, and canyons. Very little of the land is useful for farming, but the Central Plains have rich and fertile soil. The major waterways in the Southwest are the Colorado River and the Rio Grande, which forms part of the border between Mexico and the United States.
+      </div>
+  
+  
+  
+      <div class="container_park">
       <div class="park">
         <h3>Grand Canyon National Park</h3>
         <p>

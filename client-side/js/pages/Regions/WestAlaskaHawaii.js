@@ -1,6 +1,13 @@
 export default function WestAlaskaHawaii() {
   return `
-          
+          <div class="region-text">
+          The five regions of the United States all have many things about them that make them unique. The West region consists of 11 states, including Alaska and Hawaii. It is known for the Rocky Mountains and the Mojave Desert. 
+          It is also known for its warm climate in some areas, and cold climate in others. The West is a wonderful place to visit with popular tourist attractions such as Disneyland, Yellowstone National Park, and Las Vegas. 
+          It’s time to learn all about what makes the West a wonderful place to visit and live! Our culture is what makes us all unique and each region different. The culture in the West centers around food, fun, and the weather.
+          A natural resource is something that occurs in nature and is used to make products that contribute to a region’s economy. Some of the natural resources in the West region are wood, salt, pineapples, potatoes, oil, and a variety of minerals.
+          The geography of the West is extremely diverse. With 4 major mountain ranges, 2 major deserts, a beautiful coastline, and even a rainforest, it is like no other region in the United States. Because of its geographic location, the West has experienced earthquakes and even volcano eruptions!
+          The climate in the West region varies due to its immense size and changes in elevation. Northern parts of the region, such as Washington and Oregon, have a mild climate and a lot of rainfall. On the other hand, Colorado and Wyoming are colder and get a lot of snow due to the high elevation and abundance of mountains.
+          </div>
           <div class="container_park">
               <class="park">
                 <h3>Ophir Creek Campground</h3>

@@ -1,6 +1,6 @@
 export default function West() {
   return `
-          <div>
+          <div class = "region-text">
           The five regions of the United States all have many things about them that make them unique. The West region consists of 11 states, including Alaska and Hawaii. It is known for the Rocky Mountains and the Mojave Desert. 
           It is also known for its warm climate in some areas, and cold climate in others. The West is a wonderful place to visit with popular tourist attractions such as Disneyland, Yellowstone National Park, and Las Vegas. 
           It’s time to learn all about what makes the West a wonderful place to visit and live! Our culture is what makes us all unique and each region different. The culture in the West centers around food, fun, and the weather.

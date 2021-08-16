@@ -1,5 +1,12 @@
 export default function Northeast() {
   return `
+          <div class="region-text">
+          The five regions of the United States all have many things about them that make them unique. The Northeast has 11 states, many important historical landmarks, beautiful coastlines, and is the home of the nation’s capital: Washington, D.C. Known for its changing seasons, there is so much to do outdoors all year round in the Northeast. 
+          Enjoy as we learn all about the Northeast and what makes it such a wonderful place to live and visit! Spider maps are an excellent tool to help students organize facts in a systematic and visual manner. Many important natural resources come from the Northeast, including cranberries, lumber, fish, and granite.
+          The Northeast’s climate varies from season to season. The winters are long, cold, and snowy, while the summers are humid, hot, and sunny. The fall is the time of year when the leaves change color and the weather gets cooler, and the spring is a time for milder weather and the blooming of flowers.
+          The Northeast has a very rich culture and history, as well as a diverse population. Because the weather changes so frequently, residents of the Northeast have a variety of activities to partake in for fun, and plenty of things to do.
+          The Northeast region is the home of the Appalachian Mountains, the Erie Canal, and a beautiful coastline spreading from Maine to Maryland.
+          </div>
           <div class="container_park">
           <div class="park">
             <h3>Acadia National Park</h3>

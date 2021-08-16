@@ -1,5 +1,10 @@
 export default function Southeast() {
   return `
+          <div class="region-text">
+          The five regions of the United States all have many things about them that make them unique. The Southeast region, which includes 12 states, has a rich culture, an exceptional climate, and is certainly a hot spot for tourists. The Southeast is the home of the blues, delicious food, and, of course, Disney World! 
+          Hop aboard as we take a tour of the Southeast and learn all about what makes it such a wonderful place to live and visit! The climate in the Southeast is tropical, meaning it’s warm and humid much of the year. It also has intense storms, like hurricanes. The climate affects so much in the region, such as growing season, tourism, culture, and more.
+          The Southeast region of the United States has a very rich and diverse culture filled with wonderful music, foods, and traditions. 
+          </div>
 
           <div class="container_park">
           <div class="park">
