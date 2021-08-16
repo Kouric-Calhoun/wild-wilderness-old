@@ -12,6 +12,7 @@ export default function Header() {
           <li class="footer__contact">Contact Us</li>
           <li class="header__profile_faq">FAQ</li>
           <li class="header__profile_terms">Terms & Conditions</li>
+          <li class="header__profile_checklist">Checklist</li>
           
         </ul>
       </div>
