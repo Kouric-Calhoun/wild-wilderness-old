@@ -56,12 +56,12 @@ function buildPage() {
   footerHiring();
   navAbout();
   navContact();
-  navChecklist();
 }
 
 function header() {
   const headerElement = document.querySelector(".header");
   headerElement.innerHTML = Header();
+  navChecklist();
 }
 
 function footer() {

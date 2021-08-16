@@ -1,7 +1,7 @@
 export default function Checklist() {
   return `
-     <body class="checklist__todo_section">
-    <header>
+     <body class=".header__profile_checklist">
+    <header class="checklist__todo">
       <h1 class="checklist__todo">Survivor Gear CheckList</h1>
     </header>
     <form class="checklist">

@@ -1,3 +1,5 @@
+import Header from "../components/Header";
+
 export default function Checklist() {
   const todoInput = document.querySelector(".todo-input");
   const todoButton = document.querySelector(".todo-button");
@@ -11,8 +13,9 @@ export default function Checklist() {
 
   function addTodo(e) {
     e.preventDefault();
-    const todoDiv = document.createElement("div");
-    todoDiv.classList.add("todo");
+    const todoDiv = document.createElement("#app");
+    // todoDiv.classList.add("todo");
+    todoDiv.innerHTML = Header();
 
     const newTodo = document.createElement("li");
     newTodo.innerText = todoInput.value;

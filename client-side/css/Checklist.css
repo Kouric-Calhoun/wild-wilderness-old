@@ -3,13 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+.header__profile_checklist {
   background-image: linear-gradient(120deg, #68f552 0%, #21a23f 100%);
   color: white;
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
-header {
+.checklist__todo {
   font-size: 2rem;
 }
 
