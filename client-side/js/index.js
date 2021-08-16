@@ -37,6 +37,7 @@ import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 import NationalParkSearch from "./pages/NationalParkSearch.js";
 
 
+
 buildPage();
 
 function buildPage() {
@@ -264,7 +265,6 @@ function renderingFoodPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
-    addComment();
     survivalQuiz();
   });
 }
@@ -402,7 +402,6 @@ function initSlideShow(slideshow) {
     slides[index].classList.add("active");
   }, time);
 }
-
 function script() {
   var script = document.createElement("script");
   script.src = "https://platform.twitter.com/widgets.js";
