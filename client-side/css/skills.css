@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
 
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
 .fire-link-pic{
-    width: 12em;
     height: 50%;
-    border-radius: .5em;
-    margin-top: 5%;
+    background-size: cover;
+    border-radius: .3em .3em 0 0;
     
 }
 
@@ -23,9 +28,15 @@
   border-radius: .5em;
   border-style: solid;
   width: 25%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  margin-top: 5%;
   background-color: rgb(215, 230, 219);
   
+}
+
+.survival-skills-title{
+  text-decoration: underline;
+  margin-top: 5%;
 }
 
 .skills-h3{
@@ -33,6 +44,18 @@
     font-size: 1em;
     font-family: "Rubik", sans-serif;
 }
+
+.fire-card-text,
+.water-card-text,
+.shelter-card-text,
+.food-card-text,
+.predator-card-text{
+  font-size: 10px;
+  margin-bottom: 1em;
+}
+
+
+
 
 
 

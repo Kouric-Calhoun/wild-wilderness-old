@@ -1,10 +1,25 @@
+/* Fire page styling begins here */
+p{
+    text-align: left;
+}
+
+.fire-title{
+    text-align: center;
+}
+
+.fire-text{
+    font-size: small;
+}
 
 .fire-breathe-container,
 .fire-rain-container,
 .fire-tips-container,
 .fire-drill-container,
 .fire-plow-container,
-.fire-bow-container{
+.fire-bow-container,
+.fire-stone-container,
+.fire-batteries-container,
+.fire-lenses-container{
     border-radius: .5em;
     border-style: solid;
     width: 100%;
@@ -12,6 +27,19 @@
     margin-bottom: 5%;
 }
 
+/* Water procurement page styling begins here*/
 
+.water-tips-container,
+.water-boiling-container,
+.water-distillation-container,
+.water-rain-container,
+.water-snow-container,
+.water-tablets-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+}
 
 
