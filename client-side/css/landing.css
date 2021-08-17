@@ -1,0 +1,15 @@
+.logo{
+    box-shadow: 6px 3px 5px #353434;
+    border-radius: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    opacity: .85;
+    width: 50%;
+}
+
+.logo{
+    animation-timing-function: cubic-bezier(0.42,0,1,1);
+  }
+
