@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -45,7 +47,7 @@ hr.rounded {
 }
 
 .textAtTop {
-  color: blueviolet;;
+  color: blueviolet;
   display: block;
   font-size: xx-large;
   margin-left: 300px;

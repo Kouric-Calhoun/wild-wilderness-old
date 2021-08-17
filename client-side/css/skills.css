@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
 .fire-link-pic{
     width: 12em;
     height: 50%;
@@ -29,6 +31,7 @@
 .skills-h3{
     margin:1em;
     font-size: 1em;
+    font-family: "Rubik", sans-serif;
 }
 
 
