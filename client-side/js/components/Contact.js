@@ -28,7 +28,7 @@ export default function Contact() {
               <h2 class="content-title">Survivor Skills</h2>
               <div class="content-text">
                   <p>Wilderness Wild prides itself on educating all their 
-                  clients on the required surivor skills to prepare them 
+                  clients on the required survivor skills to prepare them 
                   when facing situation in various scenarios in the 
                   Wilderness. </p>
                   <br>
