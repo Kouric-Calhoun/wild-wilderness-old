@@ -7,8 +7,31 @@ p{
     text-align: center;
 }
 
-.fire-text{
+.fire-methods-title{
+    font-size: 2em;
+    margin-bottom: 2%;
+}
+
+.fire-text,
+.hand-drill-method-list,
+.fire-plow-list,
+.fire-bow-drill-materials-list,
+.fire-bow-drill-list,
+.fire-stone-list,
+.fire-battery-list,
+.fire-lenses-list{
     font-size: small;
+    margin: 2%;
+}
+
+.hand-drill-method-list,
+.fire-plow-list,
+.fire-bow-drill-materials-list,
+.fire-bow-drill-list,
+.fire-stone-list,
+.fire-battery-list,
+.fire-lenses-list{
+    text-align: left;
 }
 
 .fire-breathe-container,
