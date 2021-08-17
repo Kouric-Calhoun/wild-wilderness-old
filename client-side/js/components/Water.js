@@ -4,10 +4,11 @@ import waterBoiling from '../../images/waterBoiling.jpg';
 import rainWater from '../../images/rainWater.jpg';
 import waterPurificationPic from '../../images/waterPurificationPic.jpg';
 import snowWater from '../../images/snowWater.jpg';
+import waterDistillationPic from '../../images/waterDistillationPic.jpg';
 
 export default function Water(){
     return`
-    <main class = "water-procurement-main">
+    
     
     <div class="water-container">
     <article class = "water-header">
@@ -34,6 +35,7 @@ export default function Water(){
     <li>Take water from near the surface of a calm, sunlit pool. Harmful organisms tend to lurk just out of reach of sunlight.</li>
     </ul>
 
+    <div class="water-tips-container">
     <h2 class = "water-tips-title-2">Lakes, Streams, and Rivers</h2>
     <img src = '${waterRivers}' alt="pic of a river">
         <p>These are your most obvious sources of water in the wild. Clear, flowing water is your best option, as the movement doesn’t 
@@ -47,10 +49,14 @@ export default function Water(){
     in the desert. Animal tracks will be easier to spot in the sand, and they’ll almost always eventually lead to water. Birds will also 
     especially flock towards water in dry areas. Also just scout the environment you’re in. Water runs downhill, so follow valleys, ditches,
     gullies, etc. Find your way to low ground, and you’ll often run into water.</p>
+    </div>
     </article>
+
 
     <article class = "water-procurement-methods">
     <h1 class = "water-methods-title">Methods for procuring water</h1>
+
+    <div class="water-boiling-container">
     <h2 class = "water-boiling-title">Boiling</h2>
     <img src ='${waterBoiling}' alt = "pic of boiling water by a fire">
         <p>Boiling water is one of the best wilderness water purification methods. Boiling clear water is the most efficient way to make it 
@@ -60,8 +66,11 @@ export default function Water(){
         <p>With a solid container and a decent fire, you could have purified water in as little as 10 minutes. Just make sure that you let the water
     bubble for at least five minutes before you remove it from the fire. Once your water has been thoroughly boiled, let it rest for another five
     minutes.</p>
+    </div>
 
+    <div class="water-distillation-container">
     <h2 class = "water-distillation-title">Distillation</h2>
+    <img src ='${waterDistillationPic}' alt = "pic of pouring water by a fire">
         <p>This method of purifying water in the wild is particularly useful in tropical settings or Pacific regions. Often, when you find fresh water
     in a tropical setting, it may contain high levels of sodium and minerals. Drinking this water may cause you to become even more dehydrated
     if you aren’t careful.</p>
@@ -74,18 +83,24 @@ export default function Water(){
     on the cover in a way that causes it to run down and drip into your smaller container.</p>
         <p>With enough sunlight and the right gear, you can easily gather all of the drinkable water you need to survive. While this process doesn’t 
     fully purify your water, it distills it. This water can then be filtered using an emergency water filter.</p>
+    </div>
 
+    <div class="water-rain-container">
     <h2 class = "collect-rainwater-title">Collect Rainwater</h2>
     <img class ="rain-water-pic" src= '${rainWater}' alt="pic of rain water">
     <p>There are two primary methods of collecting rainwater. The first is to use any and all containers you might have on you. The second is to 
     tie the corners of a poncho or tarp around trees a few feet off the ground, place a small rock in the center to create a depression, and let 
     the water collect.</p>
+    </div>
 
-    <h2 class = "collect-rainwater-title">Collect Snow</h2>
+    <div class="water-snow-container">
+    <h2 class = "collect-snow-title">Collect Snow</h2>
     <img class ="snow-water-pic" src= '${snowWater}' alt="pic of snow in the woods">
     <p>Collect ice or snow and wrap it inside a t-shirt or large bandana. Use sturdy branches to suspend the snow above a fire. As the snow or ice 
     begins to melt it will start to drip through the fabric. Use a large cup or container to catch the falling water.</p>
+    </div>
 
+    <div class="water-tablets-container">
     <h2 class = "water-tablets-title">Water purification tablets/chemicals</h2>
     <img class ="water-purification-pic" src= '${waterPurificationPic}' alt="pic of bucket of water">
     <p>Water purification tablets are meant to be beneficial to anyone that does not have access to portable and clean water. These types of tablets 
@@ -93,6 +108,7 @@ export default function Water(){
     on-the-go disinfection thanks to their portability and simplicity: just filter cloudy/turbid water through a filter or cloth, drop a tablet 
     in 1-2 litres of water, wait 30 minutes and it’s safe to rehydrate. They work by releasing free chlorine into the water to quickly kill most 
     pathogens, similar to how many municipal water treatment plants disinfect drinking water before releasing it into the distribution system.</p>
+    </div>
 
     </article>
     
@@ -103,7 +119,7 @@ export default function Water(){
       </div>
 
       </div>
-    </main>
+    
     
     `;
 }
