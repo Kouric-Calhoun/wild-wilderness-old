@@ -27,6 +27,8 @@ export default function Fire() {
     </article>
 
     <article class="fire-tips">
+
+    <div class ="fire-tips-container">
     <h1 class = "fire-tips-title">Tips to know before the fire:</h1>
     <img src='${fireTipsPic}' alt = "pic of a campfire">
     <h2 class = "firestarter-title">Find your firestarter</h2>
@@ -47,7 +49,9 @@ export default function Fire() {
      coating a pine cone or two with the mixture. And for a fun way to start a fire and impress your friends, you can
      use Doritos, Cheetos, or any type of oily chip in a pinch. Simply light a corner of a few chips and place them 
     beneath your kindling.</p>
+    </div>
 
+    <div class="fire-breathe-container">
     <h2 class = "fire-breathe-title">Give your fire room to breathe</h2>
     <img src = '${fireBuilding}' alt = "pic of building a fire">
         <p>You need oxygen, fuel, and a sustained ignition source to have a fire. These three factors form a "fire triangle". 
@@ -61,7 +65,9 @@ export default function Fire() {
     oxygen won’t be able to flow freely and your fire will go out. Stick with branches or logs no bigger than your wrist.
     Larger logs don’t mean more heat energy, just a longer burn. And don’t worry if you can’t build a massive blaze—small 
     fires are just as effective for cooking and heating as larger ones.</p>
+    </div>
 
+    <div class="fire-rain-container">
     <h2 class = "fire-rain-title">Setting a fire in the rain</h2>
     <img src='${fireRainPic}' alt = "pic of a campfire in the rain">
         <p>Building a fire when everything’s perfectly dry is one thing, but in cold and wet conditions it becomes exponentially 
@@ -75,11 +81,13 @@ export default function Fire() {
     more wood than you think you need—you don’t want to have to leave your fire. Make your fire structure no more 
     than shin-high to conserve fuel, and store wet wood near your flames to dry it out. Make a solid base. You want to 
     get the fire structure off of the wet surface. Lay down a raft-like foundation of wrist size sticks. </p>
+    </div>
     </article>
     
     <article class = "fire-methods>
     <h1 class = "fire-methods-title">Methods for starting a fire</h1>
 
+    <div class="fire-drill-container">
     <h2 class = "hand-drill-title">The Hand Drill</h2>
     <img src='${fireHandDrill}' alt = "pic of a someone starting a fire">
     <p>If you’re wondering how to start a fire with sticks, you’ll want to try the hand drill. The hand drill strategy is a 
@@ -98,7 +106,9 @@ export default function Fire() {
         <li>Start a fire. When you see a shining ember, tap the fireboard to place your ember onto the bit of bark. Exchange the bark 
         to your nest of tinder. Slowly blow it to get yourself fire.</li>
     </ol>
+    </div>
 
+    <div class="fire-plow-container">
     <h2 class = "fire-plow-title">The Fire Plow</h2>
     <img src='${firePlow}' alt = "pic of a someone starting a fire by plow method">
     <p>The fire plow is another common method using minimal tools. All you’ll need is a softer wood for the plow board and a harder wood
@@ -114,7 +124,9 @@ export default function Fire() {
        until the dust smolders.</li>
     <li>Transfer the flame to the tinder. Once the dust is alight, transfer it to the tinder and gently blow to start your fire. </li>
      </ol>
+     </div>
 
+    <div class="fire-bow-container">
      <h2 class = "fire-bow-drill-title">The Bow Drill</h2>
      <img src = '${fireBowDrill}' alt = "pic of a fire bow drill">
      <p>The bow drill is presumably the best contact-based technique to use because it’s less demanding to keep up the rate and weight
@@ -142,7 +154,9 @@ export default function Fire() {
      sawing until you make an ember.</li>
      <li>Start a fire. Put ember into the nest and slowly blow on it to get yourself fire.</li>
     </ol>
+    </div>
 
+    <div class="fire-stone-container">
     <h2 class = "fire-stone-title">Stone and Steel</h2>
     <img src = '${fireStoneSteel}' alt = "pic of starting a fire with stone and steel">
     <p>Here’s how to start a fire without matches, lighters, or sticks! Using a flint is a traditional standby and is presumably
@@ -168,6 +182,7 @@ export default function Fire() {
        Rub the battery sides with the steel. The wool will start to gleam and blaze.</li>
        <li>Place the blazing wool on the tinder nest and slowly blow it to get a larger fire.</li>
       </ol>
+      </div>
 
       <h2 class = "fire-lenses-title">Traditional Lenses</h2>
       <img src = '${fireLense}' alt = "pic of starting a fire with a lense">
