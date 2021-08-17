@@ -1,3 +1,6 @@
+import header from "../../css/header.css";
+import headerImage from "../../images/headerImage.jpg";
+
 export default function Header() {
   return `
   <div class="header__section_profile">
@@ -17,7 +20,9 @@ export default function Header() {
         </ul>
       </div>
     </div>
-  <h1 class="header__title">Wilderness Wild</h1>
+    <div class="background-pic">
+    <img class="headerImageSize" src="${headerImage}"/>
+    <h1 class="header__title">WILDERNESS WILD</h1>
     <ul class ='nav-list'>
     <li class ='nav-list__home'>Home</li>
     <li class ='nav-list__skills'>Skills</li>
@@ -25,6 +30,7 @@ export default function Header() {
     <li class ='nav-list__scenarios'>Search</li>
     <li class ='nav-list__blog'>Blog</li>
     </ul>
+    </div>
 
     `;
 }

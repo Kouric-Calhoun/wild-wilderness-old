@@ -20,14 +20,15 @@ h4 {
 }
 
 #app {
-  background-color: #98fb98;
-  border-radius: 8px;
+  
 }
 
 .nav-list li {
-  background-color: green;
+  background-color:  white;
   border-radius: 10px;
-  color: #fff;
+  color: black;
+  font-family: "Rubik", sans-serif;
+  font-size: 27px;
   list-style-type: none;
   padding: 1rem;
 }

@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
 .header__section_profile {
   position: sticky;
   text-align: right;
+}
+
+
+.headerImageSize{
+  background-size: cover;
+  height: 350px;
 }
 
 .header__title {
@@ -8,6 +16,7 @@
   margin: 0px;
   padding-bottom: 1rem;
   text-align: left;
+  font-family: "Rubik", sans-serif;
 }
 
 .header__profile_button {
@@ -68,6 +77,15 @@
   text-align: left;
 }
 
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 15px;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
 .nav-list__home,
 .nav-list__skills,
 .nav-list__regions,
@@ -76,4 +94,15 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
+}
+
+.header__title{
+  color: rgb(161, 231, 178);
+  position: absolute;
+  margin-top: -250px;
+  margin-left: 500px;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: 3px 3px #FAFAD2;
 }

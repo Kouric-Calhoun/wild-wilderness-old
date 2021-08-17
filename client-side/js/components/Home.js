@@ -4,7 +4,7 @@ export default function Home() {
   return `
   <div id="home-div">
   <br>
-  <h3><strong>WELCOME TO WILDERNESS WILD</strong></h3>
+
   <br>
   <img class="logo" id="logo" src="${WildernessWildLogo}" alt="wilderness Wild Logo">
   <br>
