@@ -11,8 +11,7 @@ export default function Header() {
           <li class="footer__about">About Us</li>
           <li class="footer__contact">Contact Us</li>
           <li class="header__profile_faq">FAQ</li>
-          <li class="header__profile_checklist">Checklist</li>
-          
+          <li class="header__profile_terms">Terms & Conditions</li>
         </ul>
       </div>
     </div>
@@ -24,7 +23,7 @@ export default function Header() {
     <li class ='nav-list__regions'>Regions</li>
     <li class ='nav-list__scenarios'>Scenarios</li>
     <li class ='nav-list__blog'>Blog</li>
-    <li class ="nav-list__survival-quiz">Survival Quiz</li>
+    <li class ='nav-list__checklist'>Checklist</li>
     </ul>
 
     `;

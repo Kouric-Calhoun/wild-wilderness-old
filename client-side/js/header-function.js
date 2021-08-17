@@ -8,7 +8,6 @@ var menuCloseBtn = document.querySelector(".menu__close");
 var aboutUsBtn = document.querySelector(".header__profile_aboutUs");
 var contactUsBtn = document.querySelector(".header__profile_contactUs");
 var faqBtn = document.querySelector(".header__profile_faq");
-var checklistBtn = document.querySelector(".header__profile_checklist");
 var startBtn = document.querySelector(".header__start");
 var startMenu = document.querySelector(".menu");
 
@@ -64,9 +63,5 @@ contactUsBtn.addEventListener("click", () => {
 });
 
 faqBtn.addEventListener("click", () => {
-  closeProfileMenu();
-});
-
-checklistBtn.addEventListener("click", () => {
   closeProfileMenu();
 });

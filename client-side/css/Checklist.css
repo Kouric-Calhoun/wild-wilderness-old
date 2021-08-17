@@ -13,7 +13,7 @@
   font-size: 2rem;
 }
 
-header,
+.checklist__todo,
 form {
   min-height: 20vh;
   display: flex;

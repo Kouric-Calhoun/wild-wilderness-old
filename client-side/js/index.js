@@ -56,12 +56,12 @@ function buildPage() {
   footerHiring();
   navAbout();
   navContact();
+  navChecklist();
 }
 
 function header() {
   const headerElement = document.querySelector(".header");
   headerElement.innerHTML = Header();
-  navChecklist();
 }
 
 function footer() {
@@ -140,7 +140,7 @@ function navContact() {
 }
 
 function navChecklist() {
-  const contactElem = document.querySelector(".header__profile_checklist");
+  const contactElem = document.querySelector(".nav-list__checklist");
   contactElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Checklist();
