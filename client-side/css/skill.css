@@ -1,0 +1,17 @@
+
+.fire-breathe-container,
+.fire-rain-container,
+.fire-tips-container,
+.fire-drill-container,
+.fire-plow-container,
+.fire-bow-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+
+
+
+
