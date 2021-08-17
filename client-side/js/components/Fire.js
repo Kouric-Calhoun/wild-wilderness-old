@@ -186,7 +186,7 @@ export default function Fire() {
 
       <h2 class = "fire-lenses-title">Traditional Lenses</h2>
       <img src = '${fireLense}' alt = "pic of starting a fire with a lense">
-      <p>With this approach, all you need is some kind lens to center daylight on a particular spot. A magnifying glass or 
+      <p>With this approach, all you need is some kind lens to center daylight on a particular spot. A magnifying glass or
       binocular lens both work.</p>
 
       <ol class = "fire-lenses-list">
@@ -207,6 +207,6 @@ export default function Fire() {
 
     </div>
     </main>
-    
+
     `;
 }

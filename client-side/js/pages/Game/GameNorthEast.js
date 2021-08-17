@@ -43,33 +43,33 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: "Do you take THE WATER or leave with nothing?",
+    text: "You are driving back from a long weekend in Vegas with your buddies and the car breaks down. In your left hand you have your phone (Flashlight) what do you take in the right?",
     options: [
       {
-        text: "Take the fire",
-        setState: { fire: true },
+        text: "Take water",
+        setState: { water: true },
         nextText: 2,
       },
       {
-        text: "Take the water",
+        text: "Take nothing",
         nextText: 2,
       },
     ],
   },
   {
     id: 2,
-    text: "You venture forth in search of answers to where you are when you come across a merchant. He wants fire",
+    text: "You venture forth in search for help and someone (We will call him a merchant) offers you a deal, he wants your water",
     options: [
       {
-        text: "Trade the fire for a sword",
-        requiredState: (currentState) => currentState.fire,
-        setState: { fire: false, sword: true },
+        text: "Trade the water for a lighter",
+        requiredState: (currentState) => currentState.water,
+        setState: { water: false, lighter: true },
         nextText: 3,
       },
       {
-        text: "Trade the fire for a shield",
-        requiredState: (currentState) => currentState.fire,
-        setState: { fire: false, shield: true },
+        text: "Trade the water for a map (Why would you need a map when you have a phone....)",
+        requiredState: (currentState) => currentState.water,
+        setState: { water: false, map: true },
         nextText: 3,
       },
       {
@@ -80,10 +80,10 @@ const textNodes = [
   },
   {
     id: 3,
-    text: "After leaving the merchant you start to feel tired and stumble upon a small town next to a dangerous looking castle.",
+    text: "After leaving the merchant you start to feel sleepy and stumble upon a small run down town next to a dangerous looking mansion.",
     options: [
       {
-        text: "Explore the castle",
+        text: "Explore the mansion",
         nextText: 4,
       },
       {
@@ -91,14 +91,14 @@ const textNodes = [
         nextText: 5,
       },
       {
-        text: "Find some hay in a stable to sleep in",
+        text: "Sleep in a alley",
         nextText: 6,
       },
     ],
   },
   {
     id: 4,
-    text: "You are so tired that you fall asleep while exploring the castle and are killed by a bear in your sleep.",
+    text: "You are so tired that you fall asleep while exploring the mansion and are killed by a snake in your sleep.",
     options: [
       {
         text: "Restart",
@@ -108,7 +108,7 @@ const textNodes = [
   },
   {
     id: 5,
-    text: "Without any money to buy a room you break into the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.",
+    text: "Without any money to buy a room you break into a hotel and fall asleep. After a few hours of sleep the owner of the hotel finds you and calls the police. You are going to jail.",
     options: [
       {
         text: "Restart",
@@ -118,7 +118,7 @@ const textNodes = [
   },
   {
     id: 6,
-    text: "You wake up well rested and full of energy ready to explore the nearby castle.",
+    text: "You wake up well rested and full of energy ready to explore the nearby mansion.",
     options: [
       {
         text: "Explore the castle",
@@ -128,32 +128,32 @@ const textNodes = [
   },
   {
     id: 7,
-    text: "While exploring the castle you come across a bear in your path.",
+    text: "You knock on the door and a thirsty looking child answers....",
     options: [
       {
-        text: "Try to run",
+        text: "Ignore the boy, and walk past him.",
         nextText: 8,
       },
       {
-        text: "Attack it with your sword",
-        requiredState: (currentState) => currentState.sword,
+        text: "Give the boy your lighter",
+        requiredState: (currentState) => currentState.lighter,
         nextText: 9,
       },
       {
-        text: "Hide behind your shield",
-        requiredState: (currentState) => currentState.shield,
+        text: "Offer him your map",
+        requiredState: (currentState) => currentState.map,
         nextText: 10,
       },
       {
-        text: "Throw the fire at it",
-        requiredState: (currentState) => currentState.fire,
+        text: "Give him your water",
+        requiredState: (currentState) => currentState.water,
         nextText: 11,
       },
     ],
   },
   {
     id: 8,
-    text: "Your attempts to run are in vain and the bear easily catches you and attacks you, you lost.",
+    text: "He has a really big dog right behind him that you did not see, the dog denies your attempt LOL!!!",
     options: [
       {
         text: "Restart",
@@ -163,7 +163,7 @@ const textNodes = [
   },
   {
     id: 9,
-    text: "You foolishly thought this bear could be slain with a single sword.",
+    text: "He does not want a lighter and shuts the door in your face.",
     options: [
       {
         text: "Restart",
@@ -173,7 +173,7 @@ const textNodes = [
   },
   {
     id: 10,
-    text: "The bear roared as you hid behind your shield and ate you.",
+    text: "He has no idea what would he use a map for when he has google (Why did you choose to take a map?) The boy closes the door in your face.",
     options: [
       {
         text: "Restart",
@@ -183,10 +183,10 @@ const textNodes = [
   },
   {
     id: 11,
-    text: "You threw your fire at the bear and it exploded. After the dust settled you saw the bear was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.",
+    text: "He takes the water and Thanks you, his parents are rich and they cut you a check for all your troubles in the amount 1.5 million. ",
     options: [
       {
-        text: "Congratulations. Play Again.",
+        text: "Congratulations!!!! Play Again.",
         nextText: -1,
       },
     ],

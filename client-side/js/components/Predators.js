@@ -52,7 +52,7 @@ export default function Predators() {
     <p2>Now that we know what states are within this region, we will discuss common predatory and dangerous creatures within this region.</p2>
 
     <h3>Predator List</h3>
-    <ul></ul>
+    <ul>
     <li>Mountain Lions</li>
     <img src='${MountainLion}'><img>
     
@@ -84,8 +84,7 @@ export default function Predators() {
     
     <li>Black Widow Spiders</li>
     <img src='${Blackwidow}'><img>
-    
-   
+    </ul>
     </article>
      
      <article>
