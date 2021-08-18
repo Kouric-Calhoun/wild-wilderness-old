@@ -1,16 +1,23 @@
-const todoInput = document.querySelector(".todo-input");
-const todoButton = document.querySelector(".todo-button");
-const todoList = document.querySelector(".todo-list");
-const filterOption = document.querySelector(".filter-todo");
+let todoInput;
+let todoButton;
+let todoList;
+let filterOption;
 
-document.addEventListener("DOMContentLoaded", getTodos);
-todoButton.addEventListener("click", addTodo);
-todoList.addEventListener("click", deleteTodo);
-filterOption.addEventListener("click", filterTodo);
+export default function wireUpChecklist() {
+  todoInput = document.querySelector(".todo-input");
+  todoButton = document.querySelector(".todo-button");
+  todoList = document.querySelector(".todo-list");
+  filterOption = document.querySelector(".filter-todo");
+
+  document.addEventListener("DOMContentLoaded", getTodos);
+  todoButton.addEventListener("click", addTodo);
+  todoList.addEventListener("click", deleteTodo);
+  filterOption.addEventListener("click", filterTodo);
+}
 
 function addTodo(e) {
   e.preventDefault();
-  const todoDiv = document.createElement("#app");
+  const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
 
   const newTodo = document.createElement("li");

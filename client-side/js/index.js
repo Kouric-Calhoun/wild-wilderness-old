@@ -36,12 +36,14 @@ import startGameNorthEast from "./pages/Game/GameNorthEast.js";
 import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 import NationalParkSearch from "./pages/NationalParkSearch.js";
 import Checklist from "./components/Checklist.js";
+import wireUpChecklist from "./pages/Checklist-funtion.js";
 
 buildPage();
 
 function buildPage() {
   header();
   footer();
+  navChecklist();
   navHome();
   navSkills();
   navScenarios();
@@ -49,14 +51,13 @@ function buildPage() {
   navBlog();
   footerAbout();
   footerContact();
-  quizPage();
   survivalQuiz();
   footerDonate();
   footerEvent();
   footerHiring();
   navAbout();
   navContact();
-  navChecklist();
+  quizPage();
 }
 
 function header() {
@@ -140,10 +141,11 @@ function navContact() {
 }
 
 function navChecklist() {
-  const contactElem = document.querySelector(".nav-list__checklist");
+  const contactElem = document.querySelector(".header__profile_checklist");
   contactElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Checklist();
+    wireUpChecklist();
   });
 }
 
