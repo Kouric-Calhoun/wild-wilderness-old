@@ -7,11 +7,6 @@ p{
     text-align: center;
 }
 
-.fire-methods-title{
-    font-size: 2em;
-    margin-bottom: 2%;
-}
-
 .fire-text,
 .hand-drill-method-list,
 .fire-plow-list,
@@ -42,13 +37,124 @@ p{
 .fire-bow-container,
 .fire-stone-container,
 .fire-batteries-container,
-.fire-lenses-container{
+.fire-lenses-container,
+.fire-summary-container{
     border-radius: .5em;
     border-style: solid;
     width: 100%;
     height: 50%;
     margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
 }
+
+.fire-pics{
+    width:50%;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   
+}
+
+.fire-quiz-title{
+    background: linear-gradient(90deg, #ff0000, #abb92d, #eeb861, #db1e0d, #c0d31b, #ff00aa);
+    background-size: 200%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    word-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.quiz-btn-links_Fire{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background:transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position:relative;
+    display: inline-block;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    line-height: 52px;
+    perspective: 230px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.quiz-btn-links_Fire span{
+    background: rgb(0,0,0);
+    background:linear-gradient(180deg, #92cf58 0%, rgba(40, 75, 12, 0.88) 100%);
+    display: block;
+    position:absolute;
+    width: 200px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.quiz-btn-links_Fire span:nth-child(1) {
+    box-shadow: 
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -20px;
+}
+.quiz-btn-links_Fire span:nth-child(2) {
+    transform:rotateX(0deg);
+    transform-origin: 50% 48% -26.7px;
+}
+.quiz-btn-links_Fire:hover span:nth-child(1) {
+    transform: rotateX(0deg);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.quiz-btn-links_Fire:hover span:nth-child(2) {
+    transform:rotateX(-90deg);
+    color:transparent;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.fire-quiz-title{
+    margin-top: 10%;
+}
+
+
+
+
+
+
 
 /* Water procurement page styling begins here*/
 
@@ -58,6 +164,136 @@ p{
 .water-rain-container,
 .water-snow-container,
 .water-tablets-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+ 
+/* Shelter Page Styling Begins Here */
+.shelter-prep-container,
+.materials-for-shelter-container,
+.naturally-formed-shelter-container,
+.available-materials-container,
+.snow-shelter-build-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+
+.shelter-pics{
+    width:50%;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.shelter-quiz-title{
+    background: linear-gradient(90deg, #ff0000, #abb92d, #eeb861, #db1e0d, #c0d31b, #ff00aa);
+    background-size: 200%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    word-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.quiz-btn-links_Shelter{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background:transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position:relative;
+    display: inline-block;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    line-height: 52px;
+    perspective: 230px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.quiz-btn-links_Shelter span{
+    background: rgb(0,0,0);
+    background:linear-gradient(180deg, #92cf58 0%, rgba(40, 75, 12, 0.88) 100%);
+    display: block;
+    position:absolute;
+    width: 200px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.quiz-btn-links_Shelter span:nth-child(1) {
+    box-shadow: 
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -20px;
+}
+.quiz-btn-links_Shelter span:nth-child(2) {
+    transform:rotateX(0deg);
+    transform-origin: 50% 48% -26.7px;
+}
+.quiz-btn-links_Shelter:hover span:nth-child(1) {
+    transform: rotateX(0deg);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.quiz-btn-links_Shelter:hover span:nth-child(2) {
+    transform:rotateX(-90deg);
+    color:transparent;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.fire-quiz-title{
+    margin-top: 10%;
+}
+
+
+/* Food Page Styling Starts Here */
+.types-of-snares-container,
+.instructions-for-snare-container,
+.snare-noose-container,
+.trigger-lead-container,
+.snare-engine-container,
+.redirect-flow-of-traffic-container{
     border-radius: .5em;
     border-style: solid;
     width: 100%;

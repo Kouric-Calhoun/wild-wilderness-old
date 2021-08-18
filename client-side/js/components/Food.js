@@ -37,38 +37,44 @@ export default function Food() {
      </article>
      
      <article class = "types-of-snares">
+     <div class ="types-of-snares-container">
      <h2 class = "trigger-spring-snare">The Simplest Snare Design</h2>
      <p>There are literally hundreds of different snare sets and designs–some of which are overly complex.
       If you only learn one snare design in your life.</p>
-     </article>
+      </div>
+      </article>
 
      <article class = "instructions-for-snare">
+     <div class ="instructions-for-snare-container">
      <h2 class = "trigger-snare-components">Trigger Snare Components</h2>
      <p>The Trigger Spring Snare consists of 4 components which can be readily sourced in nearly any survival situation. 
      These components are:</p>
      <br>
     <ol>
-     <li>The Noose (made from some kind of cordage–preferably wire)</li>
-     <li>The 2 Part Trigger (carved from wood)</li>
-     <li>The Leader Line (also made from some kind of cordage)</li>
-     <li>The Engine (typically a bent over sapling)</li>
+     <li>• The Noose (made from some kind of cordage–preferably wire)</li>
+     <li>• The 2 Part Trigger (carved from wood)</li>
+     <li>• The Leader Line (also made from some kind of cordage)</li>
+     <li>• The Engine (typically a bent over sapling)</li>
      </ol>
+     </div>
      </article>
 
      <article class = "snare-noose">
+     <div class ="snare-noose-container">
      <h2 class = "noose"> Step 1: Making the Noose</h2>
      
      <p>The noose does exactly what you think–it nooses the animal.  The most effective noose material is wire.
       here are many different types of wire that will work.  The wire must be flexible.  It cannot be too thick
       or brittle.  When set in the shape of a noose (shown later), it must tighten easily and quickly when pulled upon. 
       Some examples are:</p>
+
       <ol>
-      <li>Twisted copper strands from the inside of an everyday lamp or small appliance power cord</li>
-      <li>Picture hanging wire</li>
-      <li>Stripped wire from car or vehicle electrical systems</li>
-      <li>Headphone wire</li>
-      <li>Wire from a spiral bound note pad</li>
-      <li>Wire reinforced bras</li>
+      <li>• Twisted copper strands from the inside of an everyday lamp or small appliance power cord</li>
+      <li>• Picture hanging wire</li>
+      <li>• Stripped wire from car or vehicle electrical systems</li>
+      <li>• Headphone wire</li>
+      <li>• Wire from a spiral bound note pad</li>
+      <li>• Wire reinforced bras</li>
       </ol>
       <img src='${wires}'></img>
       <br>
@@ -78,9 +84,11 @@ export default function Food() {
        <p>The average length of your noose cord needs to be 18-24 inches for most small game animals. To construct your noose you need to make
         a small loop in one end about the diameter of a pencil.  With wire you can simple make the loop and twist the wire back on itself several times.</p>
       <img src='${PencilLoop}'><img>
-        </article>
+      </div>
+      </article>
 
       <article class = "trigger-lead">
+      <div class = "trigger-lead-container">
       <h2>Step 2: Trigger and Leader Line</h2>
       <p>The trigger consists of 2 parts: the hook and the base.  As you can see in the diagram below, the leader line is tied to the top of the hook
       and the noose is tied to the bottom of the hook.  The engine (typically a bent over sapling) provides tension to the hook which is secured under
@@ -91,9 +99,11 @@ export default function Food() {
       <p>Simply find 2 sticks that branch how you need them and let nature provide your trigger system.  The noose in this photo is made from the fibers of
        a raffia palm tree.  This base is also staked into the ground.</p>
        <img src='${SnareTrigger}'><img>
+       </div>
        </article>
 
        <article class ="snare-engine">
+       <div class ="snare-engine-container">
        <h2>Step 3: The Engine</h2>
        <p>Every environment is different and unique.  There may not be a sapling to bend over along a game trail.  Or, you may be in the middle of a prairie
        or field where there are no trees at all.  If so, you must improvise.  There are many ways to do this.  One way is to simply cut down a green sapling
@@ -102,15 +112,18 @@ export default function Food() {
        from a root as the leader line and a noose made from braided cattail leaves–this is a 100% primitive snare set.</p>
        <img src='${SnareRockCombo}'><img>
        <p>Erected a make-shift tripod to serve as an anchor point for the leader line.</p>
+       </div>
        </article>
 
        <article>
+       <div class ="redirect-flow-of-traffic-container">
        <h2>Step 4: Redirect Flow of Traffic</h2>
        <p>As mentioned earlier, animals will typically follow the path of least resistance to conserve energy.  Use this to your advantage by arranging sticks, 
        logs, dirt, rocks, or other objects in such a way that funnels the animal into your snare noose.
 
        Try not to disturb the area too much if possible.  The more natural you leave it the better.  Animals survive on instinct and will react if something seems 
        out of place. The forest is their home and they know it by heart.  Leave as little trace of your activity as possible.</p>
+       </div>
        </article>
 
        <div class ="skills-main">
@@ -118,23 +131,6 @@ export default function Food() {
         <button class="quiz-btn-links_Food">Quiz</button>
       </div>
       <br><br>
-
-      <h3 class="heading">Add A Comment Below</h3>
-<body>
-  <div class="container">
-    <form>
-      <div class="form-group">
-        <textarea class="form-control status-box" rows="3" placeholder="Enter your comment here..."></textarea>
-      </div>
-    </form>
-    <div class="button-group pull-right">
-      <p class="counter">250</p>
-      <a href="#" class="btn btn-primary">Post</a>
-    </div>
-    <ul class="posts">
-    </ul>
-  </div>
-    
      `
     }
      
