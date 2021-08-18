@@ -240,6 +240,7 @@ function renderingFirePage() {
     app.innerHTML = Fire();
     renderingFireQuizPage();
     survivalQuiz();
+    renderingWaterPage();
   });
 }
 
@@ -250,6 +251,8 @@ function renderingWaterPage() {
     app.innerHTML = Water();
     renderingWaterQuizPage();
     survivalQuiz();
+    renderingFirePage();
+    renderingShelterPage();
   });
 }
 
@@ -259,6 +262,8 @@ function renderingShelterPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Shelter();
     renderingShelterQuizPage();
+    renderingWaterPage();
+    renderingFoodPage();
   });
 }
 
@@ -268,6 +273,8 @@ function renderingFoodPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
+    renderingShelterPage();
+    renderingPredatorsPage();
     survivalQuiz();
   });
 }
@@ -278,6 +285,7 @@ function renderingPredatorsPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Predators();
     renderingPredatorsQuizPage();
+    renderingFoodPage()
   });
 }
 
