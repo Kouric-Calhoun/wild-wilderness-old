@@ -7,17 +7,11 @@
 
 
 .headerImageSize{
+  padding-top: 0;
   background-size: cover;
-  height: 350px;
 }
 
-.header__title {
-  color: black;
-  margin: 0px;
-  padding-bottom: 1rem;
-  text-align: left;
-  font-family: "Rubik", sans-serif;
-}
+
 
 .header__profile_button {
   background: none;
@@ -31,7 +25,7 @@
 .header__profileMenu_backdrop {
   background: rgba(0, 0, 0, 0.5);
   display: none;
-  height: 100vh;
+  /* height: 100vh; */
   position: fixed;
   top: 0;
   width: 100vw;
@@ -96,13 +90,17 @@
   flex-direction: column;
 }
 
-.header__title{
+/* .header__title{
   color: rgb(161, 231, 178);
   position: absolute;
-  margin-top: -250px;
-  margin-left: 500px;
-  transform: translate(-50%, -50%);
+  margin-left: 8%;
+  margin-top: -15%;
   font-size: 5em;
   font-weight: bold;
-  text-shadow: 3px 3px #FAFAD2;
+  text-shadow: 4px 4px rgb(151, 151, 74);
+  font-family: "Rubik", sans-serif;
 }
+ */
+
+ @media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 

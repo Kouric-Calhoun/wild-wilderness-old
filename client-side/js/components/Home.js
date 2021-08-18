@@ -3,9 +3,6 @@ import WildernessWildLogo from "../../images/WildernessWildLogo.jpg";
 export default function Home() {
   return `
   <div id="home-div">
-  <br>
-
-  <br>
   <img class="logo" id="logo" src="${WildernessWildLogo}" alt="wilderness Wild Logo">
   <br>
   <br>

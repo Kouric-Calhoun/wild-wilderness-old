@@ -22,13 +22,12 @@ export default function Header() {
     </div>
     <div class="background-pic">
     <img class="headerImageSize" src="${headerImage}"/>
-    <h1 class="header__title">WILDERNESS WILD</h1>
     <ul class ='nav-list'>
-    <li class ='nav-list__home'>Home</li>
-    <li class ='nav-list__skills'>Skills</li>
-    <li class ='nav-list__regions'>Regions</li>
-    <li class ='nav-list__scenarios'>Search</li>
-    <li class ='nav-list__blog'>Blog</li>
+    <li class ='nav-list__home'>HOME</li>
+    <li class ='nav-list__skills'>SKILLS</li>
+    <li class ='nav-list__regions'>REGIONS</li>
+    <li class ='nav-list__scenarios'>SEARCH</li>
+    <li class ='nav-list__blog'>BLOG</li>
     </ul>
     </div>
 
