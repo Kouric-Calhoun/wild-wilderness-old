@@ -5,6 +5,7 @@ import rainWater from '../../images/rainWater.jpg';
 import waterPurificationPic from '../../images/waterPurificationPic.jpg';
 import snowWater from '../../images/snowWater.jpg';
 import waterDistillationPic from '../../images/waterDistillationPic.jpg';
+import waterTreatingPic from '../../images/waterTreatingPic.jpg';
 
 export default function Water(){
     return`
@@ -14,7 +15,7 @@ export default function Water(){
     <article class = "water-header">
     <div class="water-summary-container">
     <h1 class = "water-title">How to locate and purify water in the wild</h1>
-    <img class ="water-hands-pic" src = '${waterHands}' alt = "pic of leaf dripping water into a glass">
+    <img class ="water-pics" src = '${waterHands}' alt = "pic of leaf dripping water into a glass">
         <p class="water-text">In any survival scenario, water is by far your most important resource. You can easily go a day without food,
     and usually don’t need shelter right away, unless you’re in freezing conditions. Not having any water for 24 hours,
     however, while survivable, depletes both your physical and mental strength, making it more difficult to perform the 
@@ -27,6 +28,7 @@ export default function Water(){
     <article class = "water-tips">
     <div class="water-tips-container">
     <h2 class = "water-tips-title-1">Tips for treating water</h2>
+    <img class ="water-pics" src = '${waterTreatingPic}' alt="pic of a river">
     <ul class = "water-treating-list">
     <li>• Use a cotton cloth or coffee filter to strain out sediment before you filter/purify.</li>
     <li>• Greenish water contains algae that harbor microorganisms. Algae can clog water filters and reduce the effectiveness of chemicals.</li>
@@ -41,7 +43,7 @@ export default function Water(){
 
     <div class="water-lakes-container">
     <h2 class = "water-tips-title-2">Lakes, Streams, and Rivers</h2>
-    <img src = '${waterRivers}' alt="pic of a river">
+    <img class ="water-pics" src = '${waterRivers}' alt="pic of a river">
         <p class="water-text">These are your most obvious sources of water in the wild. Clear, flowing water is your best option, as the movement doesn’t 
     allow bacteria to fester. This means that small streams should be what you look for first. Rivers are acceptable, but larger
     ones often have a lot of pollution from upstream. Lakes and ponds are okay, but they’re stagnant, meaning there’s an increased
@@ -62,7 +64,7 @@ export default function Water(){
 
     <div class="water-boiling-container">
     <h2 class = "water-boiling-title">Boiling</h2>
-    <img src ='${waterBoiling}' alt = "pic of boiling water by a fire">
+    <img class ="water-pics" src ='${waterBoiling}' alt = "pic of boiling water by a fire">
         <p class="water-text">Boiling water is one of the best wilderness water purification methods. Boiling clear water is the most efficient way to make it 
     safe to drink. Most bacteria and microorganisms can’t survive in boiling water, and they will likely die off during the heating process.</p>
         <p class="water-text">Only boil clear water. If you boil water contaminated with physical materials like dirt and leaves, you could still end up getting sick 
@@ -74,7 +76,7 @@ export default function Water(){
 
     <div class="water-distillation-container">
     <h2 class = "water-distillation-title">Distillation</h2>
-    <img src ='${waterDistillationPic}' alt = "pic of pouring water by a fire">
+    <img class ="water-pics" src ='${waterDistillationPic}' alt = "pic of pouring water by a fire">
         <p class="water-text">This method of purifying water in the wild is particularly useful in tropical settings or Pacific regions. Often, when you find fresh water
     in a tropical setting, it may contain high levels of sodium and minerals. Drinking this water may cause you to become even more dehydrated
     if you aren’t careful.</p>
@@ -91,7 +93,7 @@ export default function Water(){
 
     <div class="water-rain-container">
     <h2 class = "collect-rainwater-title">Collect Rainwater</h2>
-    <img class ="rain-water-pic" src= '${rainWater}' alt="pic of rain water">
+    <img class ="water-pics" class ="rain-water-pic" src= '${rainWater}' alt="pic of rain water">
     <p class="water-text">There are two primary methods of collecting rainwater. The first is to use any and all containers you might have on you. The second is to 
     tie the corners of a poncho or tarp around trees a few feet off the ground, place a small rock in the center to create a depression, and let 
     the water collect.</p>
@@ -99,14 +101,14 @@ export default function Water(){
 
     <div class="water-snow-container">
     <h2 class = "collect-snow-title">Collect Snow</h2>
-    <img class ="snow-water-pic" src= '${snowWater}' alt="pic of snow in the woods">
+    <img class ="water-pics" src= '${snowWater}' alt="pic of snow in the woods">
     <p class="water-text">Collect ice or snow and wrap it inside a t-shirt or large bandana. Use sturdy branches to suspend the snow above a fire. As the snow or ice 
     begins to melt it will start to drip through the fabric. Use a large cup or container to catch the falling water.</p>
     </div>
 
     <div class="water-tablets-container">
     <h2 class = "water-tablets-title">Water purification tablets/chemicals</h2>
-    <img class ="water-purification-pic" src= '${waterPurificationPic}' alt="pic of bucket of water">
+    <img class ="water-pics" src= '${waterPurificationPic}' alt="pic of bucket of water">
     <p class="water-text">Water purification tablets are meant to be beneficial to anyone that does not have access to portable and clean water. These types of tablets 
     and chemicals include products like Aquatabs, Iodine, and Katadyn MicroPur MP1 Chlorine Dioxide Tablets. They have become a popular choice for 
     on-the-go disinfection thanks to their portability and simplicity: just filter cloudy/turbid water through a filter or cloth, drop a tablet 
