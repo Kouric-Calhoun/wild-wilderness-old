@@ -55,7 +55,7 @@ p{
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
    
 }
-
+.water-quiz-title,
 .fire-quiz-title{
     background: linear-gradient(90deg, #ff0000, #abb92d, #eeb861, #db1e0d, #c0d31b, #ff00aa);
     background-size: 200%;
@@ -77,7 +77,7 @@ p{
         background-position: 400%;
     }
 }
-
+.quiz-btn-links_Water,
 .quiz-btn-links_Fire{
     width: 200px;
     height: 50px;
@@ -101,6 +101,7 @@ p{
     4px 4px 5px 0px rgba(0,0,0,.1);
 }
 
+.quiz-btn-links_Water span,
 .quiz-btn-links_Fire span{
     background: rgb(0,0,0);
     background:linear-gradient(180deg, #92cf58 0%, rgba(40, 75, 12, 0.88) 100%);
@@ -119,6 +120,7 @@ p{
     4px 4px 5px 0px rgba(0,0,0,.1);
 }
 
+.quiz-btn-links_Water span:nth-child(1),
 .quiz-btn-links_Fire span:nth-child(1) {
     box-shadow: 
     -7px -7px 20px 0px #fff9,
@@ -128,16 +130,19 @@ p{
     transform: rotateX(90deg);
     transform-origin: 50% 50% -20px;
 }
+.quiz-btn-links_Water span:nth-child(2),
 .quiz-btn-links_Fire span:nth-child(2) {
     transform:rotateX(0deg);
     transform-origin: 50% 48% -26.7px;
 }
+.quiz-btn-links_Water:hover span:nth-child(1),
 .quiz-btn-links_Fire:hover span:nth-child(1) {
     transform: rotateX(0deg);
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1);
 }
+.quiz-btn-links_Water:hover span:nth-child(2),
 .quiz-btn-links_Fire:hover span:nth-child(2) {
     transform:rotateX(-90deg);
     color:transparent;
@@ -145,7 +150,7 @@ p{
     7px 7px 20px 0px rgba(0,0,0,.1),
     4px 4px 5px 0px rgba(0,0,0,.1);
 }
-
+.water-quiz-title,
 .fire-quiz-title{
     margin-top: 10%;
 }
@@ -163,13 +168,28 @@ p{
 .water-distillation-container,
 .water-rain-container,
 .water-snow-container,
-.water-tablets-container{
+.water-tablets-container,
+.water-lakes-container,
+.water-summary-container{
     border-radius: .5em;
     border-style: solid;
     width: 100%;
     height: 50%;
     margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
 }
+
+.water-text,
+.water-treating-list{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+}
+
+.water-methods-title{
+    font-weight: bold;
+}
+
  
 /* Shelter Page Styling Begins Here */
 .shelter-prep-container,
