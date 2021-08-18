@@ -90,18 +90,6 @@
   flex-direction: column;
 }
 
-/* .header__title{
-  color: rgb(161, 231, 178);
-  position: absolute;
-  margin-left: 8%;
-  margin-top: -15%;
-  font-size: 5em;
-  font-weight: bold;
-  text-shadow: 4px 4px rgb(151, 151, 74);
-  font-family: "Rubik", sans-serif;
-}
- */
-
  @media all and (min-width: 640px) { 
   body {font-size:1rem;} } 
 
