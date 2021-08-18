@@ -115,7 +115,9 @@ export default function Water(){
 
     <div class ="skills-main">
         <h3>Take a Quiz on how to find Water</h3>
+        <div class="skills-btn-links_Fire"><< Fire</div>
         <button class="quiz-btn-links_Water">Quiz</button>
+        <div class="skills-btn-links_Shelter">Shelter >></div>
       </div>
 
       </div>
