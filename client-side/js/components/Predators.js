@@ -215,7 +215,8 @@ export default function Predators() {
 
       <div class ="skills-main">
        <h3>Take a Quiz on Predators</h3>
-      <div class="skills-btn-links_Food"><< Food</div>
       <button class="quiz-btn-links_Predators">Quiz</button>
+      <br>
+      <div class="skills-btn-links_Food"><< Food</div>
     `;
 }
