@@ -212,5 +212,10 @@ export default function Predators() {
     tiniest tick can be a treat to your life. Avoid these creatures as best as possible. Defend yourself if there are no other options! </p>
     </article>
       </div>
+
+      <div class ="skills-main">
+       <h3>Take a Quiz on Predators</h3>
+      <div class="skills-btn-links_Food"><< Food</div>
+      <button class="quiz-btn-links_Predators">Quiz</button>
     `;
 }

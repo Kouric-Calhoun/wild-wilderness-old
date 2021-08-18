@@ -106,7 +106,9 @@ export default function Shelter() {
 
    <div class ="skills-main">
         <h3>Take a Quiz on how to Find Shelter</h3>
+        <div class="skills-btn-links_Water"><< Water</div>
         <button class="quiz-btn-links_Shelter">Quiz</button>
+        <div class="skills-btn-links_Food">Food >></div>
         </div>
 
    </div>
