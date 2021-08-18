@@ -14,8 +14,11 @@ export default function Fire() {
    
     <div class="fire-container">
     <article class = "fire-header">
+    
+
+    <div class="fire-summary-container">
     <h1 class = "fire-title">How to Safely Build a Fire</h1>
-    <img class="fire-pic-1" src='${campfire}' alt = "pic of a campfire">
+    <img class="fire-pics" src='${campfire}' alt = "pic of a campfire">
         <p class="fire-text">One of the most important skills to have when you are braving the wilderness is knowing how to build a fire.
     It is also important to know how to safely build this fire and how to tend to it so that you do not accidentally 
    start a wildfire. It is important that you know how to build a fire in the wilderness so that you can keep yourself
@@ -23,15 +26,15 @@ export default function Fire() {
    illness.There is always the possibility that temperatures might drop or that it could rain, at which point you will
     most likely be seeking a source of warmth. The skill of knowing how to build a fire will keep you warm and safe, 
    as well as those around you.</p>
+   </div>
     </article>
 
     <article class="fire-tips">
 
-    
     <h1 class = "fire-tips-title">Tips to know before the fire:</h1>
     <div class ="fire-tips-container">
     <h2 class = "firestarter-title">Find your firestarter</h2>
-    <img src='${fireTipsPic}' alt = "pic of a campfire">
+    <img class="fire-pics" src='${fireTipsPic}' alt = "pic of a campfire">
         <p class="fire-text">A good fire begins with a quality firestarter. In some cases, that can mean something as simple as a store-bought 
     starter or lighter fluid-doused twigs. But if you ever find yourself with no access to such tools, there are plenty 
     of other options you can use to get some flames burning. A favorite is birch bark and you can pack a bag or two 
@@ -55,7 +58,7 @@ export default function Fire() {
 
     <div class="fire-breathe-container">
     <h2 class = "fire-breathe-title">Give your fire room to breathe</h2>
-    <img src = '${fireBuilding}' alt = "pic of building a fire">
+    <img class="fire-pics" src = '${fireBuilding}' alt = "pic of building a fire">
         <p class="fire-text">You need oxygen, fuel, and a sustained ignition source to have a fire. These three factors form a "fire triangle". 
     If you neglect one of these things, your triangle will collapse. Usually, fuel means wood and an ignition
     source is a match or lighter. The level of oxygen will depend on how the wood is arranged—if you stack it well, it
@@ -72,7 +75,7 @@ export default function Fire() {
 
     <div class="fire-rain-container">
     <h2 class = "fire-rain-title">Setting a fire in the rain</h2>
-    <img src='${fireRainPic}' alt = "pic of a campfire in the rain">
+    <img class="fire-pics" src='${fireRainPic}' alt = "pic of a campfire in the rain">
         <p class="fire-text">Building a fire when everything’s perfectly dry is one thing, but in cold and wet conditions it becomes exponentially 
     more difficult. It can, however, still be done. Start by looking for dry wood and kindling at the bases of trees 
     where branches and foliage may have protected it from rain. In an emergency, you can harvest small branches from 
@@ -88,13 +91,13 @@ export default function Fire() {
     </div>
     </article>
     
-    <div class = "fire-methods>
     
-    <h1 class= "fire-methods-title">Methods for starting a fire</h1>
+    
+    <h1 class= "fire-methods-title">Methods for starting a fire:</h1>
 
     <div class="fire-drill-container">
     <h2 class = "hand-drill-title">The Hand Drill</h2>
-    <img src='${fireHandDrill}' alt = "pic of a someone starting a fire">
+    <img class="fire-pics" src='${fireHandDrill}' alt = "pic of a someone starting a fire">
     <p class="fire-text">If you’re wondering how to start a fire with sticks, you’ll want to try the hand drill. The hand drill strategy is a 
     primitive method and the hardest to do. Shaft revolution and descending weight are two of the most imperative prerequisites 
     for starting a hand drill fire. This method will require wood, resolute hands, and gritty determination.</p>
@@ -112,10 +115,11 @@ export default function Fire() {
         to your nest of tinder. Slowly blow it to get yourself fire.</li>
     </ul>
     </div>
+    
 
     <div class="fire-plow-container">
     <h2 class = "fire-plow-title">The Fire Plow</h2>
-    <img src='${firePlow}' alt = "pic of a someone starting a fire by plow method">
+    <img class="fire-pics" src='${firePlow}' alt = "pic of a someone starting a fire by plow method">
     <p class="fire-text">The fire plow is another common method using minimal tools. All you’ll need is a softer wood for the plow board and a harder wood
     for the plow. Willow and poplar make good plow board material.</p>
     
@@ -133,7 +137,7 @@ export default function Fire() {
 
     <div class="fire-bow-container">
      <h2 class = "fire-bow-drill-title">The Bow Drill</h2>
-     <img src = '${fireBowDrill}' alt = "pic of a fire bow drill">
+     <img class="fire-pics" src = '${fireBowDrill}' alt = "pic of a fire bow drill">
      <p class="fire-text">The bow drill is presumably the best contact-based technique to use because it’s less demanding to keep up the rate and weight
       required to create friction that can produce fire. However, it does require the most materials. 
       The items you’ll need for this method are: </p>
@@ -163,7 +167,7 @@ export default function Fire() {
 
     <div class="fire-stone-container">
     <h2 class = "fire-stone-title">Stone and Steel</h2>
-    <img src = '${fireStoneSteel}' alt = "pic of starting a fire with stone and steel">
+    <img class="fire-pics" src = '${fireStoneSteel}' alt = "pic of starting a fire with stone and steel">
         <p class="fire-text">Here’s how to start a fire without matches, lighters, or sticks! Using a flint is a traditional standby and is presumably
     a standout amongst the most solid and simple approaches to start an open-air fire. You might even see folks using this to start
     a fire at an ordinary campground. It’s generally a smart idea to carry a steel and flint with you on an outdoors trip. It is 
@@ -180,7 +184,7 @@ export default function Fire() {
 
       <div class="fire-batteries-container">
       <h2 class = "fire-batteries-title">Batteries and Steel Wool</h2>
-      <img src = '${fireBattery}' alt = "pic of starting a fire with a battery">
+      <img class="fire-pics" src = '${fireBattery}' alt = "pic of starting a fire with a battery">
       <p class="fire-text">With this strategy, all you need are a few batteries and steel wool.</p>
 
       <ol class = "fire-battery-list">
@@ -193,7 +197,7 @@ export default function Fire() {
 
       <div class="fire-lenses-container">
       <h2 class = "fire-lenses-title">Traditional Lenses</h2>
-      <img src = '${fireLense}' alt = "pic of starting a fire with a lense">
+      <img class="fire-pics" src = '${fireLense}' alt = "pic of starting a fire with a lense">
       <p class="fire-text">With this approach, all you need is some kind lens to center daylight on a particular spot. A magnifying glass or
       binocular lens both work.</p>
 
@@ -205,13 +209,14 @@ export default function Fire() {
         tinder starts smoking, gently blow to get the flame going.</li>
       </ol>
       </div>
+      
 
       <div class ="skills-main">
         <h3 class="fire-quiz-title">Take a Quiz on how to build a Fire</h3>
-        <button class="quiz-btn-links_Fire">Quiz</button>
+        <button class="quiz-btn-links_Fire"><span>Click Here!</span><span>Quiz</span></button>
       </div>
 
-    </div>
+    
     </article>
 
     </div>
