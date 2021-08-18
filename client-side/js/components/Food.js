@@ -133,8 +133,9 @@ export default function Food() {
 
        <div class ="skills-main">
        <h3 class="food-quiz-title">Take a Quiz on how to Find Food</h3>
-      <div class="skills-btn-links_Shelter"><< Shelter</div>
       <button class="quiz-btn-links_Food"><span>Click Here!</span><span>Quiz</span></button>
+      <br>
+      <div class="skills-btn-links_Shelter"><< Shelter</div>
       <div class="skills-btn-links_Predators">Predators >></div>
       </div>
       <br><br>
