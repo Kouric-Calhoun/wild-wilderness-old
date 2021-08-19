@@ -27,6 +27,8 @@ form button {
   background: #f7fffe;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 5%;
+  margin-bottom: 2%;
 }
 form button:hover {
   background: #195237;
@@ -68,6 +70,8 @@ form button:hover {
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  border-radius: 5%;
+  margin-right: 3%;
 }
 .complete-btn {
   background: rgb(11, 212, 162);
@@ -123,4 +127,17 @@ select {
   background: #195237;
   cursor: pointer;
   pointer-events: none;
+}
+
+.checklist{
+  border-style: solid;
+  border-radius: .5em;
+  background-color: rgb(155, 231, 174);
+  width: 80%;
+  
+}
+
+.todo-input{
+  margin-right: 3%;
+  
 }
