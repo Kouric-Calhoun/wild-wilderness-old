@@ -235,18 +235,25 @@ function footerHiring() {
 
 function renderingFirePage() {
   const fireBtnElm = document.querySelector(".skills-btn-links_Fire");
-  fireBtnElm.addEventListener("click", () => {
+  fireBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Fire();
     renderingFireQuizPage();
     survivalQuiz();
     renderingWaterPage();
+    renderingPredatorsPage();
   });
 }
 
 function renderingWaterPage() {
   const waterBtnElm = document.querySelector(".skills-btn-links_Water");
-  waterBtnElm.addEventListener("click", () => {
+  waterBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Water();
     renderingWaterQuizPage();
@@ -258,7 +265,10 @@ function renderingWaterPage() {
 
 function renderingShelterPage() {
   const shelterBtnElm = document.querySelector(".skills-btn-links_Shelter");
-  shelterBtnElm.addEventListener("click", () => {
+  shelterBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Shelter();
     renderingShelterQuizPage();
@@ -269,7 +279,10 @@ function renderingShelterPage() {
 
 function renderingFoodPage() {
   const foodBtnElm = document.querySelector(".skills-btn-links_Food");
-  foodBtnElm.addEventListener("click", () => {
+  foodBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
@@ -281,7 +294,10 @@ function renderingFoodPage() {
 
 function renderingPredatorsPage() {
   const predatorsBtnElm = document.querySelector(".skills-btn-links_Predators");
-  predatorsBtnElm.addEventListener("click", () => {
+  predatorsBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Predators();
     renderingPredatorsQuizPage();
@@ -418,3 +434,5 @@ function script() {
   script.src = "https://platform.twitter.com/widgets.js";
   document.head.appendChild(script);
 }
+
+
