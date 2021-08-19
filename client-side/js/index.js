@@ -292,6 +292,7 @@ function renderingPredatorsPage() {
     app.innerHTML = Predators();
     renderingPredatorsQuizPage();
     renderingFoodPage()
+    renderingFirePage();
   });
 }
 
@@ -339,10 +340,15 @@ function renderingPredatorsQuizPage() {
 
 function renderingWestPage() {
   const westBtnElm = document.querySelector(".west");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = West();
     startGameWest();
+    renderingMidwestPage();
+    renderingWestAlaskaHawaiiPage();
   });
 }
 
@@ -357,46 +363,71 @@ function renderingGearPage() {
 
 function renderingMidwestPage() {
   const westBtnElm = document.querySelector(".midwest");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Midwest();
     startGameMidWest();
+    renderingWestPage();
+    renderingNortheastPage();
   });
 }
 
 function renderingNortheastPage() {
   const westBtnElm = document.querySelector(".northeast");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Northeast();
     startGameNorthEast();
+    renderingMidwestPage();
+    renderingSoutheastPage();
   });
 }
 
 function renderingSoutheastPage() {
   const westBtnElm = document.querySelector(".southeast");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Southeast();
     startGameSouthEast();
+    renderingNortheastPage();
+    renderingSouthwestPage();
   });
 }
 
 function renderingSouthwestPage() {
   const westBtnElm = document.querySelector(".southwest");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Southwest();
     startGameSouthWest();
+    renderingWestAlaskaHawaiiPage();
+    renderingSoutheastPage();
   });
 }
 
 function renderingWestAlaskaHawaiiPage() {
   const westBtnElm = document.querySelector(".westalaskahawaii");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = WestAlaskaHawaii();
     startGameWestAlaskaHawaii();
+    renderingSouthwestPage();
+    renderingWestPage();
   });
 }
 
