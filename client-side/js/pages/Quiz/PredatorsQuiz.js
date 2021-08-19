@@ -12,8 +12,8 @@ export default function PredatorsQuiz() {
 
     <div class="question-container-predators">
     <h3 class="question-predators">Question 2: Are insects dangerous?</h3>
-    <input type="radio" name="question1">Yes<br>
-    <input type="radio" name="question1"  id="correct2">No<br>
+    <input type="radio" name="question2">Yes<br>
+    <input type="radio" name="question2"  id="correct2">No<br>
     </div>
 
     <div class="question-container-predators">
