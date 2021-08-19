@@ -1,37 +1,37 @@
 export default function PredatorsQuiz() {
 
     return `
-    <center><h1 class ="quiz-name">Predator Quiz</h1></center>
+    <center><h1 class ="quiz-name-predators">Predator Quiz</h1></center>
     <div class ="predator-quiz">
 
-    <div class="question-container-one">
-    <h3 class="question">Question 1: Should try to aggravate a predatory animal? ?</h3>
+    <div class="question-container-predators">
+    <h3 class="question-predators">Question 1: Should try to aggravate a predatory animal?</h3>
     <input type="radio" name="question1">Yes<br>
     <input type="radio" name="question1"  id="correct1">No<br>
     </div>
 
-    <div class="question-container-two">
-    <h3 class="question">Question 2: Are insects dangerous?r</h3>
+    <div class="question-container-predators">
+    <h3 class="question-predators">Question 2: Are insects dangerous?</h3>
     <input type="radio" name="question1">Yes<br>
     <input type="radio" name="question1"  id="correct1">No<br>
     </div>
 
-    <div class="question-container-three">
-    <h3 class="question">Question 3: Can you out run a Mountain Lion?</h3>
+    <div class="question-container-predators">
+    <h3 class="question-predators">Question 3: Can you out run a Mountain Lion?</h3>
     <input type="radio" name="question3" >Yep!<br>
     <input type="radio" name="question3" id="correct3" >Nope!<br>
     <input type="radio" name="question3" >I didn't read the article...<br>
     </div>
 
-    <div class="question-container-one">
-    <h3 class="question">Question 4: Did you read the article?</h3>
+    <div class="question-container-predators">
+    <h3 class="question-predators">Question 4: Did you read the article?</h3>
     <input type="radio" name="question4" >No<br>
     <input type="radio" name="question4" id="correct4">Yes<br>
     <input type="radio" name="question4" >Maybe<br>
     </div>
 
-    <div class="question-container-two">
-    <h3 class="question">Question 5:Wwhat are some things to be aware of when watching for animals in the wild?</h3>
+    <div class="question-container-predators">
+    <h3 class="question-predators">Question 5:Wwhat are some things to be aware of when watching for animals in the wild?</h3>
     <input type="radio" name="question5" >Animal Tracks<br>
     <input type="radio" name="question5" >Animal Droppings<br>
     <input type="radio" name="question5" >Unfamiliar Sounds <br>

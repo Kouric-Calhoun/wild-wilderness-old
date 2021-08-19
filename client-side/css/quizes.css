@@ -1,0 +1,103 @@
+
+.quiz-name-fire{
+    color:red;
+}
+
+.quiz-name-water{
+    color:rgb(15, 111, 155);
+   
+}
+
+.quiz-name-food{
+    color:rgb(151, 139, 67);
+}
+
+.quiz-name-predators{
+    color:orange;
+}
+
+.quiz-name-shelter{
+    color:rgb(35, 85, 35);
+}
+
+.question-shelter{
+    border-style: solid;
+    border-radius: .5em;
+    background-color: rgb(155, 231, 174);
+}
+
+.question-predators{
+    border-style: solid;
+    border-radius: .5em;
+    background-color: rgb(207, 147, 123);
+}
+
+.question-water{
+    border-style: solid;
+    border-radius: .5em;
+    background-color: rgb(164, 235, 235);
+}
+
+.question-food{
+    border-style: solid;
+    border-radius: .5em;
+    background-color: rgb(245, 230, 201);
+}
+
+.question-fire{
+    border-style: solid;
+    border-radius: .5em;
+    background-color: rgb(226, 145, 98);
+}
+
+.question-container-fire{
+    border-radius: .5em;
+    border-style: solid;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    background-color: rgb(245, 84, 35);
+}
+
+.question-container-water{
+    border-radius: .5em;
+    border-style: solid;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    background-color: rgb(36, 226, 226);
+}
+
+.question-container-shelter{
+    border-radius: .5em;
+    border-style: solid;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    background-color: rgb(98, 199, 120);
+}
+
+.question-container-food{
+    border-radius: .5em;
+    border-style: solid;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    background-color: rgb(230, 197, 122);
+}
+
+.question-container-predators{
+    border-radius: .5em;
+    border-style: solid;
+    width: 80%;
+    height: 50%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    background-color: rgb(173, 158, 147);
+}
+
+

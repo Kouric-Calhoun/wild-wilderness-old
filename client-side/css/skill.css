@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
 /* Fire page styling begins here */
 p{
     text-align: left;
@@ -56,7 +58,7 @@ p{
     background: linear-gradient(90deg, #ff0000, #abb92d, #eeb861, #db1e0d, #c0d31b, #ff00aa);
     background-size: 200%;
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: "Rubik", sans-serif;
     letter-spacing: 3px;
     font-weight: 600;
     word-spacing: 3px;
