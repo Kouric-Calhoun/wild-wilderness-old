@@ -34,15 +34,16 @@ import startGameSouthEast from "./pages/Game/GameSouthEast.js";
 import startGameNorthEast from "./pages/Game/GameNorthEast.js";
 import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 import NationalParkSearch from "./pages/NationalParkSearch.js";
+import Checklist from "./components/Checklist.js";
+import wireUpChecklist from "./pages/Checklist-funtion.js";
 import Checklist from "./pages/Checklist.js";
-
-
 
 buildPage();
 
 function buildPage() {
   header();
   footer();
+  navChecklist();
   navHome();
   navSkills();
   navScenarios();
@@ -53,7 +54,6 @@ function buildPage() {
   survivalQuiz();
   footerDonate();
   footerHiring();
-  // footerEvent();
   navAbout();
   navContact();
   Checklist();
@@ -112,7 +112,6 @@ function navRegions() {
     renderingSoutheastPage();
     renderingSouthwestPage();
     renderingWestAlaskaHawaiiPage();
-
   });
 }
 
@@ -139,6 +138,15 @@ function navContact() {
   contactElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Contact();
+  });
+}
+
+function navChecklist() {
+  const contactElem = document.querySelector(".header__profile_checklist");
+  contactElem.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Checklist();
+    wireUpChecklist();
   });
 }
 
@@ -173,7 +181,6 @@ function footerHiring() {
     app.innerHTML = Hiring();
   });
 }
-
 
 function survivalQuiz() {
   const app = document.querySelector("#app");
@@ -214,14 +221,6 @@ function survivalQuiz() {
     }
   });
 }
-
-// function footerEvent() {
-//   const footerEventElm = document.querySelector(".footer__event");
-//   footerEventElm.addEventListener("click", () => {
-//     const app = document.querySelector("#app");
-//     app.innerHTML = Event();
-//   });
-// }
 
 function renderingFirePage() {
   const fireBtnElm = document.querySelector(".skills-btn-links_Fire");
@@ -352,7 +351,6 @@ function renderingWestPage() {
   });
 }
 
-
 function renderingGearPage() {
   const gearBtnElm = document.querySelector(".home-btn-links_Gear");
   gearBtnElm.addEventListener("click", () => {
@@ -455,5 +453,3 @@ function script() {
   script.src = "https://platform.twitter.com/widgets.js";
   document.head.appendChild(script);
 }
-
-
