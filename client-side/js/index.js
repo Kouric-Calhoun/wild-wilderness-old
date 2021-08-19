@@ -7,7 +7,6 @@ import Regions from "./components/Regions";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Quiz from "./components/Quiz";
 import Donate from "./pages/Donate";
 import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
@@ -51,11 +50,10 @@ function buildPage() {
   navBlog();
   footerAbout();
   footerContact();
-  quizPage();
   survivalQuiz();
   footerDonate();
-  footerEvent();
   footerHiring();
+  // footerEvent();
   navAbout();
   navContact();
   Checklist();
@@ -64,7 +62,6 @@ function buildPage() {
 function header() {
   const headerElement = document.querySelector(".header");
   headerElement.innerHTML = Header();
-  Checklist();
 }
 
 function footer() {
@@ -161,13 +158,22 @@ function footerContact() {
   });
 }
 
-function quizPage() {
-  const quizElem = document.querySelector(".nav-list__quiz");
-  quizElem.addEventListener("click", () => {
+function footerDonate() {
+  const footerDonateElm = document.querySelector(".footer__donate");
+  footerDonateElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
-    app.innerHTML = Quiz();
+    app.innerHTML = Donate();
   });
 }
+
+function footerHiring() {
+  const footerHiringElm = document.querySelector(".footer__hiring");
+  footerHiringElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Hiring();
+  });
+}
+
 
 function survivalQuiz() {
   const app = document.querySelector("#app");
@@ -209,29 +215,13 @@ function survivalQuiz() {
   });
 }
 
-function footerDonate() {
-  const footerDonateElm = document.querySelector(".footer__donate");
-  footerDonateElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Donate();
-  });
-}
-
-function footerEvent() {
-  const footerEventElm = document.querySelector(".footer__event");
-  footerEventElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Event();
-  });
-}
-
-function footerHiring() {
-  const footerHiringElm = document.querySelector(".footer__hiring");
-  footerHiringElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Hiring();
-  });
-}
+// function footerEvent() {
+//   const footerEventElm = document.querySelector(".footer__event");
+//   footerEventElm.addEventListener("click", () => {
+//     const app = document.querySelector("#app");
+//     app.innerHTML = Event();
+//   });
+// }
 
 function renderingFirePage() {
   const fireBtnElm = document.querySelector(".skills-btn-links_Fire");
