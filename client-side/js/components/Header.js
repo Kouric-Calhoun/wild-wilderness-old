@@ -13,6 +13,8 @@ export default function Header() {
           </li>
           <li class="footer__about">About Us</li>
           <li class="footer__contact">Contact Us</li>
+          <li class="footer__donate">Donate</li>
+          <li class="footer__hiring">We Are Hiring</li>
           <li class="header__profile_faq">FAQ</li>
           <li class="header__profile_terms">Terms & Conditions</li>
           <li class="header__profile_checklist">Checklist</li>

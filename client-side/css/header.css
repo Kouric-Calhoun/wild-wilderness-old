@@ -59,9 +59,12 @@
 .header__profile_portal,
 .footer__about,
 .footer__contact,
+.footer__donate,
+.footer__hiring,
 .header__profile_faq,
 .header__profile_terms,
-.header__profile_privacy {
+.header__profile_privacy,
+.header__profile_checklist {
   border-bottom: #303c6c solid 1px;
   cursor: pointer;
   margin-left: 1rem;
