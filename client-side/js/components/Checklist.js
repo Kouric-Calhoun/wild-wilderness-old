@@ -2,7 +2,7 @@ export default function Checklist() {
   return `
      <body class=".header__profile_checklist">
     <header class="checklist__todo">
-      <h1 class="checklist__todo">Survivor Gear CheckList</h1>
+      <h1 class="checklist__todo"> To Do List</h1>
     </header>
     <form class="checklist">
       <input type="text" class="todo-input" />
