@@ -215,6 +215,7 @@ export default function Fire() {
         <h3 class="fire-quiz-title">Take a Quiz on how to build a Fire</h3>
         <button class="quiz-btn-links_Fire"><span>Click Here!</span><span>Quiz</span></button>
         <br>
+        <div class="skills-btn-links_Predators"><< Predators</div>
         <div class="skills-btn-links_Water">Water >></div>
       </div>
 
