@@ -34,7 +34,7 @@ function showOption(option) {
 function selectOption(option) {
   const nextTextNodeId = option.nextText;
   if (nextTextNodeId <= 0) {
-    return  startGameNorthEast();
+    return startGameNorthEast();
   }
   state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
@@ -43,62 +43,62 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: "You are driving back from a long weekend in Vegas with your buddies and the car breaks down. In your left hand you have your phone (Flashlight) what do you take in the right?",
+    text: "You are hunting in a midwest forest and you are about to go hunting, you have room for one more item in your bag, which will you take? ",
     options: [
       {
-        text: "Take water",
-        setState: { water: true },
+        text: "Take a extra knife",
+        setState: { knife: true },
         nextText: 2,
       },
       {
-        text: "Take nothing",
+        text: "Take some more food",
         nextText: 2,
       },
     ],
   },
   {
     id: 2,
-    text: "You venture forth in search for help and someone (We will call him a merchant) offers you a deal, he wants your water",
+    text: "As you travel you notice you have a hole in your bag and you lost all of your supplies except 3 items, Which one do you take?",
     options: [
       {
-        text: "Trade the water for a lighter",
-        requiredState: (currentState) => currentState.water,
-        setState: { water: false, lighter: true },
+        text: "Take your food",
+        requiredState: (currentState) => currentState.food,
+        setState: { knife: false, food: true },
         nextText: 3,
       },
       {
-        text: "Trade the water for a map (Why would you need a map when you have a phone....)",
+        text: "Take your water jug",
         requiredState: (currentState) => currentState.water,
-        setState: { water: false, map: true },
+        setState: { knife: false, water: true },
         nextText: 3,
       },
       {
-        text: "Ignore the merchant",
+        text: "Take your knife and leave the rest",
         nextText: 3,
       },
     ],
   },
   {
     id: 3,
-    text: "After leaving the merchant you start to feel sleepy and stumble upon a small run down town next to a dangerous looking mansion.",
+    text: "As you travel you come upon a path, which direction do you take?",
     options: [
       {
-        text: "Explore the mansion",
+        text: "Go to the right",
         nextText: 4,
       },
       {
-        text: "Find a room to sleep at in the town",
+        text: "Go to the left",
         nextText: 5,
       },
       {
-        text: "Sleep in a alley",
+        text: "Keep straight on the path you are already on",
         nextText: 6,
       },
     ],
   },
   {
     id: 4,
-    text: "You are so tired that you fall asleep while exploring the mansion and are killed by a snake in your sleep.",
+    text: "You hit a dead end and decided to wait for someone to come find you, your game is over.",
     options: [
       {
         text: "Restart",
@@ -108,7 +108,7 @@ const textNodes = [
   },
   {
     id: 5,
-    text: "Without any money to buy a room you break into a hotel and fall asleep. After a few hours of sleep the owner of the hotel finds you and calls the police. You are going to jail.",
+    text: "You go left and end up getting yourself lost, You are not ready to be a huntsman, try again.",
     options: [
       {
         text: "Restart",
@@ -118,42 +118,42 @@ const textNodes = [
   },
   {
     id: 6,
-    text: "You wake up well rested and full of energy ready to explore the nearby mansion.",
+    text: "You keep straight and find a river, you can swim across but you are not sure where it will lead",
     options: [
       {
-        text: "Explore the castle",
+        text: "Swim in the river",
         nextText: 7,
       },
     ],
   },
   {
     id: 7,
-    text: "You knock on the door and a thirsty looking child answers....",
+    text: "You emerge from the river and you see a angry bear, you have no choice but to defend yourself",
     options: [
       {
-        text: "Ignore the boy, and walk past him.",
+        text: "Ignore the bear, and hope he does not see you",
         nextText: 8,
       },
       {
-        text: "Give the boy your lighter",
-        requiredState: (currentState) => currentState.lighter,
+        text: "Give him your food",
+        requiredState: (currentState) => currentState.food,
         nextText: 9,
       },
       {
-        text: "Offer him your map",
-        requiredState: (currentState) => currentState.map,
+        text: "Throw water at him",
+        requiredState: (currentState) => currentState.water,
         nextText: 10,
       },
       {
-        text: "Give him your water",
-        requiredState: (currentState) => currentState.water,
+        text: "Pull out your knife",
+        requiredState: (currentState) => currentState.knife,
         nextText: 11,
       },
     ],
   },
   {
     id: 8,
-    text: "He has a really big dog right behind him that you did not see, the dog denies your attempt LOL!!!",
+    text: "That did not work and the bear saw you, then ate you.",
     options: [
       {
         text: "Restart",
@@ -163,7 +163,7 @@ const textNodes = [
   },
   {
     id: 9,
-    text: "He does not want a lighter and shuts the door in your face.",
+    text: "He ate the food, then ate you. Game Over!",
     options: [
       {
         text: "Restart",
@@ -173,7 +173,7 @@ const textNodes = [
   },
   {
     id: 10,
-    text: "He has no idea what would he use a map for when he has google (Why did you choose to take a map?) The boy closes the door in your face.",
+    text: "You threw water on the bear and that really got him angry, He ate you.",
     options: [
       {
         text: "Restart",
@@ -183,7 +183,7 @@ const textNodes = [
   },
   {
     id: 11,
-    text: "He takes the water and Thanks you, his parents are rich and they cut you a check for all your troubles in the amount 1.5 million. ",
+    text: "The bear saw your shiny blade and decided he did not want no smoke today and left you alone.",
     options: [
       {
         text: "Congratulations!!!! Play Again.",
