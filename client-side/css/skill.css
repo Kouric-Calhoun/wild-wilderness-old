@@ -51,7 +51,8 @@ p{
 .food-quiz-title,
 .shelter-quiz-title,
 .water-quiz-title,
-.fire-quiz-title{
+.fire-quiz-title,
+.predator-quiz-title{
     background: linear-gradient(90deg, #ff0000, #abb92d, #eeb861, #db1e0d, #c0d31b, #ff00aa);
     background-size: 200%;
     font-size: 30px;
@@ -75,7 +76,8 @@ p{
 .quiz-btn-links_Food,
 .quiz-btn-links_Shelter,
 .quiz-btn-links_Water,
-.quiz-btn-links_Fire{
+.quiz-btn-links_Fire,
+.quiz-btn-links_Predators{
     width: 200px;
     height: 50px;
     margin-bottom: 10%;
@@ -100,7 +102,8 @@ p{
 .quiz-btn-links_Food span,
 .quiz-btn-links_Shelter span,
 .quiz-btn-links_Water span,
-.quiz-btn-links_Fire span{
+.quiz-btn-links_Fire span,
+.quiz-btn-links_Predators span{
     background: rgb(0,0,0);
     background:linear-gradient(180deg, #92cf58 0%, rgba(40, 75, 12, 0.88) 100%);
     display: block;
@@ -120,7 +123,8 @@ p{
 .quiz-btn-links_Food span:nth-child(1),
 .quiz-btn-links_Shelter span:nth-child(1),
 .quiz-btn-links_Water span:nth-child(1),
-.quiz-btn-links_Fire span:nth-child(1) {
+.quiz-btn-links_Fire span:nth-child(1),
+.quiz-btn-links_Predators span:nth-child(1) {
     box-shadow: 
     -7px -7px 20px 0px #fff9,
     -4px -4px 5px 0px #fff9,
@@ -132,14 +136,16 @@ p{
 .quiz-btn-links_Food span:nth-child(2),
 .quiz-btn-links_Shelter span:nth-child(2),
 .quiz-btn-links_Water span:nth-child(2),
-.quiz-btn-links_Fire span:nth-child(2) {
+.quiz-btn-links_Fire span:nth-child(2),
+.quiz-btn-links_Predators span:nth-child(2) {
     transform:rotateX(0deg);
     transform-origin: 50% 48% -26.7px;
 }
 .quiz-btn-links_Food:hover span:nth-child(1),
 .quiz-btn-links_Shelter:hover span:nth-child(1),
 .quiz-btn-links_Water:hover span:nth-child(1),
-.quiz-btn-links_Fire:hover span:nth-child(1) {
+.quiz-btn-links_Fire:hover span:nth-child(1),
+.quiz-btn-links_Predators:hover span:nth-child(1) {
     transform: rotateX(0deg);
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
     7px 7px 20px 0px rgba(0,0,0,.1),
@@ -148,7 +154,8 @@ p{
 .quiz-btn-links_Food:hover span:nth-child(2),
 .quiz-btn-links_Shelter:hover span:nth-child(2),
 .quiz-btn-links_Water:hover span:nth-child(2),
-.quiz-btn-links_Fire:hover span:nth-child(2) {
+.quiz-btn-links_Fire:hover span:nth-child(2),
+.quiz-btn-links_Predators:hover span:nth-child(2) {
     transform:rotateX(-90deg);
     color:transparent;
     box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
@@ -158,7 +165,8 @@ p{
 .food-quiz-title,
 .shelter-quiz-title,
 .water-quiz-title,
-.fire-quiz-title{
+.fire-quiz-title,
+.predator-quiz-title{
     margin-top: 10%;
 }
 
@@ -260,4 +268,206 @@ p{
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
+
+
+/* Predator Page Styling Starts Here */
+
+.predators-summary-container,
+.predator-locations-container,
+.predator-southwest-container,
+.predator-southeast-container,
+.predator-midwest-container,
+.predator-northeast-container,
+.predator-conclusion-container {
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+
+.predator-pics{
+    display:block;
+    width:100%;
+    margin-bottom: 15%
+}
+
+.predator-pics-conclusion,
+.predator-pics-pages{
+    width:50%;
+}
+
+.predator-image-flip-div-1{
+    position:relative;
+    width: 200px;
+}
+
+.predator-image-flip-div-2{
+    background: rgba(0,0,0,0.6);
+    position:absolute;
+    opacity: 0;
+    transition: opacity 0.25s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.predator-image-flip-div-2:hover {
+    opacity: 1;
+}
+
+.predator-image-flip-div-2>*{
+    transition: transform 0.50s;
+    transform: translateY(20px);
+}
+
+.predator-image-flip-div-2:hover>*{
+    transform: translateY(0);
+}
+
+.more{
+    padding: 3px;
+    font-size: 1em;
+    color:black;
+}
+
+.predator-text{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+    color: white;
+}
+
+.predator-text-container{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+}
+
+.predator-flex-container-1{
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+    display:flex
+}
+
+
+.predator-section-1,
+.predator-section-2,
+.predator-section-3,
+.predator-section-4,
+.predator-section-5,
+.predator-section-6,
+.predator-section-7,
+.predator-section-8,
+.predator-section-9,
+.predator-section-10,
+.predator-section-11,
+.predator-section-12,
+.predator-section-13,
+.predator-section-14,
+.predator-section-15,
+.predator-section-16,
+.predator-section-17,
+.predator-section-18,
+.predator-section-19,
+.predator-section-20,
+.predator-section-21,
+.predator-section-22,
+.predator-section-23,
+.predator-section-24,
+.predator-section-25,
+.predator-section-26,
+.predator-section-27,
+.predator-section-28,
+.predator-section-29,
+.predator-section-30,
+.predator-section-31,
+.predator-section-32,
+.predator-section-33{
+    outline:4px #ccc solid;
+    border:4px solid #ccc;
+    outline-offset: -4px;
+    transition: outline-offset 350ms ease;
+    padding:10px;
+    margin-right: 10%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+
+.predator-section-1:hover,
+.predator-section-1:focus,
+.predator-section-2:hover,
+.predator-section-2:focus,
+.predator-section-3:hover,
+.predator-section-3:focus,
+.predator-section-4:hover,
+.predator-section-4:focus,
+.predator-section-5:hover,
+.predator-section-5:focus,
+.predator-section-6:hover,
+.predator-section-6:focus,
+.predator-section-7:hover,
+.predator-section-7:focus,
+.predator-section-8:hover,
+.predator-section-8:focus,
+.predator-section-9:hover,
+.predator-section-9:focus,
+.predator-section-10:hover,
+.predator-section-10:focus,
+.predator-section-11:hover,
+.predator-section-11:focus,
+.predator-section-12:hover,
+.predator-section-12:focus,
+.predator-section-13:hover,
+.predator-section-13:focus,
+.predator-section-14:hover,
+.predator-section-14:focus,
+.predator-section-15:hover,
+.predator-section-15:focus,
+.predator-section-16:hover,
+.predator-section-16:focus,
+.predator-section-17:hover,
+.predator-section-17:focus,
+.predator-section-18:hover,
+.predator-section-18:focus,
+.predator-section-19:hover,
+.predator-section-19:focus,
+.predator-section-20:hover,
+.predator-section-20:focus,
+.predator-section-21:hover,
+.predator-section-21:focus,
+.predator-section-22:hover,
+.predator-section-22:focus,
+.predator-section-23:hover,
+.predator-section-23:focus,
+.predator-section-24:hover,
+.predator-section-24:focus,
+.predator-section-25:hover,
+.predator-section-25:focus,
+.predator-section-26:hover,
+.predator-section-26:focus,
+.predator-section-27:hover,
+.predator-section-27:focus,
+.predator-section-28:hover,
+.predator-section-28:focus,
+.predator-section-29:hover,
+.predator-section-29:focus,
+.predator-section-30:hover,
+.predator-section-30:focus,
+.predator-section-31:hover,
+.predator-section-31:focus,
+.predator-section-32:hover,
+.predator-section-32:focus,
+.predator-section-33:hover,
+.predator-section-33:focus{
+    outline-offset: 4px;
+}
+
+
+
+
 
