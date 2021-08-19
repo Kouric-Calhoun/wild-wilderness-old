@@ -50,6 +50,10 @@ export default function FireQuiz() {
     <div class="submit_quiz">
     <input class="submit_Btn" type="submit" name="submit" value="Submit Quiz" id="result">
     <h1 class="number_right" id="number_correct"></h1>
+    <br>
+        <div class="skills-btn-links_Predators"><< Predators</div>
+        <div class="skills-btn-links_Fire">Fire</div>
+        <div class="skills-btn-links_Water">Water >></div>
     </div>
     
     

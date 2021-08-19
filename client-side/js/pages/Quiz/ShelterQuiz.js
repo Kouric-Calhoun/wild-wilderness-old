@@ -47,5 +47,9 @@ export default function ShelterQuiz() {
     </div>
     <div class ="shelter-quiz">
     </div>
-    `
+    <br>
+        <div class="skills-btn-links_Water"><< Water</div>
+        <div class="skills-btn-links_Shelter">Shelter</div>
+        <div class="skills-btn-links_Food">Food>></div>
+    `;
 }

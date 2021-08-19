@@ -259,6 +259,7 @@ function renderingShelterPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Shelter();
     renderingShelterQuizPage();
+    survivalQuiz();
     renderingWaterPage();
     renderingFoodPage();
   });
@@ -273,9 +274,9 @@ function renderingFoodPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
+    survivalQuiz();
     renderingShelterPage();
     renderingPredatorsPage();
-    survivalQuiz();
   });
 }
 
@@ -288,7 +289,8 @@ function renderingPredatorsPage() {
     const app = document.querySelector("#app");
     app.innerHTML = Predators();
     renderingPredatorsQuizPage();
-    renderingFoodPage()
+    survivalQuiz();
+    renderingFoodPage();
     renderingFirePage();
   });
 }
@@ -298,6 +300,9 @@ function renderingFireQuizPage() {
   fireQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = FireQuiz();
+    renderingWaterPage();
+    renderingFirePage();
+    renderingPredatorsPage();
   });
 }
 
@@ -306,6 +311,9 @@ function renderingWaterQuizPage() {
   waterQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = WaterQuiz();
+    renderingFirePage();
+    renderingWaterPage();
+    renderingShelterPage();
   });
 }
 
@@ -314,6 +322,9 @@ function renderingShelterQuizPage() {
   shelterQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = ShelterQuiz();
+    renderingWaterPage();
+    renderingShelterPage();
+    renderingFoodPage();
   });
 }
 
@@ -322,16 +333,20 @@ function renderingFoodQuizPage() {
   foodQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = FoodQuiz();
+    renderingShelterPage();
+    renderingFoodPage();
+    renderingPredatorsPage();
   });
 }
 
 function renderingPredatorsQuizPage() {
-  const predatorsQuizBtnElm = document.querySelector(
-    ".quiz-btn-links_Predators"
-  );
+  const predatorsQuizBtnElm = document.querySelector(".quiz-btn-links_Predators");
   predatorsQuizBtnElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = PredatorsQuiz();
+    renderingFoodPage();
+    renderingPredatorsPage();
+    renderingFirePage();
   });
 }
 
