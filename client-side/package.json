@@ -26,5 +26,8 @@
     "eslint": "^7.31.0",
     "jest": "^27.0.6",
     "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "scroll-to": "github:component/scroll-to"
   }
 }

@@ -1,0 +1,33 @@
+@media all and (min-width: 640px) { 
+    body {font-size:1rem;} } 
+
+.mapRegion{
+    box-shadow: 6px 3px 5px #353434;
+    border-radius: 40%;
+    border-style: solid;
+    width: 80%;
+    height: 40%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+
+h1{
+    margin-top: center;
+    text-align: center;
+    text-shadow: 1px 1px darkcyan;
+}
+
+p{
+    font-size: medium;
+}
+
+.ulRegions{
+    cursor: pointer;
+    font-size: medium;
+    text-shadow: 0.5px 0.5px rgb(62, 146, 146);
+
+}
+
+.ulRegions li:hover{
+    color: lightgreen;
+}

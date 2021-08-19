@@ -34,7 +34,7 @@ function showOption(option) {
 function selectOption(option) {
   const nextTextNodeId = option.nextText;
   if (nextTextNodeId <= 0) {
-    return  startGameNorthEast();
+    return startGameNorthEast();
   }
   state = Object.assign(state, option.setState);
   showTextNode(nextTextNodeId);
@@ -43,62 +43,62 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: "Do you take THE WATER or leave with nothing?",
+    text: "You are hunting in a midwest forest and you are about to go hunting, you have room for one more item in your bag, which will you take? ",
     options: [
       {
-        text: "Take the fire",
-        setState: { fire: true },
+        text: "Take a extra knife",
+        setState: { knife: true },
         nextText: 2,
       },
       {
-        text: "Take the water",
+        text: "Take some more food",
         nextText: 2,
       },
     ],
   },
   {
     id: 2,
-    text: "You venture forth in search of answers to where you are when you come across a merchant. He wants fire",
+    text: "As you travel you notice you have a hole in your bag and you lost all of your supplies except 3 items, Which one do you take?",
     options: [
       {
-        text: "Trade the fire for a sword",
-        requiredState: (currentState) => currentState.fire,
-        setState: { fire: false, sword: true },
+        text: "Take your food",
+        requiredState: (currentState) => currentState.food,
+        setState: { knife: false, food: true },
         nextText: 3,
       },
       {
-        text: "Trade the fire for a shield",
-        requiredState: (currentState) => currentState.fire,
-        setState: { fire: false, shield: true },
+        text: "Take your water jug",
+        requiredState: (currentState) => currentState.water,
+        setState: { knife: false, water: true },
         nextText: 3,
       },
       {
-        text: "Ignore the merchant",
+        text: "Take your knife and leave the rest",
         nextText: 3,
       },
     ],
   },
   {
     id: 3,
-    text: "After leaving the merchant you start to feel tired and stumble upon a small town next to a dangerous looking castle.",
+    text: "As you travel you come upon a path, which direction do you take?",
     options: [
       {
-        text: "Explore the castle",
+        text: "Go to the right",
         nextText: 4,
       },
       {
-        text: "Find a room to sleep at in the town",
+        text: "Go to the left",
         nextText: 5,
       },
       {
-        text: "Find some hay in a stable to sleep in",
+        text: "Keep straight on the path you are already on",
         nextText: 6,
       },
     ],
   },
   {
     id: 4,
-    text: "You are so tired that you fall asleep while exploring the castle and are killed by a bear in your sleep.",
+    text: "You hit a dead end and decided to wait for someone to come find you, your game is over.",
     options: [
       {
         text: "Restart",
@@ -108,7 +108,7 @@ const textNodes = [
   },
   {
     id: 5,
-    text: "Without any money to buy a room you break into the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.",
+    text: "You go left and end up getting yourself lost, You are not ready to be a huntsman, try again.",
     options: [
       {
         text: "Restart",
@@ -118,42 +118,42 @@ const textNodes = [
   },
   {
     id: 6,
-    text: "You wake up well rested and full of energy ready to explore the nearby castle.",
+    text: "You keep straight and find a river, you can swim across but you are not sure where it will lead",
     options: [
       {
-        text: "Explore the castle",
+        text: "Swim in the river",
         nextText: 7,
       },
     ],
   },
   {
     id: 7,
-    text: "While exploring the castle you come across a bear in your path.",
+    text: "You emerge from the river and you see a angry bear, you have no choice but to defend yourself",
     options: [
       {
-        text: "Try to run",
+        text: "Ignore the bear, and hope he does not see you",
         nextText: 8,
       },
       {
-        text: "Attack it with your sword",
-        requiredState: (currentState) => currentState.sword,
+        text: "Give him your food",
+        requiredState: (currentState) => currentState.food,
         nextText: 9,
       },
       {
-        text: "Hide behind your shield",
-        requiredState: (currentState) => currentState.shield,
+        text: "Throw water at him",
+        requiredState: (currentState) => currentState.water,
         nextText: 10,
       },
       {
-        text: "Throw the fire at it",
-        requiredState: (currentState) => currentState.fire,
+        text: "Pull out your knife",
+        requiredState: (currentState) => currentState.knife,
         nextText: 11,
       },
     ],
   },
   {
     id: 8,
-    text: "Your attempts to run are in vain and the bear easily catches you and attacks you, you lost.",
+    text: "That did not work and the bear saw you, then ate you.",
     options: [
       {
         text: "Restart",
@@ -163,7 +163,7 @@ const textNodes = [
   },
   {
     id: 9,
-    text: "You foolishly thought this bear could be slain with a single sword.",
+    text: "He ate the food, then ate you. Game Over!",
     options: [
       {
         text: "Restart",
@@ -173,7 +173,7 @@ const textNodes = [
   },
   {
     id: 10,
-    text: "The bear roared as you hid behind your shield and ate you.",
+    text: "You threw water on the bear and that really got him angry, He ate you.",
     options: [
       {
         text: "Restart",
@@ -183,10 +183,10 @@ const textNodes = [
   },
   {
     id: 11,
-    text: "You threw your fire at the bear and it exploded. After the dust settled you saw the bear was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.",
+    text: "The bear saw your shiny blade and decided he did not want no smoke today and left you alone.",
     options: [
       {
-        text: "Congratulations. Play Again.",
+        text: "Congratulations!!!! Play Again.",
         nextText: -1,
       },
     ],

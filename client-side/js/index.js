@@ -7,7 +7,6 @@ import Regions from "./components/Regions";
 import Blog from "./components/Blog";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Quiz from "./components/Quiz";
 import Donate from "./pages/Donate";
 import Event from "./pages/Event";
 import Hiring from "./pages/Hiring";
@@ -37,6 +36,7 @@ import startGameWestAlaskaHawaii from "./pages/Game/GameWestAlaskaHawaii.js";
 import NationalParkSearch from "./pages/NationalParkSearch.js";
 import Checklist from "./components/Checklist.js";
 import wireUpChecklist from "./pages/Checklist-funtion.js";
+import Checklist from "./pages/Checklist.js";
 
 buildPage();
 
@@ -53,11 +53,10 @@ function buildPage() {
   footerContact();
   survivalQuiz();
   footerDonate();
-  footerEvent();
   footerHiring();
   navAbout();
   navContact();
-  quizPage();
+  Checklist();
 }
 
 function header() {
@@ -121,6 +120,8 @@ function navBlog() {
   blogElem.addEventListener("click", () => {
     const app = document.querySelector("#app");
     app.innerHTML = Blog();
+    slideShow();
+    script()
   });
 }
 
@@ -165,11 +166,19 @@ function footerContact() {
   });
 }
 
-function quizPage() {
-  const quizElem = document.querySelector(".nav-list__quiz");
-  quizElem.addEventListener("click", () => {
+function footerDonate() {
+  const footerDonateElm = document.querySelector(".footer__donate");
+  footerDonateElm.addEventListener("click", () => {
     const app = document.querySelector("#app");
-    app.innerHTML = Quiz();
+    app.innerHTML = Donate();
+  });
+}
+
+function footerHiring() {
+  const footerHiringElm = document.querySelector(".footer__hiring");
+  footerHiringElm.addEventListener("click", () => {
+    const app = document.querySelector("#app");
+    app.innerHTML = Hiring();
   });
 }
 
@@ -213,76 +222,76 @@ function survivalQuiz() {
   });
 }
 
-function footerDonate() {
-  const footerDonateElm = document.querySelector(".footer__donate");
-  footerDonateElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Donate();
-  });
-}
-
-function footerEvent() {
-  const footerEventElm = document.querySelector(".footer__event");
-  footerEventElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Event();
-  });
-}
-
-function footerHiring() {
-  const footerHiringElm = document.querySelector(".footer__hiring");
-  footerHiringElm.addEventListener("click", () => {
-    const app = document.querySelector("#app");
-    app.innerHTML = Hiring();
-  });
-}
-
 function renderingFirePage() {
   const fireBtnElm = document.querySelector(".skills-btn-links_Fire");
-  fireBtnElm.addEventListener("click", () => {
+  fireBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Fire();
     renderingFireQuizPage();
     survivalQuiz();
+    renderingWaterPage();
+    renderingPredatorsPage();
   });
 }
 
 function renderingWaterPage() {
   const waterBtnElm = document.querySelector(".skills-btn-links_Water");
-  waterBtnElm.addEventListener("click", () => {
+  waterBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Water();
     renderingWaterQuizPage();
     survivalQuiz();
+    renderingFirePage();
+    renderingShelterPage();
   });
 }
 
 function renderingShelterPage() {
   const shelterBtnElm = document.querySelector(".skills-btn-links_Shelter");
-  shelterBtnElm.addEventListener("click", () => {
+  shelterBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Shelter();
     renderingShelterQuizPage();
+    renderingWaterPage();
+    renderingFoodPage();
   });
 }
 
 function renderingFoodPage() {
   const foodBtnElm = document.querySelector(".skills-btn-links_Food");
-  foodBtnElm.addEventListener("click", () => {
+  foodBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Food();
     renderingFoodQuizPage();
-    addComment();
+    renderingShelterPage();
+    renderingPredatorsPage();
     survivalQuiz();
   });
 }
 
 function renderingPredatorsPage() {
   const predatorsBtnElm = document.querySelector(".skills-btn-links_Predators");
-  predatorsBtnElm.addEventListener("click", () => {
+  predatorsBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Predators();
     renderingPredatorsQuizPage();
+    renderingFoodPage()
+    renderingFirePage();
   });
 }
 
@@ -330,10 +339,15 @@ function renderingPredatorsQuizPage() {
 
 function renderingWestPage() {
   const westBtnElm = document.querySelector(".west");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = West();
     startGameWest();
+    renderingMidwestPage();
+    renderingWestAlaskaHawaiiPage();
   });
 }
 
@@ -347,45 +361,95 @@ function renderingGearPage() {
 
 function renderingMidwestPage() {
   const westBtnElm = document.querySelector(".midwest");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Midwest();
     startGameMidWest();
+    renderingWestPage();
+    renderingNortheastPage();
   });
 }
 
 function renderingNortheastPage() {
   const westBtnElm = document.querySelector(".northeast");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Northeast();
     startGameNorthEast();
+    renderingMidwestPage();
+    renderingSoutheastPage();
   });
 }
 
 function renderingSoutheastPage() {
   const westBtnElm = document.querySelector(".southeast");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Southeast();
     startGameSouthEast();
+    renderingNortheastPage();
+    renderingSouthwestPage();
   });
 }
 
 function renderingSouthwestPage() {
   const westBtnElm = document.querySelector(".southwest");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = Southwest();
     startGameSouthWest();
+    renderingWestAlaskaHawaiiPage();
+    renderingSoutheastPage();
   });
 }
 
 function renderingWestAlaskaHawaiiPage() {
   const westBtnElm = document.querySelector(".westalaskahawaii");
-  westBtnElm.addEventListener("click", () => {
+  westBtnElm.addEventListener("click", () => {scrollTo(30, 30, {
+    ease: 'out-bounce',
+    duration: 1500
+  });
     const app = document.querySelector("#app");
     app.innerHTML = WestAlaskaHawaii();
     startGameWestAlaskaHawaii();
+    renderingSouthwestPage();
+    renderingWestPage();
   });
+}
+
+function slideShow() {
+  const slideshows = document.querySelectorAll(".slideshow");
+  console.log(slideshows);
+  slideshows.forEach(initSlideShow);
+}
+function initSlideShow(slideshow) {
+  var slides = slideshow.querySelector("div").querySelectorAll(".slide");
+
+  var index = 0,
+    time = 3000;
+  slides[index].classList.add("active");
+  setInterval(() => {
+    console.log(slides);
+    slides[index].classList.remove("active");
+    index++;
+    if (index === slides.length) index = 0;
+    slides[index].classList.add("active");
+  }, time);
+}
+function script() {
+  var script = document.createElement("script");
+  script.src = "https://platform.twitter.com/widgets.js";
+  document.head.appendChild(script);
 }

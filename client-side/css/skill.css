@@ -1,33 +1,263 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-  }
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  .card {
-      width: 200px;
-      margin-bottom: 5%;
-      background-color: rgb(29, 146, 64);
-  }
-  .skills-btn-links {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 12px;
-    cursor: pointer;
+/* Fire page styling begins here */
+p{
+    text-align: left;
+}
+
+.fire-title{
     text-align: center;
-    text-decoration: none;
+}
+
+.fire-text,
+.hand-drill-method-list,
+.fire-plow-list,
+.fire-bow-drill-materials-list,
+.fire-bow-drill-list,
+.fire-stone-list,
+.fire-battery-list,
+.fire-lenses-list{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+}
+
+
+
+.fire-breathe-container,
+.fire-rain-container,
+.fire-tips-container,
+.fire-drill-container,
+.fire-plow-container,
+.fire-bow-container,
+.fire-stone-container,
+.fire-batteries-container,
+.fire-lenses-container,
+.fire-summary-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+.water-pics,
+.fire-pics{
+    width:50%;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   
+}
+.food-quiz-title,
+.shelter-quiz-title,
+.water-quiz-title,
+.fire-quiz-title{
+    background: linear-gradient(90deg, #ff0000, #abb92d, #eeb861, #db1e0d, #c0d31b, #ff00aa);
+    background-size: 200%;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+    word-spacing: 3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+.quiz-btn-links_Food,
+.quiz-btn-links_Shelter,
+.quiz-btn-links_Water,
+.quiz-btn-links_Fire{
+    width: 200px;
+    height: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background:transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position:relative;
+    display: inline-block;
     outline: none;
-    color: black;
-    background-color: #BCD8BD;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  .skills-btn-links:hover {background-color: #10E917}
-  .skills-btn-links:active {
-    background-color: #10E917;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  } 
+    box-shadow: none;
+    line-height: 52px;
+    perspective: 230px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.quiz-btn-links_Food span,
+.quiz-btn-links_Shelter span,
+.quiz-btn-links_Water span,
+.quiz-btn-links_Fire span{
+    background: rgb(0,0,0);
+    background:linear-gradient(180deg, #92cf58 0%, rgba(40, 75, 12, 0.88) 100%);
+    display: block;
+    position:absolute;
+    width: 200px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .3s;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.quiz-btn-links_Food span:nth-child(1),
+.quiz-btn-links_Shelter span:nth-child(1),
+.quiz-btn-links_Water span:nth-child(1),
+.quiz-btn-links_Fire span:nth-child(1) {
+    box-shadow: 
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001;
+    transform: rotateX(90deg);
+    transform-origin: 50% 50% -20px;
+}
+.quiz-btn-links_Food span:nth-child(2),
+.quiz-btn-links_Shelter span:nth-child(2),
+.quiz-btn-links_Water span:nth-child(2),
+.quiz-btn-links_Fire span:nth-child(2) {
+    transform:rotateX(0deg);
+    transform-origin: 50% 48% -26.7px;
+}
+.quiz-btn-links_Food:hover span:nth-child(1),
+.quiz-btn-links_Shelter:hover span:nth-child(1),
+.quiz-btn-links_Water:hover span:nth-child(1),
+.quiz-btn-links_Fire:hover span:nth-child(1) {
+    transform: rotateX(0deg);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.quiz-btn-links_Food:hover span:nth-child(2),
+.quiz-btn-links_Shelter:hover span:nth-child(2),
+.quiz-btn-links_Water:hover span:nth-child(2),
+.quiz-btn-links_Fire:hover span:nth-child(2) {
+    transform:rotateX(-90deg);
+    color:transparent;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.food-quiz-title,
+.shelter-quiz-title,
+.water-quiz-title,
+.fire-quiz-title{
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+/* Water procurement page styling begins here*/
+
+.water-tips-container,
+.water-boiling-container,
+.water-distillation-container,
+.water-rain-container,
+.water-snow-container,
+.water-tablets-container,
+.water-lakes-container,
+.water-summary-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+
+.water-text,
+.water-treating-list{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+}
+
+.water-methods-title{
+    font-weight: bold;
+}
+
+ 
+/* Shelter Page Styling Begins Here */
+.shelter-summary-container,
+.shelter-prep-container,
+.materials-for-shelter-container,
+.naturally-formed-shelter-container,
+.available-materials-container,
+.snow-shelter-build-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+
+.shelter-pics{
+    width:50%;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.shelter-text,
+.shelter-prep-list,
+.shelter-material-list{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+}
+
+
+/* Food Page Styling Starts Here */
+.food-summary-container,
+.types-of-snares-container,
+.instructions-for-snare-container,
+.snare-noose-container,
+.trigger-lead-container,
+.snare-engine-container,
+.redirect-flow-of-traffic-container{
+    border-radius: .5em;
+    border-style: solid;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+    background-color: rgb(203, 219, 207);
+}
+.food-noose-list,
+.food-snare-list,
+.food-text{
+    font-size: small;
+    margin: 2%;
+    text-align: left;
+}
+
+.food-pics{
+    width:50%;
+    margin-bottom: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
