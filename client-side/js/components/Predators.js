@@ -730,6 +730,7 @@ export default function Predators() {
       <button class="quiz-btn-links_Predators"><span>Click Here!</span><span>Quiz</span></button>
       <br>
       <div class="skills-btn-links_Food"><< Food</div>
+      <div class="skills-btn-links_Fire">Fire >></div>
       </div>
     `;
 }

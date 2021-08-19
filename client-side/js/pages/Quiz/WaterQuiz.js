@@ -50,5 +50,11 @@ export default function WaterQuiz() {
     <input class="submit_Btn" type="submit" name="submit" value="Submit Quiz" id="result">
     <h1 class="number_right" id="number_correct"></h1>
     </div>
+    <br>
+    <div class="skills-btn-links_Fire"><< Fire</div>
+    <div class="skills-btn-links_Water">Water</div>
+    <div class="skills-btn-links_Shelter">Shelter >></div>
+
+
     `;
 }

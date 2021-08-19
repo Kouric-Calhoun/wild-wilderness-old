@@ -13,7 +13,7 @@ export default function PredatorsQuiz() {
     <div class="question-container-predators">
     <h3 class="question-predators">Question 2: Are insects dangerous?</h3>
     <input type="radio" name="question1">Yes<br>
-    <input type="radio" name="question1"  id="correct1">No<br>
+    <input type="radio" name="question1"  id="correct2">No<br>
     </div>
 
     <div class="question-container-predators">
@@ -46,5 +46,9 @@ export default function PredatorsQuiz() {
     </div>
     <div class ="predator-quiz">
     </div>
-    `
+    <br>
+    <div class="skills-btn-links_Food"><< Food</div>
+    <div class="skills-btn-links_Predators">Predators</div>
+    <div class="skills-btn-links_Fire">Fire >></div>
+    `;
 }
