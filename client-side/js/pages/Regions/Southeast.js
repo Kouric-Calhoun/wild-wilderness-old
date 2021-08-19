@@ -39,6 +39,8 @@ export default function Southeast() {
               <h3>Scenario 3 to add</h3>
               <button class = "home-btn-links"> Scenario 3 </button>
             </div>
+            <div class="northeast">Northeast</div>
+            <div class="southwest">Southwest</div>
           </div>
           `;
 }
