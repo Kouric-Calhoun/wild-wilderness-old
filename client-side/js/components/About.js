@@ -16,7 +16,7 @@ export default function About() {
   
 
   <div class="content">
-
+    
     <div class="cardAboutUs" id="one">
       <div class="img_box">
         <img class="picture" src="${kouric}" height="300px" width="200px" alt="Photo">

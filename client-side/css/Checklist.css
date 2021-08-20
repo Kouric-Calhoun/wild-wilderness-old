@@ -6,23 +6,20 @@
 } */
 .checklist__todo {
   font-size: 3rem;
-}
-
-.checklist__todo,
-form {
   min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-form input,
-form button {
+
+.checklist {
   padding: 0.5rem;
   font-size: 2rem;
   border: none;
   background: white;
 }
-form button {
+
+.todo-button {
   color: #195237;
   background: #f7fffe;
   cursor: pointer;
@@ -30,10 +27,12 @@ form button {
   border-radius: 5%;
   margin-bottom: 2%;
 }
-form button:hover {
+
+.todo-button:hover {
   background: #195237;
   color: white;
 }
+
 .todo-container {
   display: flex;
   justify-content: center;
@@ -55,9 +54,11 @@ form button:hover {
   align-items: center;
   transition: all 1s ease;
 }
+
 .filter-todo {
   padding: 1rem;
 }
+
 .todo li {
   flex: 1;
 }
@@ -73,9 +74,11 @@ form button:hover {
   border-radius: 5%;
   margin-right: 3%;
 }
+
 .complete-btn {
   background: rgb(11, 212, 162);
 }
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
@@ -111,6 +114,7 @@ select {
   position: relative;
   overflow: hidden;
 }
+
 select {
   color: #195237;
   font-family: "Poppins", sans-serif;

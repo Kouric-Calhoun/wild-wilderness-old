@@ -9,32 +9,10 @@ export default function Contact() {
     <title>Wilderness Wild</title>
     <body class="contactPage">
       <header id="showcase" class="grid">
-        <div class="bg-image"></div>
         <div class="content-wrap">
-          <h1>Welcome to Wilderness Wild</h1>
-          <img src='${contactImageBg2}'></img>
-          <p>We are an organization that specializes in teaching basic to advance 
-          survivor skills for different scenarios and various terrains when you 
-          are adventuring the wilderness. Our motto is, "Vincit Qui Se Vincit" 
-          which means, "He/she conquers who conquers him/herself."</p>
-          <br>
-        </div>
-      </header>
-
+          <h1>Contact Us</h1>
+  
       <main id="main">
-      <!-- Section A -->
-      <section id="section-a" class="grid">
-          <div class="content-wrap">
-              <h2 class="content-title">Survivor Skills</h2>
-              <div class="content-text">
-                  <p>Wilderness Wild prides itself on educating all their 
-                  clients on the required survivor skills to prepare them 
-                  when facing situation in various scenarios in the 
-                  Wilderness. </p>
-                  <br>
-              </div>
-          </div>
-      </section>
 
       <!-- Section B -->
       <section id="section-b" class="grid">
@@ -63,19 +41,6 @@ export default function Contact() {
           </div>
       </section>
       </main>
-
-      <!-- Section D-->
-      <div class="box">
-                <h2 class="content-title">About Our Company</h2>
-                <p>Founded in 2021 by a group of wild and crazy individuals for a 
-                tremendous love for the great outdoors and the many adventures 
-                the Earth has to offer.  These fab people chose to teach and advocate
-                friends, family, and co-workers on the survivor skills that they 
-                had experienced over their many years.  And due to the number of 
-                requests for survival guiding, <strong>Wilderness Wilds</strong> was born.</p>
-            </div>
-        </section>
- 
 
     <!-- Section E-->
       <div class="form">
