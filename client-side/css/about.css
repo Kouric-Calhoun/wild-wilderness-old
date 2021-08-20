@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
 
+@media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 
+
+
+
 .picture {
   height: 300px;
   width: 218px;
