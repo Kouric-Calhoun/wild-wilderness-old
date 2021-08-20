@@ -8,6 +8,7 @@
 
 .todo-input {
   height: 50px;
+  margin-bottom: 1rem;
   margin-top: 6px;
   margin-right: 0%;
   width: 80%;
@@ -99,6 +100,10 @@
   pointer-events: none;
 }
 
+.fas-fa-plus-square{
+  margin-left: 1rem;
+  
+}
 .fall {
   transform: translateY(10rem) rotateZ(20deg);
   opacity: 0;

@@ -10,19 +10,17 @@ export default function Southwest() {
   
   
   
-      <div class="container_park">
+      < class="container_park">
       <div class="park">
         <h3 class = "parkText">Grand Canyon National Park</h3>
         <p class ="regionPic">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26406491.41850018!2d-129.48233175488062!3d36.106925800000006!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1f38a9bec9912029!2sGrand%20Canyon%20National%20Park!5e0!3m2!1sen!2sus!4v1629061314497!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </p>
         <address>Arizona</address>
-
-      
       </div>
 
       <div class="park">
-        <<h3 class = "parkText">Arch Rock Campground</>
+        <h3 class = "parkText">Arch Rock Campground</h3>
         <p class ="regionPic">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26301345.88401779!2d-132.47784941423419!3d36.418545099999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd5e7cecef1b56049!2sArch%20Rock%20Campground!5e0!3m2!1sen!2sus!4v1629061494752!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </p>
