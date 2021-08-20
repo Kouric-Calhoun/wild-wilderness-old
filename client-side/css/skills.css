@@ -35,7 +35,11 @@
 }
 
 .survival-skills-title{
-  text-decoration: underline;
+  font-family: "Rubik", sans-serif;
+  font-size: 2.0rem;
+  margin-top: center;
+  text-align: center;
+  text-shadow: 1px 1px darkcyan;
   margin-top: 5%;
 }
 
