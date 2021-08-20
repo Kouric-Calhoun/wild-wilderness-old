@@ -7,10 +7,8 @@ export default function Southwest() {
       Our culture is what makes us all unique and each region different. The Southwest is rooted deeply in Spanish and Mexican culture, and many of the old traditions and values are still prevalent today.
       The geography of the Southwest is unique due to its vast amount of desert, plateaus, and canyons. Very little of the land is useful for farming, but the Central Plains have rich and fertile soil. The major waterways in the Southwest are the Colorado River and the Rio Grande, which forms part of the border between Mexico and the United States.
       </div>
-  
-  
-  
-      < class="container_park">
+
+      <class="container_park">
       <div class="park">
         <h3 class = "parkText">Grand Canyon National Park</h3>
         <p class ="regionPic">
