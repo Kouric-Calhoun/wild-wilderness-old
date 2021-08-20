@@ -35,3 +35,12 @@ p{
 .ulRegions li:hover{
     color: lightgreen;
 }
+
+.regions-info{
+    margin-bottom: 3%;
+    font-family: "Rubik", sans-serif;
+}
+
+.regions-list-1{
+    margin-bottom: 3%;
+}
