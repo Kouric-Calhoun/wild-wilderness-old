@@ -1,26 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+@media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 
+
 #home-div {
   position: relative;
   text-align: center;
 }
 
-#home-div p {
-  color: #32a04c;
-  font-weight: bold;
-}
-
-.home-splash {
-  width: 30rem;
-  height: auto;
-  border-radius: 50px;
-  margin-bottom: 20px;
-}
-
-.home-p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 45px;
-  color: #ffffff;
-  text-shadow: 3px 2px 0 #555;
-}

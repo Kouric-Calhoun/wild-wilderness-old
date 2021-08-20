@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+@media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 
+
+
 .game-container {
     width: 800px;
     max-width: 80%;
@@ -15,7 +21,7 @@
   }
   
   .btn {
-    background-color: hsl(200, 100%, 50%);
+    background-color: #279c2b;
     border: 1px solid hsl(200, 100%, 30%);
     border-radius: 5px;
     padding: 5px 10px;
@@ -26,3 +32,65 @@
   .btn:hover {
     border-color: black;
   }
+  h3 {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.2rem;
+    margin-top: center;
+    text-align: center;
+    text-shadow: 1px 1px darkcyan;
+  }
+
+  #scenarios-div{
+    border-style: solid;
+    margin-top: 3%;
+  }
+  .parkText {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.7rem;
+    margin-top: center;
+    text-align: center;
+    text-shadow: 1px 1px darkcyan;
+    
+  }
+  .regionPic {
+    margin-top: center;
+    text-align: center;
+  }
+
+  #scenarios-text{
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .btn {
+    margin-right: 3%;
+    margin-bottom:3%;
+    margin-top:3%;
+    margin-left: 3%;
+  }
+
+  .southeast{
+    margin-top: .5%;
+    margin-bottom: 1%;
+  }
+  .west{
+    margin-top: .5%;
+    margin-bottom: 1%;
+  }.midwest{
+    margin-top: .5%;
+    margin-bottom: 1%;
+  }
+  .northeast{
+    margin-top: .5%;
+    margin-bottom: 1%;
+  }
+  .southwest{
+    margin-top: .5%;
+    margin-bottom: 1%;
+  }
+  .westalaskahawaii{
+    margin-top: .5%;
+    margin-bottom: 1%;
+  }
+
+  

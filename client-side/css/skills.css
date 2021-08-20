@@ -1,35 +1,196 @@
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+@media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
 }
-img {
-  border-radius: 5px 5px 0 0;
+
+.fire-link-pic{
+    height: 50%;
+    background-size: cover;
+    border-radius: .3em .3em 0 0;
+    
 }
-.card {
-  width: 200px;
-  margin-bottom: 5%;
-  background-color: rgb(29, 146, 64);
+
+.skills-container-1{
+    display:flex;
+    justify-content: space-around;
 }
-.skills-btn-links {
+
+.skills-container-2{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+.card { 
+  border-radius: .5em;
+  border-style: solid;
+  width: 25%;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  background-color: rgb(215, 230, 219);
+  
+}
+
+.survival-skills-title{
+  font-family: "Rubik", sans-serif;
+  font-size: 2.0rem;
+  margin-top: center;
+  text-align: center;
+  text-shadow: 1px 1px darkcyan;
+  margin-top: 5%;
+}
+
+.skills-h3{
+    margin:1em;
+    font-size: 1em;
+    font-family: "Rubik", sans-serif;
+}
+
+.fire-card-text,
+.water-card-text,
+.shelter-card-text,
+.food-card-text,
+.predator-card-text{
+  font-size: 10px;
+  margin-bottom: 1em;
+  margin-left: 2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*The following is code to style each button separately
+due to each having a unique class name to link them. */
+
+.skills-btn-links_Fire{
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 12px;
+  padding: 5%;
+  font-size: .6em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
   color: black;
-  background-color: #bcd8bd;
+  background-color: #279c2b;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-.skills-btn-links:hover {
+.skills-btn-links_Fire:hover {
   background-color: #10e917;
 }
-.skills-btn-links:active {
+.skills-btn-links_Fire:active {
   background-color: #10e917;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+.skills-btn-links_Water{
+    display: inline-block;
+    padding: 5%;
+    font-size: .6em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #279c2b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .skills-btn-links_Water:hover {
+    background-color: #10e917;
+  }
+  .skills-btn-links_Water:active {
+    background-color: #10e917;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .skills-btn-links_Shelter{
+    display: inline-block;
+    padding: 5%;
+    font-size: .6em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #279c2b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .skills-btn-links_Shelter:hover {
+    background-color: #10e917;
+  }
+  .skills-btn-links_Shelter:active {
+    background-color: #10e917;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .skills-btn-links_Food{
+    display: inline-block;
+    padding: 5%;
+    font-size: .6em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #279c2b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .skills-btn-links_Food:hover {
+    background-color: #10e917;
+  }
+  .skills-btn-links_Food:active {
+    background-color: #10e917;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .skills-btn-links_Predators{
+    display: inline-block;
+    padding: 5%;
+    font-size: .6em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: #279c2b;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .skills-btn-links_Predators:hover {
+    background-color: #10e917;
+  }
+  .skills-btn-links_Predators:active {
+    background-color: #10e917;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+ 

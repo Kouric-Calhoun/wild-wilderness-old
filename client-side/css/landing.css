@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+@media all and (min-width: 640px) { 
+    body {font-size:1rem;} }   
+
+.logo{
+    box-shadow: 6px 3px 5px #353434;
+    border-radius: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    opacity: .85;
+    width: 40%;
+}
+
+.logo{
+    animation-timing-function: cubic-bezier(0.42,0,1,1);
+  }
+

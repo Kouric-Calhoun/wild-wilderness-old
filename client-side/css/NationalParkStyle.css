@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+@media all and (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.national-navbar {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  margin-top: center;
+  text-align: center;
+  text-shadow: 1px 1px darkcyan;
+}
+
+.app-container {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  margin-top: center;
+  text-align: center;
+  text-shadow: 1px 1px darkcyan;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  margin-top: center;
+  text-align: center;
+}
+.form-control {
+  margin-top: center;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+}
+.state-name-input {
+  margin-top: center;
+  text-align: center;
+}
+
+
+.hidden {
+  display: none;
+}

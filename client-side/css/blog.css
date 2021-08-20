@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+@media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.top-text {
+  font-family: "Rubik", sans-serif;
+  margin-top: center;
+  text-align: center;
+  text-shadow: 1px 1px;
+  font-size: 80%;
+  text-shadow: 0.5px 0.5px darkcyan;
+}
+
+hr.rounded {
+  margin-top: auto;
+  border-top: 4px solid rgb(136, 131, 131);
+  box-shadow: 1px 1px rgba(125, 231, 38, 0.753);
+  border-radius: 5px;
+}
+
+.blogA{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.textAtTop {
+  margin-top: 40%;
+  font-size: 100%;
+  color: blueviolet;
+  display: grid;
+  text-align: center;
+  text-shadow: 1px 1px #5485dfb7;
+}
+
+.reviewImg {
+  padding: 20px;
+  margin-top: 0px;  
+}
+
+[data-component="slideshow"] .slide {
+    display: none;
+}
+
+[data-component="slideshow"] .active {
+    display: block;
+}
+
+
+.list{
+  justify-content: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50%; 
+  margin-bottom: 2em;
+}
+
+.blogB{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bookImg {
+    padding: 20px;
+    margin-top: 0px;        
+}
+
+.textAtTopRight {
+  margin-top: 50%;
+  font-size: 100%;
+  color: blueviolet;
+  display: grid;
+  text-align: center;
+  text-shadow: 1px 1px #5485dfb7;
+}
+
+
+.instaSlide {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 40%;
+    width: auto;
+}
+
+.bookList{
+  height: 20%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);  
+  margin-bottom: 2em;
+    }
+
+.textAtThird {
+      color: blueviolet;;
+      display: block;
+      font-size: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      text-align: center;
+      text-shadow: 1px 1px #5485dfb7;
+}
+
+.instaList{
+  height: 20%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 2em;
+    }
+
+.textAtFourth {
+  font-size: 100%;
+  color: blueviolet;
+  display: grid;
+  text-align: center;
+  text-shadow: 1px 1px #5485dfb7;
+}
+  
+  .twitList{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2em;
+}
+
