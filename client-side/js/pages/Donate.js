@@ -1,7 +1,9 @@
+import donate from "../../css/donate.css";
+
 export default function Donate() {
     return `
       <div class="donationBody">
-      <h1>Make a Gift to Wilderness Wild</h1>
+      <h1 class="donationH1">Make a Gift to Wilderness Wild</h1>
       <h4>Your gift is 100% tax-deductible</h4>
       <h3>Your Donation Information</h3>
         <div class="donationContainer">
@@ -20,13 +22,12 @@ export default function Donate() {
                   <input type="radio" class="donationAmtRadioBtn" id="donationFormBtn25">
                   <label for="donationFormBtn2500">$25</label><br>
                   <label for="donationFormBtnOther">Other</label><br>
-                  <input type="text" class="donationAmtRadioBtn" id="donationFormBtnOther">
-                  
+                  <input type="text" class="donationAmtRadioBtn" id="donationFormBtnOther">                 
                   </div>                                 
               </div>
                 
-              <form action="donationForm.php" class="actionForm">
-                <h4>Name</h4>
+              <form class="donationActionForm">
+                <h4 class="donatorInfo">Name</h4>
                   <div class="donationFormNameFields">
                   <label for="f__Name">First Name </label><br>
                   <input type="text" id="fName" class="donationFormItem"><br>
