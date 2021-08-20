@@ -4,13 +4,14 @@ export default function Donate() {
     return `
       <div class="donationBody">
       <h1 class="donationH1">Make a Gift to Wilderness Wild</h1>
-      <h4>Your gift is 100% tax-deductible</h4>
-      <h3>Your Donation Information</h3>
+      
+      <h3 class="donation-info-title">Your Donation Information</h3>
         <div class="donationContainer">
           <div class="donorInformationSection>
               <div class="donationActionButtons">
-              <h4>Select Amount</h4>
+            
                   <div class="radioBtns">
+                  <h4>Select Amount</h4>
                   <input type="radio" class="donationAmtRadioBtn" id="donationFormBtn500">
                   <label for="donationFormBtn500">$500</label>
                   <input type="radio" class="donationAmtRadioBtn" id="donationFormBtn250">
@@ -22,25 +23,29 @@ export default function Donate() {
                   <input type="radio" class="donationAmtRadioBtn" id="donationFormBtn25">
                   <label for="donationFormBtn2500">$25</label><br>
                   <label for="donationFormBtnOther">Other</label><br>
-                  <input type="text" class="donationAmtRadioBtn" id="donationFormBtnOther">                 
+                  <input type="text" class="donationAmtRadioBtn" id="donationFormBtnOther">
+                  <h4 class="tax-donation-message">Your gift is 100% tax-deductible</h4>                 
                   </div>                                 
               </div>
                 
               <form class="donationActionForm">
                 <h4 class="donatorInfo">Name</h4>
+
+
                   <div class="donationFormNameFields">
                   <label for="f__Name">First Name </label><br>
                   <input type="text" id="fName" class="donationFormItem"><br>
                   <label for="l__Name">Last Name </label><br>
                   <input type="text" id="lName" class="donationFormItem"><br>
                   </div>
-                <h4>Address</h4>
+                <h4 class="donatorInfo">Address</h4>
                   <div class="donationFormAddressFields">
                   <label for="street__addr">Street Address</label><br>
                   <input type="text" id="stAddress" class="donationFormItem"><br>
                   <label for="city">City</label><br>
                   <input type="text" id="city" class="donationFormItem"><br>
-                  </div><br>         
+                  </div><br>     
+
                   <div class="donationFormStateAndZip">
                   <label for="state">State</label><br>
                   <select id="state__dropdown" name="stateDropdown" class="donationFormItem">
@@ -101,18 +106,13 @@ export default function Donate() {
                   <input type="text" id="zipCode" class="donationFormItem">
                   </div>
           
-                  <h4>Other Contact Info</h4>
+                  <h4 class="donatorInfo">Other Contact Info</h4>
                   <label for="email">Email</label><br>
                   <input type="text" id="email" class="donationFormItem"><br>
                   <small>example@example.com</small><p>
-                  <label for="phone">Preferred Phone</label><br>
-                  <input type="text" id="preferredPhone" class="donationFormItem" placeholder="(   )   -    "><p>
-                  <select id="phone__dropdown" name="phoneDropdown" class="phoneFormItem">
-                    <option selected value>Phone Type</option>
-                    <option value="home">Home Phone</option>
-                    <option value="mobile">Mobile Phone</option>
-                    <option value="work">Work Phone</option>              
-                  </select><br>
+                  
+
+
                   <div class="publicationInfo">
                   <br><label for="howName">How would you like your name to appear in publications?</label><br>
                   <input type="text" id="prefName" class="donationFormItem"><br>
@@ -125,7 +125,8 @@ export default function Donate() {
                     <label for="contactInvest">Please contact us about investment opportunities with Wilderness Wild</label><br>
                     </div>
                   </div>
-                  <h4>Gift Designation</h4>
+
+                  <h4 class="donatorInfo">Gift Designation</h4>
                   <select id="designation__dropdown" name="designationDropdown" class="donationFormItem">
                     <option selected value>Select One</option>
                     <option value="app maintenance">App Maintenance and Development</option>
@@ -133,8 +134,9 @@ export default function Donate() {
                     <option value="event organizer">Event Organizer of Survival Guide</option>
                   </select><br>
                   </div>
+
                   <div class="creditCardSection">
-                    <h4>Credit Card Information</h4>
+                    <h4 class="donatorInfo">Credit Card Information</h4>
                     <label for="f__Name_CC">First Name</label><br>
                     <input type="text" id="fNameCC" class="donationFormItem"><br>
                     <label for="l__Name_CC">Last Name</label><br>
@@ -160,7 +162,8 @@ export default function Donate() {
                     </select><br>
                     <label for="expiration__year">Expiration Year</label><br>
                     <input type="text" id="expNumber" class="donationFormItem"><br>
-                    <h4>Billing Address</h4>
+
+                    <h4 class="donatorInfo">Billing Address</h4>
                     <label for="addressCC">Street Address</label><br>
                     <input type="text" id="addressCC" class="donationFormItem"><br>
                     <label for="cityCC">City</label><br>

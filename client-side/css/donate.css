@@ -12,6 +12,35 @@ body{
     color: green;
 }
 
-.donationActionForm{
+.donation-info-title{
+  font-weight: bold;
+}
+
+.tax-donation-message{
+  font-style: oblique;
+}
+
+.radioBtns{
+  border-style: solid;
+  border-radius: .5em;
+  width:100%;
+  height:50%;
+  background-color: beige;
+}
+
+.donationBody{
+  background-color: rgb(228, 225, 225);
+  
+}
+
+.donationFormItem{
+  margin-bottom: 5%;
+}
+
+.donatorInfo{
+  font-weight: bold;
+  font-size: large;
 
 }
+
+
