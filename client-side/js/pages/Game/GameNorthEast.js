@@ -43,7 +43,7 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: "You are hunting in a midwest forest and you are about to go hunting, you have room for one more item in your bag, which will you take? ",
+    text: "You are in a forest and you are about to go hunting, you have room for one more item in your bag, which will you take? ",
     options: [
       {
         text: "Take a extra knife",
