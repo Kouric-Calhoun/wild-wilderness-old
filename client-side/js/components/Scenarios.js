@@ -3,14 +3,14 @@ export default function Scenarios() {
     <div id="scenarios-div">
     <body>
     <nav class="national-navbar">
-      <a id="app-title" class="navbar-brand">National Parks Finder App</a
+      <a id="app-title" class="navbar-brand">National Parks Finder</a
       >
     </nav>
 
     <main role="main" class="national-container">
       <section class="app-container">
         <form id="search-form">
-          <h1>Search U.S. National Parks</h1>
+          <h2>Search U.S. National Parks</h2>
           <p>Enter the state for some national parks suggestions</p>
           <input
             type="text"
