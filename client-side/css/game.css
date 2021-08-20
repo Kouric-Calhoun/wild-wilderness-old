@@ -1,34 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
 
-@media all and (min-width: 640px) { 
-  body {font-size:1rem;} } 
-
+@media all and (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
 
 .game-container {
-    width: 800px;
-    max-width: 80%;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px 2px;
-  }
-  
-  .btn-grid {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  .btn {
-    background-color: #279c2b;
-    border: 1px solid hsl(200, 100%, 30%);
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
-  }
-  
-  .btn:hover {
-    border-color: black;
-  }
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #279c2b;
+  border: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  margin-right: 1%;
+  margin: 0.5%;
+}
+
+.btn:hover {
+  border-color: white;
+}

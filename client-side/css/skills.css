@@ -1,87 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
 
-@media all and (min-width: 640px) { 
-  body {font-size:1rem;} } 
-
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: border-box;
 }
 
-.fire-link-pic{
-    height: 50%;
-    background-size: cover;
-    border-radius: .3em .3em 0 0;
-    
+.fire-link-pic {
+  height: 50%;
+  background-size: cover;
+  border-radius: 0.3em 0.3em 0 0;
 }
 
-.skills-container-1{
-    display:flex;
-    justify-content: space-around;
+.skills-container-1 {
+  display: flex;
+  justify-content: space-around;
 }
 
-.skills-container-2{
-    display:flex;
-    justify-content: space-around;
+.skills-container-2 {
+  display: flex;
+  justify-content: space-around;
 }
 
-
-.card { 
-  border-radius: .5em;
+.card {
+  border-radius: 0.5em;
   border-style: solid;
   width: 25%;
   margin-bottom: 10%;
   margin-top: 5%;
   background-color: rgb(215, 230, 219);
-  
 }
 
-.survival-skills-title{
+.survival-skills-title {
   font-family: "Rubik", sans-serif;
-  font-size: 2.0rem;
+  font-size: 2rem;
   margin-top: center;
   text-align: center;
   text-shadow: 1px 1px darkcyan;
   margin-top: 5%;
 }
 
-.skills-h3{
-    margin:1em;
-    font-size: 1em;
-    font-family: "Rubik", sans-serif;
+.skills-h3 {
+  margin: 1em;
+  font-size: 1em;
+  font-family: "Rubik", sans-serif;
 }
 
 .fire-card-text,
 .water-card-text,
 .shelter-card-text,
 .food-card-text,
-.predator-card-text{
+.predator-card-text {
   font-size: 10px;
   margin-bottom: 1em;
   margin-left: 2%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*The following is code to style each button separately
 due to each having a unique class name to link them. */
 
-.skills-btn-links_Fire{
+.skills-btn-links_Fire {
   display: inline-block;
   padding: 5%;
-  font-size: .6em;
+  font-size: 0.6em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -101,96 +82,94 @@ due to each having a unique class name to link them. */
   transform: translateY(4px);
 }
 
-.skills-btn-links_Water{
-    display: inline-block;
-    padding: 5%;
-    font-size: .6em;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: #279c2b;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  .skills-btn-links_Water:hover {
-    background-color: #10e917;
-  }
-  .skills-btn-links_Water:active {
-    background-color: #10e917;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.skills-btn-links_Water {
+  display: inline-block;
+  padding: 5%;
+  font-size: 0.6em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #279c2b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.skills-btn-links_Water:hover {
+  background-color: #10e917;
+}
+.skills-btn-links_Water:active {
+  background-color: #10e917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
-  .skills-btn-links_Shelter{
-    display: inline-block;
-    padding: 5%;
-    font-size: .6em;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: #279c2b;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  .skills-btn-links_Shelter:hover {
-    background-color: #10e917;
-  }
-  .skills-btn-links_Shelter:active {
-    background-color: #10e917;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.skills-btn-links_Shelter {
+  display: inline-block;
+  padding: 5%;
+  font-size: 0.6em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #279c2b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.skills-btn-links_Shelter:hover {
+  background-color: #10e917;
+}
+.skills-btn-links_Shelter:active {
+  background-color: #10e917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
-  .skills-btn-links_Food{
-    display: inline-block;
-    padding: 5%;
-    font-size: .6em;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: #279c2b;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  .skills-btn-links_Food:hover {
-    background-color: #10e917;
-  }
-  .skills-btn-links_Food:active {
-    background-color: #10e917;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.skills-btn-links_Food {
+  display: inline-block;
+  padding: 5%;
+  font-size: 0.6em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #279c2b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.skills-btn-links_Food:hover {
+  background-color: #10e917;
+}
+.skills-btn-links_Food:active {
+  background-color: #10e917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
-  .skills-btn-links_Predators{
-    display: inline-block;
-    padding: 5%;
-    font-size: .6em;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: black;
-    background-color: #279c2b;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  .skills-btn-links_Predators:hover {
-    background-color: #10e917;
-  }
-  .skills-btn-links_Predators:active {
-    background-color: #10e917;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
-
- 
+.skills-btn-links_Predators {
+  display: inline-block;
+  padding: 5%;
+  font-size: 0.6em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #279c2b;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.skills-btn-links_Predators:hover {
+  background-color: #10e917;
+}
+.skills-btn-links_Predators:active {
+  background-color: #10e917;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

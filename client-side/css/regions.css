@@ -1,37 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
 
-@media all and (min-width: 640px) { 
-  body {font-size:1rem;} } 
-
-.mapRegion{
-    box-shadow: 6px 3px 5px #353434;
-    border-radius: 40%;
-    border-style: solid;
-    width: 80%;
-    height: 40%;
-    margin-bottom: 5%;
-    background-color: rgb(203, 219, 207);
+@media all and (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
-h1{
-    font-family: "Rubik", sans-serif;
-    font-size: 2.0rem;
-    margin-top: center;
-    text-align: center;
-    text-shadow: 1px 1px darkcyan;
+.mapRegion {
+  box-shadow: 6px 3px 5px #353434;
+  border-radius: 40%;
+  border-style: solid;
+  width: 80%;
+  height: 40%;
+  margin-bottom: 5%;
+  background-color: rgb(203, 219, 207);
 }
 
-p{
-    font-size: medium;
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  margin-top: center;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
 }
 
-.ulRegions{
-    cursor: pointer;
-    font-size: medium;
-    text-shadow: 0.5px 0.5px rgb(62, 146, 146);
-
+p {
+  font-size: medium;
 }
 
-.ulRegions li:hover{
-    color: lightgreen;
+.ulRegions {
+  cursor: pointer;
+  font-size: medium;
+  text-shadow: 0.5px 0.5px rgb(62, 146, 146);
+}
+
+.ulRegions li:hover {
+  color: lightgreen;
+}
+
+.park {
+  float: left;
+  margin-right: 19%;
+}
+
+.west,
+.midwest,
+.northeast,
+.southeast,
+.southwest,
+.westalaskahawaii {
+  background-color: #279c2b;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 1%;
+  font-size: 60%;
+  font-family: "Rubik", sans-serif;
 }
