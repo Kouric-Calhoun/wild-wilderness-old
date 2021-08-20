@@ -9,6 +9,7 @@ body{
 } 
 .donationBody{
   font-size: "Rubik", sans-serif;
+  background-color: rgb(228, 225, 225);
 }
 
 .donationH1{
@@ -17,3 +18,33 @@ body{
   text-align: center;
   text-shadow: 1px 1px darkcyan;
 }
+
+
+.donation-info-title{
+  font-weight: bold;
+}
+
+.tax-donation-message{
+  font-style: oblique;
+}
+
+.radioBtns{
+  border-style: solid;
+  border-radius: .5em;
+  width:100%;
+  height:50%;
+  background-color: beige;
+}
+
+.donationFormItem{
+  margin-bottom: 5%;
+}
+
+.donatorInfo{
+  font-weight: bold;
+  font-size: large;
+
+}
+
+
+
