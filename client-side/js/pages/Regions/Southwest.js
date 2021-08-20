@@ -11,7 +11,7 @@ export default function Southwest() {
   
   
   
-      < class="container_park">
+      <div class="container_park">
       <div class="park">
         <h3>Grand Canyon National Park</h3>
         <p>
@@ -19,8 +19,6 @@ export default function Southwest() {
         </p>
         <address>Arizona</address>
         </div>
-
-      
       </div>
 
       <div class="park">
