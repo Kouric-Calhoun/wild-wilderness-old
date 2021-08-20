@@ -4,13 +4,14 @@
   body {font-size:1rem;} } 
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .top-text {
+  font-family: "Rubik", sans-serif;
   margin-top: center;
   text-align: center;
-  color: green;
+  text-shadow: 1px 1px;
   font-size: 80%;
   text-shadow: 0.5px 0.5px darkcyan;
 }

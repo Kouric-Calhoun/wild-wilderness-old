@@ -6,11 +6,19 @@
 body{
     font-family: "Montserrat", sans-serif;
     font: medium;
-}  
+} 
+.donationBody{
+  font-size: "Rubik", sans-serif;
+  background-color: rgb(228, 225, 225);
+}
 
 .donationH1{
-    color: green;
+  font-family: "Rubik", sans-serif;
+  margin-top: center;
+  text-align: center;
+  text-shadow: 1px 1px darkcyan;
 }
+
 
 .donation-info-title{
   font-weight: bold;
@@ -28,11 +36,6 @@ body{
   background-color: beige;
 }
 
-.donationBody{
-  background-color: rgb(228, 225, 225);
-  
-}
-
 .donationFormItem{
   margin-bottom: 5%;
 }
@@ -42,5 +45,6 @@ body{
   font-size: large;
 
 }
+
 
 
