@@ -4,7 +4,7 @@ import regions from "../../css/regions.css";
 export default function Regions() {
   return `
     <div id="regions-div">
-      <h1>Regions</h1>
+      <h1 class="regions">Regions</h1>
 
 
       <p class="regions-info">A wilderness area is a region where the land is in a natural state; where impacts from 
