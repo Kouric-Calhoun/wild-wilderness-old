@@ -1,3 +1,6 @@
+@media all and (min-width: 640px) { 
+  body {font-size:1rem;} } 
+
 img {
   border-radius: 0px;
   height: 100%;

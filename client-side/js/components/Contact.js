@@ -58,16 +58,16 @@ export default function Contact() {
       soon as possible.</p><br>
     
 
-            <form class="writeUs">
+            <div class="writeUs">
                 <p class="writeUs"><b><label for="name">Name</label></b></p>
                 <p class="writeUs"><input type="text" id="name" name="name" placeholder="Enter your name"></p>
                 <p class="writeUs"><b><label for="email">Email</label></b></p>
                 <p class="writeUs"><input type="text" id="email" name="email" placeholder="Enter your email"></p>
                 <p class="writeUs"><b><label for="email">Message</label></b></p>
                 <p class="writeUs"><textarea id="subject" name="subject" placeholder="Write your comment" style="height:170px"></textarea></p>
-                <input type="submit" value="Submit">
+                <button class="quiz-btn-links_Fire"><span>Click Here!</span><span>Submit</span></button>
                 <br>
-            </form>
+            </div>
             <br>
  
  
