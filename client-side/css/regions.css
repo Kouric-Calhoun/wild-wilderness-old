@@ -16,7 +16,7 @@
   background-color: rgb(203, 219, 207);
 }
 
-h1 {
+.regions {
   font-family: "Rubik", sans-serif;
   font-size: 2rem;
   margin-top: center;
@@ -24,7 +24,7 @@ h1 {
   font-family: "Rubik", sans-serif;
 }
 
-p {
+.regions-info {
   font-size: medium;
 }
 
