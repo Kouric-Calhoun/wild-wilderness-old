@@ -3,8 +3,7 @@ export default function Scenarios() {
     <div id="scenarios-div">
     <body>
     <nav class="national-navbar">
-      <a id="app-title" class="navbar-brand" href="#"
-        >National Parks Finder App</a
+      <a id="app-title" class="navbar-brand">National Parks Finder App</a
       >
     </nav>
 
