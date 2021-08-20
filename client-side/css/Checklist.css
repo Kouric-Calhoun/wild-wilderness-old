@@ -8,11 +8,13 @@
 
 .todo-input {
   height: 50px;
-  margin-bottom: 1rem;
-  margin-top: 6px;
+  margin-bottom: 3px;
+  /* margin-top: 6px; */
   margin-right: 0%;
   width: 80%;
   position: relative;
+  padding: 1rem;
+  font-size: larger;
 }
 
 .checklist {
@@ -20,13 +22,13 @@
 }
 .checklist,
 .todo-button {
-  padding: 0.5rem;
+  padding: 0.4rem;
   font-size: 2rem;
   border: none;
   background: white;
   margin-inline: 0%;
   margin-block-end: 2%;
-  margin-top: 2%;
+  vertical-align: top;
 }
 
 .todo-button {
@@ -35,11 +37,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
   border-radius: 5%;
+  padding-top: 0;
+  padding-bottom: 12px;
 }
 
 .todo-button:hover {
   background: #195237;
-  color: white;
+  color: black;
   position: relative;
 }
 
@@ -78,7 +82,7 @@
 .trash-btn,
 .complete-btn {
   background: #195237;
-  color: white;
+  color: black;
   border: none;
   padding: 1rem;
   cursor: pointer;
@@ -100,9 +104,8 @@
   pointer-events: none;
 }
 
-.fas-fa-plus-square{
+.fas-fa-plus-square {
   margin-left: 1rem;
-  
 }
 .fall {
   transform: translateY(10rem) rotateZ(20deg);

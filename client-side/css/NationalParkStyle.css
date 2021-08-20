@@ -6,9 +6,9 @@
   }
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -55,7 +55,6 @@ p {
   margin-top: center;
   text-align: center;
 }
-
 
 .hidden {
   display: none;

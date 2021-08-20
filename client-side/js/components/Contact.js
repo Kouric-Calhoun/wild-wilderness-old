@@ -1,7 +1,6 @@
-import contactForm from '../../css/contactForm.css';
-import contact from '../../css/contact.css';
-import contactImageBg2 from '../../images/contactImageBg2.jpg';
-
+import contactForm from "../../css/contactForm.css";
+import contact from "../../css/contact.css";
+import contactImageBg2 from "../../images/contactImageBg2.jpg";
 
 export default function Contact() {
   return `

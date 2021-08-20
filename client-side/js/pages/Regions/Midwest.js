@@ -13,7 +13,7 @@ export default function Midwest() {
           <div class="park">
             <h3>Brown County State Park</h3>
             <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12376.973628267006!2d-86.2317976!3d39.1464451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae862da38db4aebc!2sBrown%20County%20State%20Park!5e0!3m2!1sen!2sus!4v1629002938844!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12376.973628267006!2d-86.2317976!3d39.1464451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae862da38db4aebc!2sBrown%20County%20State%20Park!5e0!3m2!1sen!2sus!4v1629002938844!5m2!1sen!2sus" width="290" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </p>
             <address>1801 Indiana 46 East, Nashville, IN 47448</address>
           </div>
@@ -21,7 +21,7 @@ export default function Midwest() {
           <div class="park">
             <h3>Starved Rock State Park</h3>
             <p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29557.929546150586!2d-89.01453729652278!3d41.3146953184701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d9df865a94428c4!2sStarved%20Rock%20State%20Park!5e0!3m2!1sen!2sus!4v1629003244855!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29557.929546150586!2d-89.01453729652278!3d41.3146953184701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d9df865a94428c4!2sStarved%20Rock%20State%20Park!5e0!3m2!1sen!2sus!4v1629003244855!5m2!1sen!2sus" width="290" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </p>
             <address>2678 E 875th Rd, Oglesby, IL 61348</address>
             </div>
