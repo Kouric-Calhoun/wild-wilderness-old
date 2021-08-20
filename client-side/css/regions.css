@@ -67,3 +67,7 @@ p {
   margin-left: 80%;
   padding-bottom: 5px;
 }
+
+#scenarios-text {
+  text-align: center;
+}
