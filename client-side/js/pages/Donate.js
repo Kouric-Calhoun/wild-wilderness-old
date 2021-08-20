@@ -58,7 +58,6 @@ export default function Donate() {
                     <option value="georgia">Georgia</option>
                     <option value="hawaii">Hawaii</option>
                     <option value="idaho">Idaho</option>
-                    <option value="illinois">Illinois</option>              
                     <option value="indiana">Indiana</option>             
                     <option value="iowa">Iowa</option>          
                     <option value="kansas">Kansas</option>
